@@ -1,0 +1,4 @@
+#Wed Jan 28 18:57:02 WAT 2026
+base.0=D\:\\GPSproject\\GPS\\org.eclipse.paho.android.service\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_device_information"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_border_primary"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/iv_headPortrait"
+        android:layout_toStartOf="@id/iv_arrow_right"
+        android:textAppearance="@style/normal_white"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_imei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_name"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/iv_headPortrait"
+        android:textAppearance="@style/normal_white"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_headPortrait"
+        android:layout_marginStart="10dp"
+        android:textAppearance="@style/normal_white"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_headPortrait"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@mipmap/ic_default_pigeon_marker" />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/iv_arrow_right"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icon_arrow_right_grey"/>
+
+</RelativeLayout>

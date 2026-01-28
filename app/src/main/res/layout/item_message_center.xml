@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="@dimen/line_size"
+        android:layout_marginStart="@dimen/config_margin_16dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvImei"
+            android:layout_width="@dimen/config_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/config_margin_16dp"
+            android:layout_marginTop="@dimen/config_margin_8dp"
+            android:layout_marginEnd="@dimen/config_margin_16dp"
+            android:textAppearance="@style/small_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvContent"
+            android:layout_width="@dimen/config_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/config_margin_2dp"
+            android:layout_marginBottom="@dimen/config_margin_8dp"
+            android:textAppearance="@style/normal_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvImei"
+            app:layout_constraintStart_toStartOf="@id/tvImei"
+            app:layout_constraintTop_toBottomOf="@id/tvImei" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

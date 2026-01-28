@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/include_toolbar_container" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:padding="5dp"
+        android:text="@string/competition_name" />
+
+    <EditText
+        android:id="@+id/et_competition_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/enter_the_name_of_competition_prompt"
+        android:maxLength="20"
+        android:background="@drawable/history_date_bg"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:padding="5dp"
+        android:text="@string/competition_time" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_select_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/history_date_bg"
+        android:textAppearance="@style/simple_history_date" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:padding="5dp"
+        android:text="@string/competition_start_and_end_point" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_start_longitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/start_point_longitude"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:layout_margin="2dp"
+            android:background="@drawable/history_date_bg"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_start_latitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/start_point_latitude"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:layout_margin="2dp"
+            android:background="@drawable/history_date_bg"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_end_longitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/end_point_longitude"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:layout_margin="2dp"
+            android:background="@drawable/history_date_bg"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_end_latitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/end_point_latitude"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:layout_margin="2dp"
+            android:background="@drawable/history_date_bg"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_create_competition"
+        style="@style/login_btn"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/create_pigeon_competition" />
+
+
+</LinearLayout>

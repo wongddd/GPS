@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clUsername"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:background="@drawable/btn_white_round_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etUsername"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@null"
+            android:maxLength="36"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCountryCode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/account"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clLanguage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/btn_white_round_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clUsername">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivLanguageArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/language"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSelectLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivLanguageArrow"
+            app:layout_constraintStart_toEndOf="@id/tvLanguage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@id/clUsername"
+        app:layout_constraintStart_toStartOf="@id/clUsername"
+        app:layout_constraintTop_toBottomOf="@id/clUsername" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/config_image_80dp"
+        android:layout_height="@dimen/config_image_80dp"
+        android:layout_margin="@dimen/margin_12"
+        android:background="@mipmap/splash_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvSwitchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/margin_4"
+        android:paddingTop="@dimen/margin_4"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/clUsername"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:background="@color/xui_config_color_white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/margin_8"
+        app:xui_shadowAlpha="1"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/ivPortrait"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="@dimen/margin_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_is_circle="true"
+                app:riv_is_touch_select_mode_enabled="false" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_40"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_40"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAppearance="@style/edit_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivPortrait" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_40"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_40"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAppearance="@style/text_black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginBottom="@dimen/margin_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvId">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/clFriend"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/text_black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:maxLines="1"
+                        android:text="@string/point"
+                        android:textAppearance="@style/normal_dimgray"
+                        app:layout_constraintBottom_toTopOf="@id/tvPoint"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clFriend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/clContacts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvFriend"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/text_black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:maxLines="1"
+                        android:text="@string/friend"
+                        android:textAppearance="@style/normal_dimgray"
+                        app:layout_constraintBottom_toTopOf="@id/tvFriend"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clContacts"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    app:layout_constraintBottom_toBottomOf="@id/clFriend"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/clFriend"
+                    app:layout_constraintTop_toTopOf="@id/clFriend">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvContacts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/text_black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:maxLines="1"
+                        android:text="@string/contacts"
+                        android:textAppearance="@style/normal_dimgray"
+                        app:layout_constraintBottom_toTopOf="@id/tvContacts"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/new_watch_login_title"
+        android:textAppearance="@style/edit_black"
+        app:layout_constraintEnd_toEndOf="@id/llInfo"
+        app:layout_constraintStart_toStartOf="@id/llInfo"
+        app:layout_constraintTop_toBottomOf="@id/llInfo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:text="@string/new_watch_login_content"
+        android:textAppearance="@style/normal_dimgray"
+        app:layout_constraintEnd_toEndOf="@id/llInfo"
+        app:layout_constraintStart_toStartOf="@id/llInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/scanBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:text="@string/scan_and_scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/llInfo"
+        app:layout_constraintStart_toStartOf="@id/llInfo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvScanPrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:gravity="center"
+        android:text="@string/scan_new_watch"
+        android:textAppearance="@style/normal_gray"
+        app:layout_constraintBottom_toTopOf="@id/scanBtn"
+        app:layout_constraintEnd_toEndOf="@id/llInfo"
+        app:layout_constraintStart_toStartOf="@id/llInfo" />
+
+</android.support.constraint.ConstraintLayout>

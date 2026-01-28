@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_background">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar_container"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/actionbar_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/tracking_map"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <FrameLayout
+            android:id="@+id/pagerWrap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/config_margin_4dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_map_type_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:background="@drawable/map_type"
+            android:contentDescription=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tracking_message_panel" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_locus_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:background="@mipmap/ic_locus"
+            android:contentDescription=""
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn"
+            app:layout_constraintTop_toBottomOf="@id/tracking_map_type_btn" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_show_marker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:background="@drawable/show_marker_btn"
+            android:contentDescription=""
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn"
+            app:layout_constraintTop_toBottomOf="@id/tracking_locus_btn" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_distance_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/config_margin_4dp"
+            android:background="@drawable/location_all"
+            android:contentDescription=""
+            app:layout_constraintBottom_toTopOf="@id/pagerWrap"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_mobile_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:background="@drawable/location_mobile"
+            android:contentDescription=""
+            app:layout_constraintBottom_toTopOf="@id/tracking_distance_btn"
+            app:layout_constraintStart_toStartOf="@id/tracking_distance_btn" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_car_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/location_btn_appearance"
+            android:contentDescription=""
+            app:layout_constraintBottom_toTopOf="@id/tracking_mobile_btn"
+            app:layout_constraintStart_toStartOf="@id/tracking_distance_btn" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_zoom_out_btn"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/config_margin_4dp"
+            android:background="@drawable/zoom_out"
+            android:contentDescription=""
+            app:layout_constraintBottom_toTopOf="@id/pagerWrap"
+            app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/tracking_zoom_in_btn"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:background="@drawable/zoom_in"
+            android:contentDescription=""
+            app:layout_constraintBottom_toTopOf="@id/tracking_zoom_out_btn"
+            app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn" />
+
+        <RelativeLayout
+            android:id="@+id/tracking_message_panel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:background="@drawable/translucent_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tracking_message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:maxLines="2"
+                android:minLines="1"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tracking_weather_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tracking_message_content"
+                android:layout_marginHorizontal="2dp"
+                android:maxLines="2"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tracking_count_down_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/simple_black"
+            app:layout_constraintStart_toStartOf="@id/tracking_distance_btn"
+            app:layout_constraintTop_toBottomOf="@id/tracking_message_panel" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tracking_distance_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/map_alert_bg"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/simple_black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tracking_zoom_out_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:background="@drawable/btn_refresh"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/tracking_zoom_in_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tracking_show_marker" />
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:id="@+id/llTrackMode"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginEnd="@dimen/config_margin_4dp"
+            android:background="@color/xui_config_color_white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/tracking_show_marker"
+            app:layout_constraintTop_toBottomOf="@id/tracking_show_marker"
+            app:xui_borderColor="@color/dimgray"
+            app:xui_borderWidth="@dimen/line_size"
+            app:xui_outerNormalColor="?attr/xui_config_color_background"
+            app:xui_radius="@dimen/margin_8"
+            app:xui_shadowAlpha="0.5"
+            app:xui_shadowElevation="@dimen/margin_8">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clTrackMode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_custom_item_round_selector"
+                android:clickable="true"
+                android:focusable="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ivTrackMode"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/margin_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_track_mode_selector" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/track_mode"
+                    android:textAppearance="@style/min_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivTrackMode" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:id="@+id/llMore"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginEnd="@dimen/config_margin_4dp"
+            android:background="@color/xui_config_color_white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/tracking_show_marker"
+            app:layout_constraintTop_toBottomOf="@id/tracking_show_marker"
+            app:xui_borderColor="@color/dimgray"
+            app:xui_borderWidth="@dimen/line_size"
+            app:xui_outerNormalColor="?attr/xui_config_color_background"
+            app:xui_radius="@dimen/margin_8"
+            app:xui_shadowAlpha="0.5"
+            app:xui_shadowElevation="@dimen/margin_8">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clMore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_custom_item_round_selector"
+                android:clickable="true"
+                android:focusable="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ivMore"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/margin_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/ic_more" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/more"
+                    android:textAppearance="@style/min_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivMore" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/config_margin_8dp"
+            android:layout_marginEnd="@dimen/config_margin_4dp"
+            android:background="@color/xui_config_color_white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/tracking_show_marker"
+            app:layout_constraintTop_toBottomOf="@id/llMore"
+            app:xui_borderColor="@color/dimgray"
+            app:xui_borderWidth="@dimen/line_size"
+            app:xui_outerNormalColor="?attr/xui_config_color_background"
+            app:xui_radius="@dimen/margin_8"
+            app:xui_shadowAlpha="0.5"
+            app:xui_shadowElevation="@dimen/margin_8">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_custom_item_round_selector"
+                android:clickable="true"
+                android:focusable="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/ivRefresh"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/ic_refresh_pressed" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="10"
+                    android:textAppearance="@style/simple_black"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/layout_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:minWidth="200dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/title_bar_color"
+            android:padding="10dp"
+            android:text="@string/which_devices_be_shown"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners">
+
+                <CheckBox
+                    android:id="@+id/selectAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/select_all"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/cancel" />
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/confirm" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/title" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

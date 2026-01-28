@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etFirst"
+                style="@style/edittext_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="@dimen/margin_24"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_auth_num_first"
+                android:inputType="phone"
+                android:labelFor="@id/etFirst"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingStart="@dimen/margin_16"
+                android:paddingTop="@dimen/margin_8"
+                android:paddingEnd="@dimen/margin_16"
+                android:paddingBottom="@dimen/margin_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etSecond"
+                style="@style/edittext_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_auth_num_second"
+                android:inputType="phone"
+                android:labelFor="@id/etSecond"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingStart="@dimen/margin_16"
+                android:paddingTop="@dimen/margin_8"
+                android:paddingEnd="@dimen/margin_16"
+                android:paddingBottom="@dimen/margin_8"
+                app:layout_constraintEnd_toEndOf="@id/etFirst"
+                app:layout_constraintStart_toStartOf="@id/etFirst"
+                app:layout_constraintTop_toBottomOf="@id/etFirst" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/confirmBtn"
+                style="@style/login_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:text="@string/confirm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/etSecond"
+                app:layout_constraintStart_toStartOf="@id/etSecond"
+                app:layout_constraintTop_toBottomOf="@id/etSecond" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

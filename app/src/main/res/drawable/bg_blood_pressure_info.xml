@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#207C18E8" />
+
+    <stroke android:color="@color/health_blood_pressure" android:width="@dimen/line_size" />
+
+    <corners android:radius="@dimen/margin_8" />
+
+</shape>

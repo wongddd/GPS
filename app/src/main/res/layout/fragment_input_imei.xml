@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvInputImei"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/input_imei"
+        android:textAppearance="@style/max_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvInputImeiPrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center"
+        android:text="@string/input_imei_prompt"
+        android:textAppearance="@style/normal_gray"
+        app:layout_constraintEnd_toEndOf="@id/tvInputImei"
+        app:layout_constraintStart_toStartOf="@id/tvInputImei"
+        app:layout_constraintTop_toBottomOf="@id/tvInputImei" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clImei"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_64"
+        app:layout_constraintEnd_toEndOf="@id/tvInputImei"
+        app:layout_constraintStart_toStartOf="@id/tvInputImei"
+        app:layout_constraintTop_toBottomOf="@id/tvInputImeiPrompt">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvImei"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/bind_imei"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etImei"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_48"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/imei_hint"
+            android:maxLength="50"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvImei" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_size"
+        android:layout_marginStart="@dimen/margin_16"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clImei" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bindBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/btn_custom_selector"
+        android:text="@string/bind"
+        app:layout_constraintEnd_toEndOf="@id/clImei"
+        app:layout_constraintStart_toStartOf="@id/clImei"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxLines="1"
+        android:padding="@dimen/margin_4"
+        android:text="@string/not_found_imei"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/clImei"
+        app:layout_constraintStart_toStartOf="@id/clImei"
+        app:layout_constraintTop_toBottomOf="@id/bindBtn" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tv_qrcode_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="@dimen/margin_4"
+        android:text="@string/qrcode_scanner"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        app:layout_constraintEnd_toEndOf="@id/clImei"
+        app:layout_constraintStart_toStartOf="@id/clImei"
+        app:layout_constraintTop_toBottomOf="@id/bindBtn" />
+
+
+</android.support.constraint.ConstraintLayout>

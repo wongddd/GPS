@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content">
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xllInfo"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/config_margin_4dp"
+        android:layout_marginEnd="@dimen/config_margin_4dp"
+        android:layout_marginBottom="@dimen/config_margin_4dp"
+        android:background="@color/xui_config_color_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/margin_8"
+        app:xui_shadowAlpha="1"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clInfo"
+                android:layout_width="@dimen/config_zero"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/config_margin_8dp"
+                android:layout_marginEnd="@dimen/config_margin_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/ivPortrait"
+                    android:layout_width="@dimen/config_image_simple"
+                    android:layout_height="@dimen/config_image_simple"
+                    android:layout_marginTop="@dimen/config_margin_4dp"
+                    android:layout_marginBottom="@dimen/config_margin_4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_is_circle="true"
+                    app:riv_is_touch_select_mode_enabled="true"
+                    app:riv_selected_mask_color="@color/gainsboro" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/config_margin_4dp"
+                    android:layout_marginTop="@dimen/config_margin_4dp"
+                    android:layout_marginBottom="@dimen/config_margin_4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivPortrait"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvType"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textAppearance="@style/small_black"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvImei"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textAppearance="@style/small_black"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvType" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textAppearance="@style/small_black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvImei" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clLocationInfo"
+                android:layout_width="@dimen/config_zero"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/clInfo"
+                app:layout_constraintStart_toStartOf="@id/clInfo"
+                app:layout_constraintTop_toBottomOf="@id/clInfo">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvLocationTime"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvLogTime"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLocationTime" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvLatlng"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLogTime" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvLocationType"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLatlng" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/config_zero"
+                android:layout_height="@dimen/config_size_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/clInfo"
+                app:layout_constraintStart_toStartOf="@id/clInfo"
+                app:layout_constraintTop_toBottomOf="@id/clLocationInfo">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/trackBtn"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@drawable/btn_custom_item_selector"
+                    android:text="@string/track"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/locationBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/locationBtn"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@drawable/btn_custom_item_selector"
+                    android:text="@string/location"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/messageBtn"
+                    app:layout_constraintStart_toEndOf="@id/trackBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/messageBtn"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@drawable/btn_custom_item_selector"
+                    android:text="@string/send_command_message"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/detailsBtn"
+                    app:layout_constraintStart_toEndOf="@id/locationBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/detailsBtn"
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@drawable/btn_custom_item_selector"
+                    android:text="@string/details"
+                    android:textAppearance="@style/small_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/messageBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="@dimen/line_size"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@color/colorLine"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/trackBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="@dimen/line_size"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@color/colorLine"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/locationBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="@dimen/line_size"
+                    android:layout_height="@dimen/config_zero"
+                    android:background="@color/colorLine"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/messageBtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="@dimen/config_zero"
+                android:layout_height="@dimen/line_size"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clLocationInfo" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xllAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/xui_config_color_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/xllInfo"
+        app:layout_constraintEnd_toEndOf="@id/xllInfo"
+        app:layout_constraintStart_toStartOf="@id/xllInfo"
+        app:layout_constraintTop_toTopOf="@id/xllInfo"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/margin_8"
+        app:xui_shadowAlpha="1"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_add_pressed" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+</android.support.constraint.ConstraintLayout>

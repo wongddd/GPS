@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#ddd"
+    android:clickable="true"
+    android:paddingVertical="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:focusable="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/bg_custom_round"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/selectAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/select_all"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="1dp"
+        android:layout_marginHorizontal="2dp"
+        android:background="@drawable/bg_custom_round"
+        android:text="@string/cancel"/>
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="1dp"
+        android:layout_marginHorizontal="2dp"
+        android:background="@drawable/bg_custom_round"
+        android:text="@string/confirm"/>
+
+</LinearLayout>

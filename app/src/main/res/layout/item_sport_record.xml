@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:textAppearance="@style/normal_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvSecond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:textAppearance="@style/normal_black"
+        app:layout_constraintEnd_toEndOf="@id/tvFirst"
+        app:layout_constraintStart_toStartOf="@id/tvFirst"
+        app:layout_constraintTop_toBottomOf="@id/tvFirst" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvThird"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:textAppearance="@style/normal_black"
+        app:layout_constraintEnd_toEndOf="@id/tvFirst"
+        app:layout_constraintStart_toStartOf="@id/tvFirst"
+        app:layout_constraintTop_toBottomOf="@id/tvSecond" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvFourth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:textAppearance="@style/normal_black"
+        app:layout_constraintEnd_toEndOf="@id/tvFirst"
+        app:layout_constraintStart_toStartOf="@id/tvFirst"
+        app:layout_constraintTop_toBottomOf="@id/tvThird" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvFifth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:textAppearance="@style/normal_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvFirst"
+        app:layout_constraintStart_toStartOf="@id/tvFirst"
+        app:layout_constraintTop_toBottomOf="@id/tvFourth" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvFirst" />
+
+</android.support.constraint.ConstraintLayout>

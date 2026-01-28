@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/first"-->
+<!--        style="@style/setting_fragment_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="replay" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/second"-->
+<!--        style="@style/setting_fragment_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Geo fence" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/third"-->
+<!--        style="@style/setting_fragment_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="remote control" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/fourth"-->
+<!--        style="@style/setting_fragment_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="trip report"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/fifth"-->
+<!--        style="@style/setting_fragment_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="summary report" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sixth"-->
+<!--        style="@style/setting_fragment_tv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="device setting" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TEMPORARY PAGE"
+        android:textSize="@dimen/textSize_16"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/find_login_pwd"
+        android:textAppearance="@style/max_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitlePrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:gravity="center"
+        android:textAppearance="@style/normal_gray"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clCountry"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_64"
+        android:background="@drawable/btn_transparent_selector"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitlePrompt">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/country_code"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivCountryArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSelectCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivCountryArrow"
+            app:layout_constraintStart_toEndOf="@id/tvCountry"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/lineFirst"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clCountry" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clCountry">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvInput"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etInput"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@null"
+            android:maxLength="36"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvInput"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/lineSecond"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_size"
+        android:layout_marginStart="@dimen/margin_16"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clInput" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvSwitchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/lineSecond" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/confirmBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/btn_custom_selector"
+        android:text="@string/next_step"
+        app:layout_constraintEnd_toEndOf="@id/clInput"
+        app:layout_constraintStart_toStartOf="@id/clInput"
+        app:layout_constraintTop_toBottomOf="@id/tvSwitchType" />
+
+</android.support.constraint.ConstraintLayout>

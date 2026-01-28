@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:background="@color/xui_config_color_white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:xui_borderColor="?attr/xui_config_color_separator_light"
+            app:xui_outerNormalColor="?attr/xui_config_color_background"
+            app:xui_radius="@dimen/margin_8"
+            app:xui_shadowAlpha="1"
+            app:xui_shadowElevation="@dimen/margin_4">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBloodPressureBg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/btn_custom_item_round_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBloodPressureNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvBloodPressureUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_pressure_unit"
+                        android:textAppearance="@style/simple_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvBloodPressureNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_2"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/health_blood_pressure"
+                        android:textSize="28dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvBloodPressureUnit"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvBloodPressureConstant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:text="@string/blood_pressure_content"
+                    android:textAppearance="@style/small_gray"
+                    app:layout_constraintEnd_toEndOf="@id/clBloodPressureNum"
+                    app:layout_constraintTop_toBottomOf="@id/clBloodPressureNum" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvBloodPressureTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_40"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/blood_pressure"
+                    android:textAppearance="@style/edit_black"
+                    app:layout_constraintEnd_toStartOf="@id/clBloodPressureNum"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvBloodPressureDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:textAppearance="@style/small_gray"
+                    app:layout_constraintEnd_toEndOf="@id/tvBloodPressureTitle"
+                    app:layout_constraintEnd_toStartOf="@id/tvBloodPressureConstant"
+                    app:layout_constraintStart_toStartOf="@id/tvBloodPressureTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvBloodPressureTitle" />
+
+                <View
+                    android:id="@+id/lineBloodPressure"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/line_size"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:background="@color/colorLine"
+                    app:layout_constraintEnd_toEndOf="@id/clBloodPressureNum"
+                    app:layout_constraintStart_toStartOf="@id/tvBloodPressureTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvBloodPressureDate" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineBloodPressure">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_40"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clPbBloodPressure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginEnd="@dimen/margin_16"
+                            android:background="@drawable/bg_blood_pressure_stroke"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                                android:id="@+id/mpbBloodPressure"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="28dp"
+                                android:layout_margin="@dimen/margin_2"
+                                android:progress="30"
+                                android:secondaryProgress="50"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:mpb_progressBackgroundTint="@android:color/transparent"
+                                app:mpb_progressStyle="horizontal"
+                                app:mpb_progressTint="@color/white"
+                                app:mpb_secondaryProgressTint="@color/health_blood_pressure"
+                                app:mpb_useIntrinsicPadding="false" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/clPbBloodPressure">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvPBFirst"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_8"
+                                android:text="0"
+                                android:textColor="@color/health_blood_pressure"
+                                android:textSize="@dimen/small_font"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvPBThird"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:textColor="@color/health_blood_pressure"
+                                android:textSize="@dimen/small_font"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvPBSecond"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50"
+                                android:textColor="@color/health_blood_pressure"
+                                android:textSize="@dimen/small_font"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvPBThird"
+                                app:layout_constraintStart_toEndOf="@id/tvPBFirst"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvPBForth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="150"
+                                android:textColor="@color/health_blood_pressure"
+                                android:textSize="@dimen/small_font"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvPBFifth"
+                                app:layout_constraintStart_toEndOf="@id/tvPBThird"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvPBFifth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/margin_8"
+                                android:text="200"
+                                android:textColor="@color/health_blood_pressure"
+                                android:textSize="@dimen/small_font"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ibBloodPressure"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_24"
+        android:background="@mipmap/ic_health_blood_pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

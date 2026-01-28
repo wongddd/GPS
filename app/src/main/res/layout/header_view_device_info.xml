@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xlLayout"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/config_margin_16dp"
+        android:layout_marginTop="@dimen/config_margin_16dp"
+        android:layout_marginEnd="@dimen/config_margin_16dp"
+        android:layout_marginBottom="@dimen/config_margin_16dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/config_margin_16dp"
+        app:xui_shadowAlpha="0.5"
+        app:xui_shadowElevation="@dimen/config_shadow_normal"
+        app:xui_showBorderOnlyBeforeL="false">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clInfo"
+                android:layout_width="@dimen/config_zero"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/config_margin_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/ivPortrait"
+                    android:layout_width="@dimen/config_image_large"
+                    android:layout_height="@dimen/config_image_large"
+                    android:layout_marginStart="@dimen/config_margin_16dp"
+                    android:layout_marginTop="@dimen/config_margin_8dp"
+                    android:layout_marginBottom="@dimen/config_margin_8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="@dimen/config_radius_normal"
+                    app:riv_is_circle="false"
+                    app:riv_is_touch_select_mode_enabled="true"
+                    app:riv_selected_mask_color="@color/gainsboro" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/config_margin_16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/ivPortrait"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ivPortrait">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ivArrow"
+                        android:layout_width="@dimen/config_image_normal"
+                        android:layout_height="@dimen/config_image_normal"
+                        android:background="@mipmap/ic_arrow_right_white"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/ibRefresh"
+                        android:layout_width="@dimen/config_image_middle"
+                        android:layout_height="@dimen/config_image_middle"
+                        android:background="@drawable/btn_refresh"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="@dimen/config_zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/config_margin_16dp"
+                    android:layout_marginEnd="@dimen/config_margin_8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/clBtn"
+                    app:layout_constraintStart_toEndOf="@id/ivPortrait"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/text_white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvImei"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/config_margin_4dp"
+                        android:textAppearance="@style/normal_white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvRingNo"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/config_margin_4dp"
+                        android:textAppearance="@style/normal_white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvImei" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvMode"
+                        android:layout_width="@dimen/config_zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/config_margin_4dp"
+                        android:textAppearance="@style/normal_white"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRingNo" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvInfo"
+                android:layout_width="@dimen/config_zero"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/config_margin_16dp"
+                android:layout_marginTop="@dimen/config_margin_8dp"
+                android:layout_marginEnd="@dimen/config_margin_16dp"
+                android:layout_marginBottom="@dimen/config_margin_16dp"
+                android:textAppearance="@style/normal_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clInfo" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+</android.support.constraint.ConstraintLayout>

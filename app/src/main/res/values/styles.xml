@@ -1,0 +1,590 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 拓展主题 theme. -->
+    <style name="XUITheme" parent="XUIBaseTheme" tools:ignore="PrivateResource">
+        <!--设置默认窗口的动画样式-->
+        <item name="android:windowAnimationStyle">@style/WindowAnimStyle</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+
+        <!--**********************************************
+        *               通用颜色属性设置                    *
+        ***********************************************-->
+        <item name="xui_config_color_error_text">@color/xui_config_color_red</item>
+        <item name="xui_config_color_input_text">@color/xui_config_color_edittext_input_text</item>
+        <item name="xui_config_color_hint_text">@color/xui_config_color_edittext_hint_text</item>
+        <item name="xui_config_color_stroke">@color/xui_config_color_edittext_stroke</item>
+        <item name="xui_config_color_disable">@color/xui_config_color_edittext_disable</item>
+        <item name="xui_config_color_pressed">@color/xui_config_color_background_pressed</item>
+
+        <!--actionbar的样式-->
+        <item name="xui_actionbar_color">@color/colorPrimary</item>
+        <item name="xui_actionbar_text_color">@color/white</item>
+        <item name="xui_actionbar_immersive">false</item>
+        <item name="xui_actionbar_ic_navigation_back" tools:ignore="PrivateResource">
+            @drawable/back_ic
+        </item>
+
+        <!-- 文字的style -->
+        <item name="xui_config_color_title_text">@color/black</item>
+        <item name="xui_config_color_content_text">@color/black</item>
+        <item name="xui_config_color_explain_text">@color/black</item>
+        <!--应用的主要文字颜色，actionBar的标题文字默认使用该颜色-->
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <!--全局样式-->
+        <item name="xui_config_content_spacing_horizontal">16dp</item>
+        <item name="xui_config_content_spacing_vertical">10dp</item>
+
+        <!--文字字号样式-->
+        <item name="xui_config_size_title_text">20dp</item>
+        <item name="xui_config_size_content_text">17dp</item>
+        <item name="xui_config_size_explain_text">14dp</item>
+        <item name="xui_config_size_spinner_text">14dp</item>
+
+        <!--按钮样式-->
+        <item name="xui_btn_view_radius">8dp</item>
+        <item name="xui_btn_view_width" tools:ignore="PrivateResource">
+            @dimen/default_btn_view_width_phone
+        </item>
+        <item name="xui_btn_view_height">36dp</item>
+        <item name="xui_btn_view_text_size">14dp</item>
+        <item name="xui_btn_view_border_width">0.8dp</item>
+        <item name="xui_config_icon_drawable_padding">8dp</item>
+
+        <!--输入框样式-->
+        <item name="xui_config_size_edittext_input_text">14dp</item>
+        <item name="xui_config_size_edittext_helper_text">10dp</item>
+        <item name="xui_config_size_edittext_components_spacing">8dp</item>
+        <item name="xui_config_size_edittext_left_padding">12dp</item>
+        <item name="xui_config_size_edittext_radius">5dp</item>
+        <item name="xui_config_size_edittext_height">36dp</item>
+
+        <!--actionbar-->
+        <item name="xui_actionbar_height">@dimen/actionbar_size</item>
+        <item name="xui_actionbar_title_text_size">@dimen/title_font</item>
+        <item name="xui_actionbar_action_text_size">@dimen/edit_font</item>
+        <item name="xui_actionbar_sub_text_size" tools:ignore="PrivateResource">
+            @dimen/xui_actionbar_sub_text_size_phone
+        </item>
+        <item name="xui_actionbar_action_padding">8dp</item>
+        <item name="xui_actionbar_side_text_padding">15dp</item>
+
+        <!--spinner-->
+        <item name="ms_padding_left_size">10dp</item>
+        <item name="ms_padding_top_size">8dp</item>
+        <item name="ms_item_height_size">36dp</item>
+        <item name="ms_dropdown_offset">2dp</item>
+        <item name="ms_arrow_size">10dp</item>
+        <!--StatefulLayout-->
+        <item name="stf_progressbar_size">70dp</item>
+        <item name="stf_tip_img_size">90dp</item>
+        <!--*********************************************
+        *                  Dialog                       *
+        **********************************************-->
+        <item name="xui_dialog_radius_size">8dp</item>
+        <item name="xui_dialog_loading_padding_size">30dp</item>
+        <item name="xui_dialog_loading_min_size">110dp</item>
+        <item name="xui_dialog_mini_loading_padding_size">20dp</item>
+        <item name="xui_dialog_mini_loading_min_size">100dp</item>
+        <item name="xui_loading_view_size">85dp</item>
+        <item name="xui_mini_loading_view_size">30dp</item>
+        <item name="xui_loading_text_size">14dp</item>
+        <item name="xui_loading_view_width">5dp</item>
+        <item name="xui_loading_margin_size">8dp</item>
+        <item name="xui_mini_loading_margin_size">15dp</item>
+        <item name="mini_loading_view_size">25dp</item>
+
+        <!--style of actionSheet-->
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <style name="AppTheme.Launch">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splash_image</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--DialogTheme，用于将Activity作为Dialog的主题-->
+    <style name="DialogTheme" parent="XUITheme.Phone">
+        <!--设置dialog的背景，此处为系统给定的透明值-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>　　　　　
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否有覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置Activity出现方式-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--默认样式 注意* 样式只可修改，不能删除任何一项 否则报错-->
+    <style name="picture.default.style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/skyblue</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/skyblue</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">true</item>
+        <!--返回键图标-->
+        <item name="picture.leftBack.icon">@drawable/ic_back</item>
+        <!--标题下拉箭头-->
+        <item name="picture.arrow_down.icon">@drawable/arrow_down</item>
+        <!--标题上拉箭头-->
+        <item name="picture.arrow_up.icon">@drawable/arrow_up</item>
+        <!--标题文字颜色-->
+        <item name="picture.title.textColor">@color/black</item>
+        <!--标题栏右边文字-->
+        <item name="picture.right.textColor">@color/black</item>
+        <!--图片列表勾选样式-->
+        <item name="picture.checked.style">@drawable/picture_checkbox_selector</item>
+        <!--开启图片列表勾选数字模式,开启的话勾选样式要换-->
+        <item name="picture.style.checkNumMode">false</item>
+        <!--选择图片样式0/9-->
+        <item name="picture.style.numComplete">false</item>
+        <!--图片列表底部背景色-->
+        <item name="picture.bottom.bg">@color/color_fa</item>
+        <!--图片列表预览文字颜色-->
+        <item name="picture.preview.textColor">@color/black</item>
+        <!--图片列表已完成文字颜色-->
+        <item name="picture.complete.textColor">@color/black</item>
+        <!--图片已选数量圆点背景色-->
+        <item name="picture.num.style">@drawable/orange_oval</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture.ac_preview.title.textColor">@color/black</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture.ac_preview.complete.textColor">@color/black</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture.ac_preview.title.bg">@color/skyblue</item>
+        <!--预览界面底部背景色-->
+        <item name="picture.ac_preview.bottom.bg">@color/color_fa</item>
+        <!--预览界面返回箭头-->
+        <item name="picture.preview.leftBack.icon">@drawable/ic_back</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/skyblue</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture.crop.status.color">@color/skyblue</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture.crop.title.color">@color/black</item>
+        <!--相册文件夹列表选中图标-->
+        <item name="picture.folder_checked_dot">@drawable/orange_oval</item>
+    </style>
+
+    <!--默认样式 注意* 样式只可修改，不能删除任何一项 否则报错-->
+    <style name="picture.qq.style" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题栏背景色-->
+        <item name="colorPrimary">@color/skyblue</item>
+        <!--状态栏背景色-->
+        <item name="colorPrimaryDark">@color/skyblue</item>
+        <!--是否改变图片列表界面状态栏字体颜色为黑色-->
+        <item name="picture.statusFontColor">true</item>
+        <!--返回键图标-->
+        <item name="picture.leftBack.icon">@drawable/ic_back</item>
+        <!--标题下拉箭头-->
+        <item name="picture.arrow_down.icon">@drawable/arrow_down</item>
+        <!--标题上拉箭头-->
+        <item name="picture.arrow_up.icon">@drawable/arrow_up</item>
+        <!--标题文字颜色-->
+        <item name="picture.title.textColor">@color/black</item>
+        <!--标题栏右边文字-->
+        <item name="picture.right.textColor">@color/black</item>
+        <!--图片列表勾选样式-->
+        <item name="picture.checked.style">@drawable/checkbox_num_selector</item>
+        <!--开启图片列表勾选数字模式,开启的话勾选样式要换-->
+        <item name="picture.style.checkNumMode">true</item>
+        <!--选择图片样式0/9-->
+        <item name="picture.style.numComplete">false</item>
+        <!--图片列表底部背景色-->
+        <item name="picture.bottom.bg">@color/color_fa</item>
+        <!--图片列表预览文字颜色-->
+        <item name="picture.preview.textColor">@color/black</item>
+        <!--图片列表已完成文字颜色-->
+        <item name="picture.complete.textColor">@color/black</item>
+        <!--图片已选数量圆点背景色-->
+        <item name="picture.num.style">@drawable/num_oval_blue</item>
+        <!--预览界面标题文字颜色-->
+        <item name="picture.ac_preview.title.textColor">@color/black</item>
+        <!--预览界面已完成文字颜色-->
+        <item name="picture.ac_preview.complete.textColor">@color/black</item>
+        <!--预览界面标题栏背景色-->
+        <item name="picture.ac_preview.title.bg">@color/skyblue</item>
+        <!--预览界面底部背景色-->
+        <item name="picture.ac_preview.bottom.bg">@color/color_fa</item>
+        <!--预览界面返回箭头-->
+        <item name="picture.preview.leftBack.icon">@drawable/ic_back</item>
+        <!--裁剪页面标题背景色-->
+        <item name="picture.crop.toolbar.bg">@color/skyblue</item>
+        <!--裁剪页面状态栏颜色-->
+        <item name="picture.crop.status.color">@color/skyblue</item>
+        <!--裁剪页面标题文字颜色-->
+        <item name="picture.crop.title.color">@color/black</item>
+        <!--相册文件夹列表选中图标-->
+        <item name="picture.folder_checked_dot">@drawable/orange_oval</item>
+    </style>
+
+    <!-- font style -->
+    <style name="toolbar_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="max_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/max_font</item>
+    </style>
+
+    <style name="common_btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+        <item name="android:background">@drawable/btn_custom_selector</item>
+    </style>
+
+    <style name="edittext_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+    </style>
+
+    <style name="normal_darkgray">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="normal_gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="normal_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="normal_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="normal_blue">
+        <item name="android:textColor">@color/colorTexNormal</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="normal_dimgray">
+        <item name="android:textColor">@color/dimgray</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="normal_red">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+    <style name="simple_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="simple_lightslategray">
+        <item name="android:textColor">@color/lightslategray</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="simple_gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="simple_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="simple_dimgray">
+        <item name="android:textColor">@color/dimgray</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="edit_darkgray">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="edit_gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="edit_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="edit_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="edit_red">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="edit_blue">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="edit_dimgray">
+        <item name="android:textColor">@color/dimgray</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+    </style>
+
+    <style name="small_gray">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <style name="small_darkgray">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <style name="small_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <style name="small_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <style name="min_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/min_font</item>
+    </style>
+
+    <style name="text_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_font</item>
+    </style>
+
+    <style name="text_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/title_font</item>
+    </style>
+
+    <style name="text_darkgray">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/title_font</item>
+    </style>
+
+    <style name="max_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/max_font</item>
+    </style>
+
+    <style name="simple_section_color">
+        <item name="android:textColor">@color/colorSectionTextColor</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <!-- dialog style -->
+    <style name="dialog_normal_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="dialog_loading_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="login_btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+        <item name="android:background">@drawable/login_btn_bg</item>
+    </style>
+
+    <style name="toolbar_pop_theme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/toolbar_font</item>
+        <!--图标与文字的间距-->
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="toolbar_subtitle_style" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/toolbar_font</item>
+    </style>
+
+    <style name="toolbar_title_style" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_font</item>
+    </style>
+
+    <style name="setting_fragment_tv">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="elevation">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+
+
+<!--    =========================================================================================
+====================================================================================-->
+
+    <style name="toolbar_nav_button" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
+    <style name="toolbar_action_button_style" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/toolbar_font</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+    </style>
+
+    <style name="toolbar_overflow_button_style" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+
+    </style>
+
+    <style name="toolbar_action_menu_overflow" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，为true则盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-2dp</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="login_top_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="login_type">
+        <item name="android:textColor">@color/login_type</item>
+        <item name="android:textSize">@dimen/edit_font</item>
+        <item name="android:background">@drawable/login_type_bg</item>
+    </style>
+
+
+    <style name="chat_send_btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+        <item name="android:background">@drawable/login_btn_bg</item>
+    </style>
+
+
+    <style name="normal_device_info">
+        <item name="android:textColor">@color/device_info</item>
+        <item name="android:textSize">@dimen/normal_font</item>
+    </style>
+
+
+    <style name="simple_history_date">
+        <item name="android:textColor">@color/history_date</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="simple_device_info">
+        <item name="android:textColor">@color/device_info</item>
+        <item name="android:textSize">@dimen/simple_font</item>
+    </style>
+
+    <style name="amap_window_info">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxEms">12</item>
+        <item name="android:textAppearance">@style/normal_black</item>
+        <item name="android:background">@null</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+    </style>
+
+    <!--扫描样式  ========================================================  -->
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AutoWrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AutoWrapTv" parent="AutoWrap">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_btn_orange</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+</resources>

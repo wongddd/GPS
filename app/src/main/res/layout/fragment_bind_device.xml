@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:srcCompat="@mipmap/splash_img" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvBindDevice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/bind_device"
+        android:textAppearance="@style/max_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIcon" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvBindDevicePrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center"
+        android:text="@string/bind_device_prompt"
+        android:textAppearance="@style/simple_gray"
+        app:layout_constraintEnd_toEndOf="@id/tvBindDevice"
+        app:layout_constraintStart_toStartOf="@id/tvBindDevice"
+        app:layout_constraintTop_toBottomOf="@id/tvBindDevice" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxLines="1"
+        android:text="@string/not_found_device_bind_imei"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        app:layout_constraintEnd_toEndOf="@id/tvBindDevice"
+        app:layout_constraintStart_toStartOf="@id/tvBindDevice"
+        app:layout_constraintTop_toBottomOf="@id/tvBindDevicePrompt" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bindBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/find_bind_imei"
+        app:layout_constraintEnd_toEndOf="@id/tvBindDevice"
+        app:layout_constraintStart_toStartOf="@id/tvBindDevice"
+        app:layout_constraintTop_toBottomOf="@id/tvNotFound" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/liveBtn"
+        android:background="@color/title_bar_color"
+        android:textColor="@color/white"
+        android:textSize="@dimen/edit_font"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/race_live_broadcast"
+        app:layout_constraintEnd_toEndOf="@id/tvBindDevice"
+        app:layout_constraintStart_toStartOf="@id/tvBindDevice"
+        app:layout_constraintTop_toBottomOf="@id/bindBtn" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvSwitchAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxLines="1"
+            android:paddingStart="@dimen/margin_4"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingEnd="@dimen/margin_4"
+            android:paddingBottom="@dimen/margin_2"
+            android:text="@string/switch_account"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/simple_font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/line_size"
+            android:layout_height="0dp"
+            android:background="@color/colorTexNormal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvSwitchAccount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvRemoveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/margin_4"
+            android:paddingEnd="@dimen/margin_4"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/simple_font"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/line"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

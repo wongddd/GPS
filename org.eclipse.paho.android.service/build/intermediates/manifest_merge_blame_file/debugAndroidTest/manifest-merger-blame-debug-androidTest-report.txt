@@ -1,0 +1,62 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.eclipse.paho.android.service.test" >
+4
+5    <uses-sdk
+5-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:5:5-7:41
+6        android:minSdkVersion="19"
+6-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:6:9-35
+7        android:targetSdkVersion="33" />
+7-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:7:9-38
+8
+9    <!-- Permissions the Application Requires -->
+10    <uses-permission android:name="android.permission.WAKE_LOCK" />
+10-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:10:5-68
+10-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:10:22-65
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:11:5-81
+11-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:11:22-78
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:12:5-79
+12-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:12:22-76
+13
+14    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:15:5-80
+15-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:15:22-77
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:16:5-67
+16-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:16:22-64
+17
+18    <instrumentation
+18-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:18:5-23:73
+19        android:name="android.test.InstrumentationTestRunner"
+19-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:19:9-62
+20        android:functionalTest="false"
+20-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:20:9-39
+21        android:handleProfiling="false"
+21-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:21:9-40
+22        android:label="Tests for org.eclipse.paho.android.service.test"
+22-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:22:9-72
+23        android:targetPackage="org.eclipse.paho.android.service.test" />
+23-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:23:9-70
+24
+25    <application
+25-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:25:5-32:19
+26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+26-->[com.android.support:support-compat:28.0.0] C:\Users\ALEN\.gradle\caches\transforms-2\files-2.1\4d4fb9708fa23cc75759599f1e1a5941\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+27        android:debuggable="true" >
+27-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:25:18-43
+28
+29        <!-- Mqtt Service -->
+30        <service android:name="org.eclipse.paho.android.service.MqttService" >
+30-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:28:9-29:19
+30-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:28:18-77
+31        </service>
+32
+33        <uses-library android:name="android.test.runner" />
+33-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:31:9-60
+33-->D:\GPSproject\GPS\org.eclipse.paho.android.service\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4500360378300662951.xml:31:23-57
+34    </application>
+35
+36</manifest>

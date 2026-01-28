@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/login_and_register"
+        android:textAppearance="@style/max_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clCountry"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/btn_white_round_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/tvLogin"
+        app:layout_constraintStart_toStartOf="@id/tvLogin"
+        app:layout_constraintTop_toBottomOf="@id/tvLogin">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/country_code"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivCountryArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSelectCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivCountryArrow"
+            app:layout_constraintStart_toEndOf="@id/tvCountry"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clUsername"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/btn_white_round_bg"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clCountry">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etUsername"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@null"
+            android:maxLength="36"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCountryCode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clPwd"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/btn_white_round_bg"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clUsername">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvPwd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/pwd"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/ibPwdShow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_pwd_show_selector"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etPwd"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ibPwdShow"
+            app:layout_constraintStart_toEndOf="@id/tvPwd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clLanguage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/btn_white_round_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clPwd">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/language"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivLanguageArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSelectLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivLanguageArrow"
+            app:layout_constraintStart_toEndOf="@id/tvLanguage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clServer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/btn_white_round_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clLanguage">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/country_server"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivServerArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSelectServer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivServerArrow"
+            app:layout_constraintStart_toEndOf="@id/tvServer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvForgotPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/margin_8"
+        android:maxLines="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        android:text="@string/forgot_pwd"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clServer"/>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvSwitchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clServer" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/tvSwitchType" />
+
+<!--        <android.support.constraint.ConstraintLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/margin_24"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/tvLogin"-->
+<!--            app:layout_constraintStart_toStartOf="@id/tvLogin"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/loginBtn">-->
+
+<!--            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView-->
+<!--                android:id="@+id/tvForgotPwd"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/margin_4"-->
+<!--                android:paddingTop="@dimen/margin_2"-->
+<!--                android:paddingEnd="@dimen/margin_4"-->
+<!--                android:paddingBottom="@dimen/margin_2"-->
+<!--                android:text="@string/forgot_pwd"-->
+<!--                android:textColor="@color/text_common_selector"-->
+<!--                android:textSize="@dimen/normal_font"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/line"-->
+<!--                android:layout_width="@dimen/line_size"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:background="@color/colorTexNormal"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@id/tvForgotPwd"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView-->
+<!--                android:id="@+id/tvMobileUnuse"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:gravity="center"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/margin_4"-->
+<!--                android:paddingEnd="@dimen/margin_4"-->
+<!--                android:text="@string/mobile_unuse"-->
+<!--                android:textColor="@color/text_common_selector"-->
+<!--                android:textSize="@dimen/normal_font"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@id/line"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        </android.support.constraint.ConstraintLayout>-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvLogin"
+        app:layout_constraintStart_toStartOf="@id/tvLogin">
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvMobileRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxLines="1"
+            android:paddingStart="@dimen/margin_4"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingEnd="@dimen/margin_4"
+            android:paddingBottom="@dimen/margin_2"
+            android:text="@string/register_mobile"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/simple_font"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView-->
+<!--            android:id="@+id/tvForgotPwd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:maxLines="1"-->
+<!--            android:paddingStart="@dimen/margin_4"-->
+<!--            android:paddingTop="@dimen/margin_2"-->
+<!--            android:paddingEnd="@dimen/margin_4"-->
+<!--            android:paddingBottom="@dimen/margin_2"-->
+<!--            android:text="@string/forgot_pwd"-->
+<!--            android:textColor="@color/text_common_selector"-->
+<!--            android:textSize="@dimen/normal_font"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <View
+            android:id="@+id/lineSecond"
+            android:layout_width="@dimen/line_size"
+            android:layout_height="0dp"
+            android:background="@color/colorTexNormal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvMobileRegister"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvEmailRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/margin_4"
+            android:paddingEnd="@dimen/margin_4"
+            android:text="@string/register_email"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/simple_font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lineSecond"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

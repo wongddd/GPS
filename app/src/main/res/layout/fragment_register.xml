@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/parent_mobile_register"
+        android:textAppearance="@style/max_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvRegisterPrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center"
+        android:text="@string/parent_mobile_register_prompt"
+        android:textAppearance="@style/normal_gray"
+        app:layout_constraintEnd_toEndOf="@id/tvRegister"
+        app:layout_constraintStart_toStartOf="@id/tvRegister"
+        app:layout_constraintTop_toBottomOf="@id/tvRegister" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clCountry"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_64"
+        android:background="@drawable/btn_transparent_selector"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="@id/tvRegister"
+        app:layout_constraintStart_toStartOf="@id/tvRegister"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterPrompt">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/country_code"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivCountryArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_arrow" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvSelectCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/china"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivCountryArrow"
+            app:layout_constraintStart_toEndOf="@id/tvCountry"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/lineFirst"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clCountry" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clUsername"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clCountry">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:maxLines="1"
+            android:text="@string/china_mobile_code"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etUsername"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/mobile_hint"
+            android:inputType="number"
+            android:maxLength="36"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvCountryCode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/lineSecond"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/clUsername" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/registerBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/btn_custom_selector"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@id/clCountry"
+        app:layout_constraintStart_toStartOf="@id/clCountry"
+        app:layout_constraintTop_toBottomOf="@id/lineSecond" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="@id/tvRegister"
+        app:layout_constraintStart_toStartOf="@id/tvRegister"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbProtocol"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="@dimen/margin_4"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.yyt.trackcar.ui.widget.textview.QMUISpanTouchFixTextView
+            android:id="@+id/tvRegisterProtocol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register_protocol"
+            android:textSize="@dimen/small_font"
+            android:textColor="@color/gray"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbProtocol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:maxLines="1"
+            android:text="@string/read_and_agree"
+            android:visibility="gone"
+            android:textAppearance="@style/small_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbProtocol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxLines="1"
+            android:text="@string/user_service_agreement"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/small_font"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAgree"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/and"
+            android:visibility="gone"
+            android:textAppearance="@style/small_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAgreement"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvProtocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxLines="1"
+            android:text="@string/privacy_protocol"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/small_font"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvAnd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:layout_marginStart="@dimen/margin_4"
+        android:layout_marginEnd="@dimen/margin_4"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvRegister"
+        app:layout_constraintStart_toStartOf="@id/tvRegister">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbJoin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvJion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:maxLines="1"
+            android:text="@string/jion"
+            android:textAppearance="@style/small_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbJoin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:id="@+id/tvExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/user_experience"
+            android:textColor="@color/text_common_selector"
+            android:textSize="@dimen/small_font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvJion"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clExperienceSecond"
+        android:layout_width="0dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvRegister"
+        app:layout_constraintStart_toStartOf="@id/tvRegister">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbJoinSecond"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.yyt.trackcar.ui.widget.textview.QMUISpanTouchFixTextView
+            android:id="@+id/tvExperienceSecond"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register_protocol"
+            android:textSize="@dimen/small_font"
+            android:textColor="@color/gray"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cbJoinSecond"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

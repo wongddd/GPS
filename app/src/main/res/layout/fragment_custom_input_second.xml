@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:textAppearance="@style/simple_dimgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clInput"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/bg_white_round"
+        app:layout_constraintEnd_toEndOf="@id/tvPrompt"
+        app:layout_constraintStart_toStartOf="@id/tvPrompt"
+        app:layout_constraintTop_toBottomOf="@id/tvPrompt">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etInput"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@null"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvTextLen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:maxLines="1"
+        android:textColor="@color/colorTexNormal"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintStart_toStartOf="@id/clInput"
+        app:layout_constraintTop_toBottomOf="@id/clInput" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxLines="1"
+        android:padding="@dimen/margin_4"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        app:layout_constraintStart_toStartOf="@id/clInput"
+        app:layout_constraintTop_toBottomOf="@id/tvTextLen" />
+
+</android.support.constraint.ConstraintLayout>

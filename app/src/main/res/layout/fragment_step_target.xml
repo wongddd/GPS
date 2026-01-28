@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/ivPortrait"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="@dimen/margin_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:maxLines="1"
+        android:text="@string/step_num_target_unit"
+        android:textAppearance="@style/normal_dimgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPortrait" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTargetStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTarget" />
+
+    <com.xuexiang.xui.widget.picker.RulerView
+        android:id="@+id/rvTargetStep"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginEnd="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTargetStep"
+        app:rv_bgColor="#fcfffc"
+        app:rv_firstScale="8000"
+        app:rv_largeScaleColor="#50b586"
+        app:rv_maxScale="20000"
+        app:rv_midScaleColor="#999999"
+        app:rv_minScale="1000"
+        app:rv_resultNumColor="#50b586"
+        app:rv_scaleCount="10"
+        app:rv_scaleLimit="1000"
+        app:rv_scaleNumColor="#666666"
+        app:rv_showScaleResult="false"
+        app:rv_smallScaleColor="#aaaaaa"
+        app:rv_unit=""
+        app:rv_unitColor="#50b586"
+        app:rv_unitTextSize="10sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/saveBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:background="@drawable/btn_custom_selector"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:text="@string/step_target_prompt"
+        android:textAppearance="@style/small_gray"
+        app:layout_constraintBottom_toTopOf="@id/saveBtn"
+        app:layout_constraintEnd_toEndOf="@id/saveBtn"
+        app:layout_constraintStart_toStartOf="@id/saveBtn" />
+
+</android.support.constraint.ConstraintLayout>

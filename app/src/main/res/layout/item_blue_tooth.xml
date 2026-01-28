@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/config_margin_16dp"
+    android:layout_marginEnd="@dimen/config_margin_16dp"
+    android:background="@drawable/btn_custom_item_selector">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/config_margin_16dp"
+        android:layout_marginTop="@dimen/config_margin_8dp"
+        android:layout_marginEnd="@dimen/config_margin_16dp"
+        android:textAppearance="@style/edit_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvContent"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/config_margin_2dp"
+        android:textAppearance="@style/normal_gray"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/config_margin_2dp"
+        android:textAppearance="@style/normal_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvContent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/config_zero"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvTitle" />
+
+</android.support.constraint.ConstraintLayout>

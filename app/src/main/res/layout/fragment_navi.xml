@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <android.support.constraint.ConstraintLayout-->
+    <!--        android:id="@+id/clInfo"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/white"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/toolbar">-->
+
+    <!--        <android.support.v7.widget.AppCompatTextView-->
+    <!--            android:id="@+id/tvInfoTitle"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="@dimen/margin_16"-->
+    <!--            android:layout_marginTop="@dimen/margin_16"-->
+    <!--            android:layout_marginEnd="@dimen/margin_16"-->
+    <!--            android:layout_marginBottom="@dimen/margin_16"-->
+    <!--            android:textAppearance="@style/edit_black"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        &lt;!&ndash;        <android.support.v7.widget.AppCompatTextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/tvInfoContent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="@dimen/margin_4"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginBottom="@dimen/margin_16"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textAppearance="@style/normal_gray"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintEnd_toEndOf="@id/tvInfoTitle"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintStart_toStartOf="@id/tvInfoTitle"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintTop_toBottomOf="@id/tvInfoTitle" />&ndash;&gt;-->
+
+    <!--    </android.support.constraint.ConstraintLayout>-->
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xllTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/xui_config_color_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="22dp"
+        app:xui_shadowAlpha="0.5"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <com.xuexiang.xui.widget.tabbar.TabControlView
+            android:id="@+id/tabView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tcv_selectedColor="@android:color/transparent"
+            app:tcv_selectedTextColor="@color/red"
+            app:tcv_strokeWidth="0dp"
+            app:tcv_unselectedColor="@android:color/transparent"
+            app:tcv_unselectedTextColor="@color/black" />
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    <fragment
+        android:id="@+id/googleMapContainer"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.github.pengrad.mapscaleview.MapScaleView
+        android:id="@+id/scaleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/googleMapContainer"
+        app:scale_maxWidth="48dp" />
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:layout_width="36dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:background="@color/xui_config_color_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/googleMapContainer"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/margin_4"
+        app:xui_shadowAlpha="0.5"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clZoomIn"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/btn_custom_top_radius_four"
+            android:clickable="true"
+            android:focusable="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_zoom_in" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line_size"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:background="@color/colorLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clZoomOut"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_custom_bottom_radius_four"
+            android:clickable="true"
+            android:focusable="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_zoom_out" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xllPlay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:background="@color/xui_config_color_white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/margin_8"
+        app:xui_shadowAlpha="1"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_4">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/playBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/margin_8"
+                android:background="@drawable/ic_navi_tarck_play_selector"
+                android:contentDescription=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:text="@string/navi_track_progress"
+                android:textAppearance="@style/small_gray"
+                app:layout_constraintStart_toEndOf="@id/playBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SeekBar
+                android:id="@+id/sbProgress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tvProgress"
+                app:layout_constraintTop_toBottomOf="@id/tvProgress" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navi_track_speed"
+                android:textAppearance="@style/small_gray"
+                app:layout_constraintStart_toStartOf="@id/tvProgress"
+                app:layout_constraintTop_toBottomOf="@id/sbProgress" />
+
+            <SeekBar
+                android:id="@+id/sbSpeed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/sbProgress"
+                app:layout_constraintStart_toStartOf="@id/sbProgress"
+                app:layout_constraintTop_toBottomOf="@id/tvSpeed" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        android:id="@+id/xllInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:background="@color/xui_config_color_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:xui_borderColor="?attr/xui_config_color_separator_light"
+        app:xui_outerNormalColor="?attr/xui_config_color_background"
+        app:xui_radius="@dimen/margin_8"
+        app:xui_shadowAlpha="1"
+        app:xui_shadowElevation="@dimen/margin_4">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:textAppearance="@style/edit_black" />
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+</android.support.constraint.ConstraintLayout>

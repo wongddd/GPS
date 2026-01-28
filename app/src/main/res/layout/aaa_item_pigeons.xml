@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucent_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        app:layout_goneMarginTop="1dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_4"
+            android:text="@string/number_of_pigeon_ring"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_4"
+            android:text="@string/number_of_pigeon_ring"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_4"
+            android:text="@string/number_of_pigeon_ring"
+            android:textColor="@color/black" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_operation"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/delete"
+                android:scaleType="centerInside"
+                android:textColor="@color/black" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

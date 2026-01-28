@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/include_device_info"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_column_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/first"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_border_first"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_first_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_tracking"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_tracking" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/home_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_first_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_tracking"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/second"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_second"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_second_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_history"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_history" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_second_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_history"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_column_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingTop="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/third"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_third"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_third_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_electronic"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_electronic" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_third_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_electronic"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fourth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:background="@drawable/rounded_border_fourth"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_fourth_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_send_order"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_send_order" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/home_fourth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_fourth_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_send_order"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ninth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_border_orange"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_ninth_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_flight_training_plan"
+                        android:clickable="false"
+                        android:contentDescription="@string/flight_training" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/home_ninth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_ninth_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/flight_training"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_column_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingTop="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/fifth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:background="@drawable/rounded_border_fifth"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_fifth_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_report_stop"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_trip_report" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_fifth_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_trip_report"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sixth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:background="@drawable/rounded_border_sixth"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_sixth_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_report_mileage"
+                        android:clickable="false"
+                        android:contentDescription="@string/alarm_report_content" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_sixth_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_summary_record"
+                        android:textAppearance="@style/normal_white" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seventh"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_seventh"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_seventh_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_command"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_device_setting" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/home_seventh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_seventh_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/home_device_setting"
+                        android:textAppearance="@style/normal_white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tenth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:background="@drawable/rounded_border_deepskyblue"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_tenth_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_search"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_device_setting" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/home_tenth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_tenth_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/search_device"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/twelve"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:background="@drawable/rounded_border_deepskyblue"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_twelve_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_safe"
+                        android:clickable="false"
+                        android:contentDescription="@string/home_device_setting" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/home_twelve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_twelve_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/appointment_parameter"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_column_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/eleventh"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/loose_leaf_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_eleventh"
+                    android:padding="@dimen/dp_4">
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/home_eleventh_btn"
+                        android:layout_width="@dimen/home_btn_size"
+                        android:layout_height="@dimen/home_btn_size"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/home_dealer"
+                        android:clickable="false"
+                        android:contentDescription="@string/dealer_manage" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_eleventh_btn"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/dealer_manage"
+                        android:textAppearance="@style/normal_white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

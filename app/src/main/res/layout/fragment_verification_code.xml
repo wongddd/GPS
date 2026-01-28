@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvVerificationCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/verification_code_input"
+        android:textAppearance="@style/max_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvVerificationCodePrompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center"
+        android:text="@string/verification_code_prompt"
+        android:textAppearance="@style/normal_gray"
+        app:layout_constraintEnd_toEndOf="@id/tvVerificationCode"
+        app:layout_constraintStart_toStartOf="@id/tvVerificationCode"
+        app:layout_constraintTop_toBottomOf="@id/tvVerificationCode" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvVerificationCodeT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_64"
+        android:maxLines="1"
+        android:text="@string/verification_code"
+        android:textAppearance="@style/edit_black"
+        app:layout_constraintStart_toStartOf="@id/tvVerificationCode"
+        app:layout_constraintTop_toBottomOf="@id/tvVerificationCodePrompt" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clVerificationCode"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_48"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="@id/tvVerificationCode"
+        app:layout_constraintStart_toStartOf="@id/tvVerificationCode"
+        app:layout_constraintTop_toBottomOf="@id/tvVerificationCodeT">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/verificationCodeBtn"
+            style="@style/small_white"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@drawable/btn_custom_selector"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etVerificationCode"
+            style="@style/edittext_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_4"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/verification_code_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/verificationCodeBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/colorLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clVerificationCode" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/nextStepBtn"
+        style="@style/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/btn_custom_selector"
+        android:text="@string/next_step"
+        app:layout_constraintEnd_toEndOf="@id/clVerificationCode"
+        app:layout_constraintStart_toStartOf="@id/clVerificationCode"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/tvNoReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxLines="1"
+        android:padding="@dimen/margin_4"
+        android:text="@string/no_receive_verification_code"
+        android:textColor="@color/text_common_selector"
+        android:textSize="@dimen/simple_font"
+        app:layout_constraintEnd_toEndOf="@id/clVerificationCode"
+        app:layout_constraintStart_toStartOf="@id/clVerificationCode"
+        app:layout_constraintTop_toBottomOf="@id/nextStepBtn" />
+
+</android.support.constraint.ConstraintLayout>

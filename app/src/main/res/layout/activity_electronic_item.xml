@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/item_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@color/red"
+            android:text="@string/delete"
+            android:textAppearance="@style/text_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg">
+
+        <View
+            android:id="@+id/item_line"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginStart="@dimen/margin_16"
+            android:background="@color/line_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/item_switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textAppearance="@style/edit_black"
+            app:layout_constraintEnd_toStartOf="@id/item_switch_btn"
+            app:layout_constraintStart_toStartOf="@id/item_line"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:textAppearance="@style/normal_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/item_title"
+            app:layout_constraintStart_toStartOf="@id/item_title"
+            app:layout_constraintTop_toBottomOf="@id/item_title" />
+    </android.support.constraint.ConstraintLayout>
+</com.daimajia.swipe.SwipeLayout>

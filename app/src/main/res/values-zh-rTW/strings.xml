@@ -1,0 +1,1849 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="PrivateResource">傳信鴿</string>
+
+    <!-- shortcut -->
+    <string name="shortcut_label_setting">設置</string>
+
+    <!-- login -->
+    <string name="login_and_register">登入&amp;註冊</string>
+    <string name="country_code">國家/地區</string>
+    <string name="pwd">密碼</string>
+    <string name="login">登入</string>
+    <string name="phone_number">手機號碼</string>
+    <string name="forgot_pwd">忘記密碼</string>
+    <string name="mobile_unuse">手機號已經不再使用？</string>
+    <string name="register_mobile">手機註冊</string>
+    <string name="register_email">郵箱註冊</string>
+    <string name="login_mobile">手機登入</string>
+    <string name="login_email">郵箱登入</string>
+    <string name="login_account">帳號登入</string>
+    <string name="login_imei">設備號登入</string>
+    <string name="email">郵箱</string>
+    <string name="account">帳號</string>
+    <string name="imei">設備號</string>
+    <string name="language">語言</string>
+    <string name="select_language">選擇語言</string>
+    <string name="language_type_first">中文简体</string>
+    <string name="language_type_second">English</string>
+    <string name="language_type_third">Indonesian</string>
+    <string name="language_type_fourth">Português</string>
+    <string name="language_type_fifth">Español</string>
+    <string name="language_type_sixth">中文繁體</string>
+    <string name="language_type_seventh">Tiếng Việt</string>
+    <string name="language_type_eighth">日本語</string>
+    <string name="language_type_ninth">русский язык</string>
+    <string name="language_type_tenth">اللغة العربية</string>
+    <string name="language_type_eleventh">Deutsch</string>
+    <string name="language_type_twelfth">Français</string>
+    <string name="server_address">服務器</string>
+    <string name="select_server_address">選擇服務器</string>
+    <string name="server_address_east">東半球</string>
+    <string name="server_address_west">西半球</string>
+    <string name="country_server">地區</string>
+    <string name="country_select_server">選擇地區</string>
+    <string name="country_cn">亞洲</string>
+    <string name="country_en">美洲</string>
+    <string name="country_asia">中國</string>
+    <string name="country_europe">歐洲</string>
+    <string name="country_asia_two">亞太</string>
+    <string name="country_en_two">歐美</string>
+
+    <!-- register -->
+    <string name="register">註冊</string>
+    <string name="parent_mobile_register">手機號註冊</string>
+    <string name="parent_mobile_register_prompt">請正確輸入妳的手機號碼</string>
+    <string name="register_protocol">已閱讀並同意《用戶服務協議》和《隱私保護政策》</string>
+    <string name="read_and_agree">已閱讀並同意</string>
+    <string name="and">和</string>
+    <string name="jion">加入</string>
+    <string name="user_service_agreement">《用戶服務協議》</string>
+    <string name="privacy_protocol">《隱私保護政策》</string>
+    <string name="user_experience">《用戶體驗改進計劃》</string>
+
+    <!-- verification code -->
+    <string name="verification_code">驗證碼</string>
+    <string name="xui_count_down_finish" tools:ignore="PrivateResource">重新獲取</string>
+    <string name="verification_code_input">輸入驗證碼</string>
+    <string name="verification_code_prompt">請輸入你收到的驗證碼</string>
+    <string name="no_receive_verification_code">收不到驗證碼？</string>
+    <string name="next_step">下一步</string>
+    <string name="verification_code_to_max_prompt">發送驗證碼過於頻繁，請1分鐘後再試</string>
+
+    <!-- set password -->
+    <string name="set_pwd">設置登入密碼</string>
+    <string name="set_pwd_prompt">請設置6&#8211;16位字母和數字組合的密碼</string>
+    <string name="complete">完成</string>
+
+    <!-- country or area -->
+    <string name="china">中國</string>
+    <string name="china_mobile_code">+86</string>
+    <string name="taiwan">臺灣</string>
+    <string name="taiwan_mobile_code">+886</string>
+    <string name="country_code_often">常用地區</string>
+    <string name="country_code_not_result">無結果</string>
+
+    <!-- find pwd -->
+    <string name="find_login_pwd">找回登入密碼</string>
+    <string name="find_pwd_mobile_prompt">請輸入妳註冊時用的手機號碼</string>
+    <string name="find_pwd_email_prompt">請輸入妳註冊時用的郵箱</string>
+    <string name="find_pwd_email">郵箱找回</string>
+    <string name="find_pwd_mobile">手機找回</string>
+    <string name="find_pwd_prompt_mobile_title">確認手機號</string>
+    <string name="find_pwd_prompt_mobile_content">我們將發送短信驗證碼到這個號碼：%s</string>
+    <string name="find_pwd_prompt_email_title">確認郵箱</string>
+    <string name="find_pwd_prompt_email_content">我們將發送驗證碼到這個郵箱：%s</string>
+
+    <!-- reset pwd -->
+    <string name="reset_pwd">重置密碼</string>
+    <string name="reset_pwd_new">新密碼</string>
+    <string name="reset_pwd_confirm">確認密碼</string>
+
+    <!-- bind device -->
+    <string name="bind_device">綁定設備</string>
+    <string name="bind_device_prompt">請找到設備綁定號後掃描綁定</string>
+    <string name="not_found_device_bind_imei">未找到設備綁定號？</string>
+    <string name="find_bind_imei">已找到綁定號</string>
+    <string name="switch_account">切換賬號</string>
+
+    <!-- camera capture -->
+    <string name="scan_qrcode">掃描設備二維碼</string>
+    <string name="album">相冊</string>
+    <string name="no_support_flash_light_prompt">設備不支持閃光燈</string>
+    <string name="scan_qrcode_prompt">將設備二維碼對準框內，即可掃描</string>
+    <string name="try_input_imei_prompt">多次掃描不成功？試試輸入綁定號</string>
+    <string name="multiple_scan_error">多次掃描不成功？</string>
+    <string name="try_input_imei">試試輸入綁定號</string>
+    <string name="scan_imei_result_prompt">掃描的結果不是設備的綁定號</string>
+    <string name="scan_imei_none_prompt">設備未生成綁定碼</string>
+
+    <!-- input imei -->
+    <string name="input_imei">輸入綁定號</string>
+    <string name="input_imei_prompt">IMEI號是15至17個數字組合的字符串，請查看設備上的IMEI號</string>
+    <string name="bind_imei">綁定號</string>
+    <string name="not_found_imei">找不到輸入的綁定號？</string>
+    <string name="bind">綁定</string>
+    <string name="input_imei_error_prompt">綁定碼無效</string>
+
+    <!-- bind apply -->
+    <string name="bind_apply">綁定申請</string>
+    <string name="bind_apply_prompt">請填寫信息綁定設備</string>
+    <string name="contact_name">稱呼</string>
+    <string name="send_apply">發送申請</string>
+
+    <!-- wait manager confirm -->
+    <string name="wait_manager_confirm">等待管理員確認</string>
+    <string name="wait_manager_confirm_prompt">妳的申請信息已發送，正在等待管理員確認</string>
+
+    <!-- bind success -->
+    <string name="bind_success">恭喜綁定成功</string>
+    <string name="bind_success_prompt">妳的申請已被接受，快去監護手表吧</string>
+    <string name="entry_main_page">進入主頁</string>
+    <string name="bind_success_contacts_prompt">妳尚未添加聯系人，是否去添加？</string>
+
+    <!-- main page -->
+    <string name="chat">微聊</string>
+    <string name="location">定位</string>
+    <string name="find">發現</string>
+    <string name="more">更多</string>
+    <string name="manager_bind_content">是否同意%s申請成為手表監護人</string>
+
+    <!-- chat -->
+    <string name="video_call">視頻通話</string>
+    <string name="family_group_chat">家庭群聊</string>
+    <string name="chat_to_baby">試試和寶貝聊天吧</string>
+    <string name="chat_to_family">試試和家庭成員聊天吧</string>
+    <string name="chat_new_message">收到新的微聊消息</string>
+
+    <!-- chat group member -->
+    <string name="chat_group_member">微聊成員</string>
+    <string name="chat_group_member_prompt">綁定手表的家庭成員，會自動添加到微聊</string>
+    <string name="chat_group_member_add">添加</string>
+    <string name="clear_chat_group_message">清除聊天記錄</string>
+    <string name="profile_clean_group_chat_history">確定刪除群聊天記錄嗎</string>
+
+    <!-- find -->
+    <string name="new_product">新產品</string>
+    <string name="charge_base">充電底座</string>
+    <string name="watch_strap">表帶</string>
+
+    <!-- location -->
+    <string name="baby">寶貝</string>
+    <string name="location_refresh">更新位置</string>
+    <string name="google_map">谷歌地圖</string>
+    <string name="satellite">衛星</string>
+    <string name="satellite_map">衛星地圖</string>
+    <string name="track">軌跡</string>
+    <string name="find_child">找小孩</string>
+    <string name="navi_track">歷史軌跡</string>
+    <string name="location_settings">定位設置</string>
+    <string name="location_mode">定位模式</string>
+    <string name="position_info">位置信息</string>
+    <string name="accuracy_info">(精度%d米)</string>
+    <string name="no_position_info">暫無位置信息</string>
+    <string name="get_position_info">正在獲取位置信息&#8230;</string>
+    <string name="get_position_now">正在定位&#8230;</string>
+    <string name="no_address_info">獲取地址失敗</string>
+    <string name="please_wait">請稍後</string>
+    <string name="location_mode_prompt">溫馨提示：\n定位過程中，手表會根據當前設置的定位模式的頻率進行定位，定位模式的時間越短，手表耗電會越快。</string>
+
+    <!-- navi track -->
+    <string name="navi_track_no_data">沒有軌跡記錄</string>
+    <string name="navi_track_query">正在查找軌跡記錄&#8230;</string>
+    <string name="navi_track_progress">進度</string>
+    <string name="navi_track_speed">速度</string>
+    <string name="navi_track_no_data_play">暫無軌跡可播放</string>
+    <string name="location_type_prompt">由於您設定了省電模式，足迹記錄有限，如需記錄更多足迹可設定其他定位模式（會縮短續航時間）</string>
+
+    <!-- device msg -->
+    <string name="msg_sos">寶貝撥打了緊急求救電話</string>
+    <string name="msg_photo">寶貝使用拍照功能上傳了一張照片，請及時查看</string>
+    <string name="msg_call_record">寶貝剛跟%s通話</string>
+    <string name="msg_update_version">手表已升至最新版本</string>
+    <string name="msg_leave_fence">寶貝離開名字叫%s的電子圍欄</string>
+    <string name="msg_entry_fence">寶貝進入名字叫%s的電子圍欄</string>
+    <string name="msg_low_energy">寶貝電量低於%s%%，請及時充電</string>
+    <string name="msg_shutdown">寶貝的手表已關機</string>
+    <string name="msg_reserved_electric">寶貝進入預留電量模式，為了能在更長的時間內聯系到孩子，該模式下僅能接聽電話，及時充電後可恢復正常</string>
+    <string name="msg_agree_bind">管理員同意了%s的綁定請求</string>
+    <string name="msg_refuse_bind">管理員拒絕了%s的綁定請求</string>
+    <string name="msg_request_bind">%s請求綁定妳的設備</string>
+    <string name="msg_unbind">%s已解綁設備</string>
+    <string name="msg_manager_unbind">管理員已解綁全部設備</string>
+    <string name="msg_transfer_manager">%s成為新管理員</string>
+    <string name="msg_update_contancts">寶貝添加了新朋友</string>
+    <string name="msg_wifi_success">\"%s\"Wi-Fi手表本地已連接成功</string>
+    <string name="msg_wifi">手表添加的WiFi\"%s\"密碼錯誤，請修改密碼</string>
+    <string name="msg_open_loss">%s開啟手表掛失功能</string>
+    <string name="msg_close_loss">%s關閉手表掛失功能</string>
+    <string name="msg_pwd_unlock_success">手表使用掛失密碼解鎖成功</string>
+    <string name="msg_pwd_unlock">手表使用掛失密碼解鎖失敗</string>
+    <string name="msg_step_target">設備已完成今日目標步數</string>
+    <string name="msg_change_device_name">%s修改了設備信息</string>
+    <string name="msg_health_data">上報健康數據</string>
+    <string name="msg_health_data_test_fail">健康數據測量失敗</string>
+    <string name="msg_deivce_put_on">設備已佩戴上</string>
+    <string name="msg_deivce_fall_off">設備已脫落</string>
+
+    <!-- settings -->
+    <string name="settings">設置</string>
+    <string name="settings_close_prompt">關閉後消息接收時不會提醒妳</string>
+    <string name="watch_setting_change">手表設置變更</string>
+    <string name="watch_electric">手表電量</string>
+    <string name="entry_reserved_electric">進入預留電量</string>
+    <string name="address_book_message">通訊錄消息</string>
+    <string name="sport">運動</string>
+    <string name="sos">SOS</string>
+    <string name="update_firmware">升級</string>
+    <string name="upload_photo">上傳圖片</string>
+    <string name="call_record_log">通話日誌</string>
+
+    <!-- location settings -->
+    <string name="common_location">常用地點</string>
+    <string name="fence">電子圍欄</string>
+    <!--    <string name="indoor_map">室內地圖</string>-->
+    <string name="locate_mode_explain">定位方式說明</string>
+    <string name="is_open">已開啟</string>
+    <string name="is_close">已關閉</string>
+    <string name="location_type_first">正常模式：9分鐘/次</string>
+    <string name="location_type_second">省電模式：1小時/次</string>
+    <string name="location_type_third">休眠模式：手動獲取定位</string>
+
+    <!-- common location -->
+    <string name="family">家</string>
+    <string name="common_location_first">培訓班</string>
+    <string name="common_location_second">外婆家</string>
+    <string name="common_location_third">同學家</string>
+    <string name="customize">自定義</string>
+    <string name="common_location_prompt">溫馨提示\n1.孩子可通過手表上的導航前往已設置的常用地點;\n2.設置常用地點後，定位到常用地點時，會直接顯示在相應的地點；\n3.通過程序的自主學習和修正，可逐漸提高定位結果的準確度；</string>
+
+    <!-- edit location -->
+    <string name="edit_location">編輯地點</string>
+    <string name="location_name">地點名稱</string>
+    <string name="location_position">地點位置</string>
+    <string name="optional">選填</string>
+    <string name="nearby_wifi">該地點附近Wi&#8211;Fi</string>
+
+    <!-- select wifi -->
+    <string name="select_wifi">選擇Wi&#8211;Fi</string>
+    <string name="mobile_search_wifi">手機搜索到的Wi&#8211;Fi</string>
+    <string name="have_chosen">[已添加]</string>
+
+    <!-- fence -->
+    <string name="fence_add">添加電子圍欄</string>
+    <string name="fence_edit">編輯電子圍欄</string>
+    <string name="fence_info">進入提醒:%s,離開提醒:%s,半徑:%s</string>
+    <string name="fence_info_description">地址:%1$s</string>
+    <string name="fence_name">電子圍欄名稱</string>
+    <string name="entry_fence_switch">進入提醒</string>
+    <string name="exit_fence_switch">離開提醒</string>
+
+    <!-- location settings -->
+    <string name="locate_mode">定位方式</string>
+    <string name="locate_mode_satellite">衛星定位</string>
+    <string name="locate_mode_satellite_content">支持美國GPS、俄羅斯GLONASS兩種衛星定位，室外空曠地，最佳定位精度10米左右，但室內定位效果不佳。</string>
+    <string name="locate_mode_wifi">Wi&#8211;Fi定位</string>
+    <string name="locate_mode_wifi_content">手表通過Wi&#8211;Fi模塊，收集周邊的Wi&#8211;Fi熱點信息，來計算出自身的位置信息，定位的精準度最佳在50米以內。</string>
+    <string name="locate_mode_fuzzy">模糊定位</string>
+    <string name="locate_mode_fuzzy_content">手表通過電信移動運營商的網絡(如GSM網)，獲取自身的位置信息，定位的精準度一般在500米以內。</string>
+    <string name="locate_mode_agps">A&#8211;GPS定位</string>
+    <string name="locate_mode_agps_content">A&#8211;GPS技術是一種結合了網絡基站信息和GPS信息對移動臺進行定位的技術，它可以提高GPS衛星定位系統的性能。通過移動通訊運營基站它可以快速地定位。最佳精度在10米左右。</string>
+    <string name="acceleration_sensor">加速度傳感器</string>
+    <string name="acceleration_sensor_content">通過加速度傳感器輔助定位，獲取手表當前運動狀態。</string>
+    <string name="locate_mode_prompt">溫馨提示：\n定位過程中，手表會根據當時環境，智能選擇最合適的定位方式，用戶無須手動選擇定位方式</string>
+
+    <!-- more -->
+    <string name="update_device_firmware">手表固件升級</string>
+    <string name="bind_member">綁定成員</string>
+    <string name="device_address_book">寶貝通訊錄</string>
+    <string name="sms_collection">代收短信</string>
+    <string name="watch_bill">手表話費</string>
+    <string name="ban_classes">上課禁用</string>
+    <string name="refuse_strangers">拒接陌生人</string>
+    <string name="school_guardian">上學守護</string>
+    <string name="time_switch">定時開關機</string>
+    <string name="automatic_connection">自動接通</string>
+    <string name="reserved_electric">預留電量</string>
+    <string name="device_wifi">手表Wi&#8211;Fi</string>
+    <string name="call_record">通話記錄</string>
+    <string name="device_settings">設備設置</string>
+    <string name="device_report_loss">設備掛失</string>
+    <string name="app_settings">APP設置</string>
+    <string name="bind_and_unbind">綁定與解綁</string>
+    <string name="add_contacts">添加聯系人</string>
+    <string name="change_device">切換設備</string>
+    <string name="add_device">添加設備</string>
+    <string name="unbind_device">解綁設備</string>
+    <string name="device_qrcode">設備二維碼</string>
+    <string name="point">積分</string>
+    <string name="step_counter">計步</string>
+    <string name="device_imei">設備號:%s</string>
+
+    <!-- device message -->
+    <string name="device_message">手表消息</string>
+    <string name="main_message">消息</string>
+
+    <!-- call record -->
+    <string name="change_device_title">切換手表</string>
+    <string name="no_answer">未接聽</string>
+    <string name="call_duration">通話時長：%s</string>
+    <string name="strange_number">陌生號碼</string>
+    <string name="cmd_type_first">正常</string>
+    <string name="cmd_type_second">SOS</string>
+    <string name="cmd_type_third">監護</string>
+    <string name="cmd_type_fourth">攔截陌生來電</string>
+
+    <!-- qrcode -->
+    <string name="unbind">解除綁定</string>
+    <string name="devices_qrcode">%s的二維碼</string>
+    <string name="bind_id">綁定號:%s</string>
+    <string name="scan_bind_device">掃碼綁定設備</string>
+    <string name="unbind_prompt">解綁後，妳將無法查看此設備的信息，是否確認解綁？</string>
+
+    <!-- contacts add -->
+    <string name="name">名稱</string>
+    <string name="name_select">選擇名稱</string>
+    <string name="short_number">短號/親情號</string>
+    <string name="short_number_add">添加短號/親情號</string>
+    <string name="short_number_input_prompt">SIM卡之間辦理的通話優惠套餐，可互相撥打2&#8211;6位數的短號進行通話。\n未開通，不要填寫。</string>
+    <string name="edit_contacts">編輯聯系人</string>
+
+    <!-- select name -->
+    <string name="name_type_first">爸爸</string>
+    <string name="name_type_second">媽媽</string>
+    <string name="name_type_fourth">爺爺</string>
+    <string name="name_type_fifth">奶奶</string>
+    <string name="name_type_seventh">外公</string>
+    <string name="name_type_eighth">外婆</string>
+    <string name="name_type_tenth">自定義名稱</string>
+    <string name="name_type_eleventh">校訓錄</string>
+
+    <!-- personal center -->
+    <string name="personal_center">寶貝個人中心</string>
+    <string name="friend">好友</string>
+    <string name="contacts">聯系人</string>
+    <string name="watch_number">手表號碼</string>
+    <string name="baby_info">寶貝信息</string>
+    <string name="incomplete">未完成</string>
+    <string name="baby_short_numer">寶貝短號/親情號</string>
+    <string name="no_input">未填寫</string>
+    <string name="new_watch_login">在新手表上登入</string>
+    <string name="photograph">拍照</string>
+    <string name="select_from_album">從手機相冊選擇</string>
+    <string name="change_mobile_prompt">請填寫正確的手表號碼，號碼填寫錯誤可能導致無法正常使用。</string>
+    <string name="goto_set">去設置</string>
+
+    <!-- baby info -->
+    <string name="portrait">頭像</string>
+    <string name="baby_name">寶貝名稱</string>
+    <string name="baby_level">寶貝等級</string>
+    <string name="sex">性別</string>
+    <string name="birthday">生日</string>
+    <string name="school">學校</string>
+    <string name="grade">年級</string>
+    <string name="classes">班級</string>
+    <string name="family_address">家庭地址</string>
+    <string name="family_wifi">家庭Wi&#8211;Fi</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="sex_select">選擇性別</string>
+    <string name="grade_select">選擇年級</string>
+    <string name="grade_type_first">未上學</string>
+    <string name="grade_type_second">幼兒園小班</string>
+    <string name="grade_type_third">幼兒園中班</string>
+    <string name="grade_type_fourth">幼兒園大班</string>
+    <string name="grade_type_fifth">學前班</string>
+    <string name="grade_type_sixth">小學一年級</string>
+    <string name="grade_type_seventh">小學二年級</string>
+    <string name="grade_type_eighth">小學三年級</string>
+    <string name="grade_type_ninth">小學四年級</string>
+    <string name="grade_type_tenth">小學五年級</string>
+    <string name="grade_type_eleventh">小學六年級</string>
+    <string name="grade_type_twelfth">初一</string>
+    <string name="grade_type_thirteenth">初二</string>
+    <string name="grade_type_fourteenth">高一</string>
+    <string name="grade_type_fifteenth">高二</string>
+    <string name="grade_type_sixteenth">高三</string>
+    <string name="grade_type_seventeenth">初三</string>
+    <string name="others">其他</string>
+    <string name="birth_select">選擇生日</string>
+
+    <!-- change number -->
+    <string name="change_phone_number_input_prompt">APP檢測到設備號碼後，會自動替換手動輸入的號碼</string>
+    <string name="change_phone_number_question">手表需要換卡怎麽辦？</string>
+    <string name="change_short_number_input_prompt">有開通此類套餐的請填寫</string>
+    <string name="change_sim_card">手機換卡</string>
+
+    <!-- new watch login -->
+    <string name="new_watch_login_title">想在新手表使用該設備號的數據？</string>
+    <string name="new_watch_login_content">掃一掃新表的二維碼，即可在新手表上使用該設備號的數據，舊手表將恢復未綁定狀態。</string>
+    <string name="scan_new_watch">掃一掃新手表，使用該設備號數據</string>
+    <string name="scan_and_scan">掃一掃</string>
+
+    <!-- step -->
+    <string name="step_update">%s更新</string>
+    <string name="step_num_target">目標步數%s</string>
+    <string name="step_week_record">最近七天步數</string>
+    <string name="step_target">每日運動目標</string>
+    <string name="step_num_target_unit">目標步數(步)</string>
+    <string name="step_target_prompt">研究表明：每天堅持30分鐘快走或慢跑（每分鐘110步以上），對健康益處較大，推薦每日目標8000步</string>
+
+    <!-- update firmware -->
+    <string name="device_watch">%s的手表</string>
+    <string name="current_version">當前版本：%s</string>
+    <string name="install_package_wifi">使用Wi&#8211;Fi下載安裝包</string>
+    <string name="install_package_traffic">流量下載安裝包</string>
+    <string name="install_package_traffic_prompt">未連Wi&#8211;Fi時用流量下載，請關註流量使用</string>
+    <string name="current_version_newest">當前已是最新版本</string>
+
+    <!-- bind member -->
+    <string name="bind_member_prompt">需要下載傳信鴿 APP綁定手表才可以跟寶貝微聊和視頻通話</string>
+    <string name="manager">管理員</string>
+    <string name="me">我</string>
+    <string name="invitate_member">邀請家庭成員</string>
+    <string name="apply_wait_handle">申請待處理</string>
+    <string name="user_bind_device_prompt">監護人申請</string>
+    <string name="manager_transfer_prompt">轉讓管理員</string>
+    <string name="manager_transfer_content">是否設置成員:%s為管理員？</string>
+    <string name="change_user_nick">修改稱呼</string>
+    <string name="info_title">%s的資料</string>
+    <string name="manager_unbind_title">妳是管理員，可以：</string>
+    <string name="continue_unbind">繼續解綁</string>
+    <string name="unbind_member_title">刪除綁定成員</string>
+    <string name="unbind_member_prompt">刪除綁定成員後，該綁定成員不再與手表有關聯，是否刪除？</string>
+
+    <!-- unbind -->
+    <string name="unbind_title">解綁說明</string>
+    <string name="unbind_device_prompt">解綁後手表將恢復未綁定狀態，本地數據、相冊等將會被清除。</string>
+    <string name="reset_device_prompt">此手表將會恢復未綁定狀態，確定要解綁所有人並恢復出廠設置嗎？</string>
+
+    <!-- device address book -->
+    <string name="address_book_add">添加聯系人</string>
+    <string name="add_short_number">添加短號/親情號</string>
+    <string name="address_book_sort">通訊錄排序</string>
+    <string name="add_sos_number">添加SOS&#160;&#160;&#160;&#160;</string>
+    <string name="add_sos_number_title">添加SOS</string>
+    <string name="guard">守護</string>
+    <string name="address_book_sort_prompt">拖動聯系人排序，保存後將同步到手表</string>
+    <string name="details">詳情</string>
+    <string name="guard_permission">守護權限</string>
+    <string name="emergency_call">緊急通話</string>
+    <string name="emergency_call_content">可接聽手表的緊急求救通話</string>
+
+    <!-- sms collection -->
+    <string name="sms_collection_title">代收手表短信</string>
+    <string name="sms_collection_open">代收手表短信中&#8230;</string>
+    <string name="sms_collection_close">代收手表短信已關閉</string>
+    <string name="open_string">開啟%s</string>
+    <string name="close_string">關閉%s</string>
+    <string name="open_status">開啟</string>
+    <string name="close_status">關閉</string>
+
+    <!-- ban classes -->
+    <string name="ban_classes_title">上課不打擾</string>
+    <string name="ban_classes_content">寶貝學習不分心</string>
+    <string name="ban_classes_prompt">溫馨提示\n禁用時手表僅可查看時間，同時拒接所有電話和消息</string>
+    <string name="ban_classes_time_slot">禁用時間段</string>
+    <string name="repeat">重復</string>
+    <string name="repeat_to">%s至%s</string>
+    <string name="start_time">開始時間</string>
+    <string name="end_time">結束時間</string>
+    <string name="start_more_than_end_time_prompt">開始時間不可以大於結束時間</string>
+    <string name="end_less_than_start_time_prompt">結束時間不可以小於開始時間</string>
+
+    <!-- refuse strangers -->
+    <string name="refuse_strangers_call">拒接陌生人來電</string>
+    <string name="refuse_strangers_title">拒接騷擾電話</string>
+    <string name="refuse_strangers_content">不給陌生人鉆空的機會</string>
+    <string name="call_permission">打電話權限</string>
+    <string name="call_permission_content">開啟後只有通訊錄的聯系人才能打通手表</string>
+    <string name="intercept_record">攔截記錄</string>
+    <string name="intercept_record_content">有陌生人來電會發送消息給APP，方便家長確認</string>
+    <string name="refuse_call">拒接來電</string>
+
+    <!-- time switch -->
+    <string name="time_switch_title">開關機定個時</string>
+    <string name="time_switch_content">手表休息更準時</string>
+    <string name="time_switch_prompt">註意：充電狀態，定時開關機不生效</string>
+    <string name="time_switch_start">定時開機時間</string>
+    <string name="time_switch_end">定時關機時間</string>
+    <string name="time_switch_time_error_prompt">開關機時間不能一樣</string>
+
+    <!-- automatic connection -->
+    <string name="automatic_connection_title">10秒接通無障礙</string>
+    <string name="automatic_connection_content">聯系寶貝更輕松</string>
+
+    <!-- reserved electric -->
+    <string name="reserved_electric_title">預留專屬電量</string>
+    <string name="reserved_electric_content">寶貝僅能接聽來電</string>
+    <string name="watch_ban">手表禁用</string>
+    <string name="watch_ban_content">電量不足後，手表進入省電狀態</string>
+    <string name="support_answer_call">支持接聽電話</string>
+    <string name="support_answer_call_content">手表進入省電界面，僅支持接聽電話</string>
+
+    <!-- device report loss -->
+    <string name="device_report_loss_manager">手表丟失管理</string>
+    <string name="device_report_loss_title">手表丟失不要怕</string>
+    <string name="device_report_loss_content">我來幫妳想辦法</string>
+    <string name="location_report">位置上報</string>
+    <string name="location_report_content">掛失後，只要手表聯網成功，每次開機時將自動上報位置到APP</string>
+    <string name="watch_lock">手表鎖定</string>
+    <string name="watch_lock_content">手表進入鎖定狀態，只能輸入掛失密碼解鎖</string>
+    <string name="privacy_security">隱私安全</string>
+    <string name="privacy_security_content">他人無法使用，保障隱私和財產安全</string>
+    <string name="ring_tone_maximize">鈴聲最大化</string>
+    <string name="ring_tone_maximize_content">掛失狀態下，手表的消息和電話鈴聲音量最大化</string>
+    <string name="device_report_loss_prompt">手表掛失後，將被鎖定，不能正常使用和守護，是否要確定掛失？</string>
+    <string name="device_report_loss_close_content">關閉後，將結束手表的掛失功能，不會開機自動返回位置。是否確認關閉？</string>
+    <string name="input_report_loss_pwd_simple_prompt">設置的密碼過於簡單，請重新輸入</string>
+
+    <!-- device wifi -->
+    <string name="add_wifi">添加Wi&#8211;Fi</string>
+    <string name="edit_wifi">修改Wi&#8211;Fi</string>
+    <string name="add_wifi_title">為手表連接Wi&#8211;Fi</string>
+    <string name="add_wifi_content">省流量，更放心</string>
+    <string name="verify_success">驗證成功</string>
+    <string name="verify_error">驗證失敗</string>
+    <string name="verify_wait">等待驗證</string>
+    <string name="device_wifi_title">Wi&#8211;Fi：%s</string>
+    <string name="wifi_name">Wi&#8211;Fi名稱</string>
+    <string name="wifi_add_prompt">註意:\n1.若添加的Wi&#8211;Fi沒有密碼可直接確認即可；\n2.手表不支持&#160;&#160;5G&#160;&#160;Wi&#8211;Fi；</string>
+
+    <!-- device settings -->
+    <string name="hour_system">%s小時制</string>
+    <string name="time_display_format">時間顯示格式</string>
+    <string name="dial_pad">撥號鍵盤</string>
+    <string name="alarm_clock_settings">鬧鐘設置</string>
+    <string name="find_device">查找設備</string>
+    <string name="voice_monitor">語音監護</string>
+    <string name="remote_photo_take">遠程拍照</string>
+    <string name="remote_shutdown">遠程關機</string>
+    <string name="remote_reboot">遠程重啟</string>
+    <string name="reset_device">重置設備</string>
+    <string name="no_shutdown">禁止關機</string>
+    <string name="allow_watch_use">允許手表使用</string>
+    <string name="allow_watch_use_content">關閉後，手表不能使用撥號鍵盤打電話</string>
+    <string name="instruct_send_prompt">是否發送%s指令</string>
+    <string name="disable_watch_shutdown">禁用手表關機</string>
+    <string name="disable_watch_shutdown_content">開啟後，手表無法手動關機，只能通過APP遠程關機</string>
+    <string name="set_alarm_clock">設置鬧鐘</string>
+    <string name="alarm_clock">鬧鐘</string>
+    <string name="time">時間</string>
+
+    <!-- app settings -->
+    <string name="message_notify">消息通知</string>
+    <string name="change_pwd">修改密碼</string>
+    <string name="app_server_select">App服務器選擇</string>
+    <string name="clear_cache">清除緩存</string>
+    <string name="app_version_update">App版本更新</string>
+    <string name="app_version_can_update">有可更新的版本</string>
+    <string name="about">關於</string>
+    <string name="login_out">登出</string>
+    <string name="login_out_prompt">退出登入後不會刪除任何手表或App的數據，確定退出嗎？</string>
+    <string name="clear_cache_prompt">是否一鍵清除微聊、消息記錄等本地數據？</string>
+
+    <!-- app version update -->
+    <string name="app_new_version">檢測到最新版本：%s</string>
+    <string name="app_new_version_content">版本更新如下：\n%s</string>
+    <string name="app_is_newest_version">當前已是最新版本</string>
+
+    <!-- message notify -->
+    <string name="receiver_message_notify">接受新消息通知</string>
+    <string name="receiver_message_notify_prompt">如果妳要開啟或關閉傳信鴿的新消息提醒，請進入手機\&#034;設置\&#034;&#8211;\&#034;引用\&#034;，在應用程序列表中，找到\&#034;傳信鴿\&#034;&#8211;\&#034;通知\&#034;進行更改。</string>
+    <string name="mobile_ringtone">手機鈴聲</string>
+    <string name="mobile_vibrate">手機振動</string>
+
+    <!-- change pwd -->
+    <string name="change_pwd_prompt">請輸入舊密碼，再輸入6&#8211;16位字母和數字組合的新密碼</string>
+    <string name="change_forgot_pwd">忘記密碼？</string>
+
+    <!-- app version update -->
+    <string name="app_version_auto_update">有新版本，自動更新</string>
+    <string name="app_version_wifi">Wi&#8211;Fi環境自動下載更新包</string>
+    <string name="install_now">立即安裝</string>
+
+    <!-- about -->
+    <string name="about_user_service">用戶服務協議</string>
+    <string name="about_privacy_protocol">隱私政策</string>
+    <string name="about_user_experience">用戶體驗改進計劃</string>
+
+    <!-- select device type -->
+    <string name="device_type_select">選擇設備類型</string>
+    <string name="device_type_first">兒童手表</string>
+    <string name="device_type_second">老人手表</string>
+    <string name="chat_to_device">試試和設備聊天吧</string>
+    <string name="device">設備</string>
+    <string name="find_device_navi">找設備</string>
+    <string name="msg_device_sos">設備撥打了緊急求救電話</string>
+    <string name="msg_device_photo">設備使用拍照功能上傳了壹張照片，請及時查看</string>
+    <string name="msg_device_call_record">設備剛跟%s通話</string>
+    <string name="msg_device_leave_fence">設備離開名字叫%s的電子圍欄</string>
+    <string name="msg_device_entry_fence">設備進入名字叫%s的電子圍欄</string>
+    <string name="msg_device_low_energy">設備電量低於%s%%，請及時充電</string>
+    <string name="msg_device_shutdown">設備已關機</string>
+    <string name="msg_device_reserved_electric">設備進入預留電量模式，為了能在更長的時間內聯系到孩子，該模式下僅能接聽電話，及時充電後可恢復正常</string>
+    <string name="msg_device_update_contancts">設備添加了新朋友</string>
+    <string name="address_book">通訊錄</string>
+    <string name="change_device_type">切換產品</string>
+    <string name="sedentary_reminder">久坐提醒</string>
+    <string name="alarm_and_prompt">鬧鐘與提醒</string>
+    <string name="name_type_twelfth">老伴</string>
+    <string name="name_type_thirteenth">兒子</string>
+    <string name="name_type_fourteenth">女兒</string>
+    <string name="name_type_fifteenth">兒媳</string>
+    <string name="name_type_sixteenth">女婿</string>
+    <string name="device_center_second">設備基本信息</string>
+    <string name="device_info">設備信息</string>
+    <string name="device_name">設備名稱</string>
+    <string name="weight">體重</string>
+    <string name="height">身高</string>
+    <string name="weight_unit">公斤</string>
+    <string name="height_unit">厘米</string>
+    <string name="selelct_type">選擇%s</string>
+    <string name="bind_member_device_prompt">需要下載傳信鴿 APP綁定手表才可以跟設備微聊和視頻通話</string>
+    <string name="automatic_connection_devie_content">聯系家人更輕松</string>
+    <string name="reserved_electric_device_content">設備僅能接聽來電</string>
+    <string name="set_alarm_and_prompt">設置鬧鐘與提醒</string>
+    <string name="prompt_content">提醒內容</string>
+
+    <string name="contact_device_name_hint">請輸入妳對設備的稱呼</string>
+    <string name="device_name_hint">請輸入設備的昵稱</string>
+    <string name="no_add_data_prompt">暫未添加%1$s</string>
+    <string name="settings_to_max_prompt">最多設置%1$d個%2$s</string>
+
+    <!-- sedentary reminder -->
+    <string name="sedentary_reminder_no_disturb">午休免打擾</string>
+    <string name="sedentary_reminder_no_disturb_content">%1$s至%2$s不要提醒我</string>
+    <string name="settings_less_than_hour">至少設置壹小時</string>
+<!--    <string name="sedentary_reminder_content">持续40分钟未活动，手表将振动提醒</string>-->
+
+    <!-- Elderly Watch  -->
+
+    <!-- health -->
+    <string name="health">健康</string>
+    <string name="heart_rate">心率</string>
+    <string name="heart_rate_unit">BPM</string>
+    <string name="heart_rate_day">24小時心率</string>
+    <string name="heart_rate_average">平均心率</string>
+    <string name="blood_oxygen">血氧飽和度</string>
+    <string name="sleep_title">睡眠</string>
+    <string name="sleep_hour">%s小時</string>
+    <string name="step_num_title">步數</string>
+    <string name="step_unit">%s步</string>
+    <string name="blood_pressure">血壓</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <string name="blood_pressure_content">收縮壓/舒張壓</string>
+    <string name="temperature">體溫</string>
+    <string name="temperature_unit">℃</string>
+    <string name="temperature_unit_name">攝氏度</string>
+    <string name="health_testing">正在測量中...</string>
+    <string name="bind_member_device_no_video_prompt">需要下載傳信鴿 APP綁定手表才可以跟設備微聊</string>
+
+    <!-- heart rate -->
+    <string name="week_unit">周</string>
+    <string name="heart_rate_analysis_content">心率數據分析</string>
+    <string name="heart_rate_analysis">了解心率數據分析</string>
+    <string name="heart_rate_quiet">安靜心率：正常人在安靜狀態下每分鐘心跳次數為60-100次。</string>
+    <string name="heart_rate_sport">運動心率：運動過程中根據心率區間可以判斷身體的運動狀態，選擇合適的心率區間才能達到較佳的運動效果。</string>
+    <string name="heart_rate_test_trend">近七次心率測量趨勢</string>
+    <string name="heart_rate_start_test">點擊開始測量心率</string>
+    <string name="heart_rate_type_first">熱身放松</string>
+    <string name="heart_rate_type_second">脂肪燃燒</string>
+    <string name="heart_rate_type_third">心肺強化</string>
+    <string name="heart_rate_type_forth">耐力強化</string>
+    <string name="heart_rate_type_fifth">無氧極限</string>
+
+    <!-- heart rate test -->
+    <string name="heart_rate_continue_test">連續心率測試</string>
+    <string name="heart_rate_test_type">心率測量說明</string>
+    <string name="heart_rate_test_content">開啟連續測量功能，24小時實時監測您的心率，心率數據更詳細，刷新更及時，功耗將增大50%</string>
+    <string name="heart_rate_test_type_first">智能</string>
+    <string name="heart_rate_test_type_first_content">根據運動狀態動態調整測量頻率，24小時智能檢測您的心率，又助於省電</string>
+    <string name="heart_rate_test_type_second">即時</string>
+    <string name="heart_rate_test_type_second_content">24小時檢測您的心率，心率數據更詳細，刷新更及時，對功耗影響大</string>
+    <string name="heart_rate_adjust">靜態心率調整</string>
+    <string name="heart_rate_adjust_hign">靜態心率過高</string>
+    <string name="heart_rate_adjust_low">靜態心率過低</string>
+    <string name="heart_rate_adjust_hign_content">非活動狀態下，心率持續10分鐘以上都超過150次/分鐘</string>
+    <string name="heart_rate_adjust_low_content">非活動狀態下，心率持續10分鐘以上都低於45次/分鐘</string>
+    <string name="heart_rate_adjust_unit">次/分鐘</string>
+
+    <!-- blood pressure -->
+    <string name="blood_pressure_start_test">點擊開始測量血壓</string>
+    <string name="systolic_pressure">收縮壓</string>
+    <string name="diastolic_pressure">舒張壓</string>
+    <string name="blood_pressure_data_about">關於血壓數據</string>
+    <string name="blood_pressure_data_analysis">了解血壓數據</string>
+    <string name="blood_pressure_data_analysis_content">血壓正常值：\n90MMHG &lt; 收縮壓 &lt; 140MMHG\n60MMHG &lt; 舒張壓 &lt; 90MMHG</string>
+    <string name="blood_pressure_test_trend">近七次血壓測量趨勢</string>
+
+    <!-- blood oxygen -->
+    <string name="blood_oxygen_start_test">點擊開始測量血氧飽和度</string>
+    <string name="blood_oxygen_data_about">關於血氧數據</string>
+    <string name="blood_oxygen_data_analysis">了解血氧飽和度數據</string>
+    <string name="blood_oxygen_data_analysis_content">血氧飽和度是血液中被氧結合的氧合血紅蛋白的容量占全部可結合的血紅蛋白容量的百分比，即血液中血氧的濃度，它是呼吸循環的重要生理參數。\n\n正常動脈血氧飽和度約為96~99%</string>
+    <string name="blood_oxygen_test_trend">近七次血氧飽和度測量趨勢</string>
+
+    <!-- sleep -->
+    <string name="sleep_data_point">睡眠質量評分</string>
+    <string name="sleep_data_point_about">了解睡眠質量評分</string>
+    <string name="sleep_data_point_about_content">睡眠質量評分是基於匹茲堡睡眠質量指數計算基本原值，通過手環所測得的睡眠規律性、睡眠時長、深睡眠比例、夜裏醒來次數和醒來時間等因子來評估睡眠質量並進行評分。</string>
+
+    <!-- temperature -->
+    <string name="temperature_start_test">點擊開始測量體溫</string>
+    <string name="temperature_data_about">關於體溫數據</string>
+    <string name="temperature_data_analysis">了解體溫數據</string>
+    <string name="temperature_data_analysis_content">體溫數據\n體溫數據</string>
+    <string name="temperature_test_trend">近七次體溫測量趨勢</string>
+
+    <!-- step -->
+    <string name="metre">米</string>
+    <string name="kilocalorie">千卡</string>
+    <string name="effective_sport">有效活動量</string>
+    <string name="effective_sport_unit">MET-min</string>
+    <string name="effective_sport_week_num">本周已累計</string>
+    <string name="effective_sport_recommend">推薦一周累計有效活動量為 600-1000 MET-min</string>
+    <string name="effective_sport_analysis">了解有效活動量</string>
+    <string name="effective_sport_analysis_content">身體活動達到中等或高等強度，並且活動時間持續10分鐘及以上，則認為該次活動對健康有益，是有效活動</string>
+    <string name="step_test_trend">近七天達標情況</string>
+    <string name="step_info_prompt">卡路里和距離根據身高體重進行計算得出</string>
+
+    <!-- health settings -->
+    <string name="health_settings">健康設置</string>
+
+    <!-- fall off -->
+    <string name="fall_off">脫落檢測</string>
+    <string name="fall_off_title">脫落開關</string>
+    <string name="fall_off_content">打開後會增加功耗</string>
+
+    <!-- unit -->
+    <string name="report_day">日</string>
+    <string name="report_week">周</string>
+    <string name="report_month">月</string>
+    <string name="report_sun">周日</string>
+    <string name="report_mon">周一</string>
+    <string name="report_tue">周二</string>
+    <string name="report_wed">周三</string>
+    <string name="report_thu">周四</string>
+    <string name="report_fri">周五</string>
+    <string name="report_sat">周六</string>
+
+    <!-- hint -->
+    <string name="mobile_hint">請填寫手機號碼</string>
+    <string name="email_hint">請填寫郵箱</string>
+    <string name="account_hint">請填寫帳號</string>
+    <string name="pwd_hint">請填寫密碼</string>
+    <string name="verification_code_hint">請輸入驗證碼</string>
+    <string name="set_pwd_hint">請設置密碼</string>
+    <string name="imei_hint">請輸入設備綁定號</string>
+    <string name="contact_name_hint">請輸入寶貝對妳的稱呼</string>
+    <string name="baby_name_hint">請輸入寶貝的昵稱</string>
+    <string name="new_pwd_hint">請輸入新密碼</string>
+    <string name="short_number_hint">請填寫短號/親情號</string>
+    <string name="custom_name_hint">請輸入聯系人名稱</string>
+    <string name="old_pwd_hint">請輸入舊密碼</string>
+    <string name="confirm_pwd_hint">請確認新密碼</string>
+    <string name="location_name_hint">請填寫地點名稱</string>
+    <string name="watch_bill_hint">請輸入查詢指令或套餐指令</string>
+    <string name="input_hint">請填寫%s</string>
+    <string name="voice_monitor_hint">請填寫語音監護的手機號碼</string>
+    <string name="wifi_name_hint">請填寫Wi&#8211;Fi名稱</string>
+    <string name="wifi_pwd_hint">請填寫Wi&#8211;Fi密碼</string>
+    <string name="fence_name_hint">請輸入電子圍欄名稱</string>
+    <string name="report_loss_pwd_hint">請輸入六位的掛失密碼</string>
+    <string name="chat_input_hint">不超過15個漢字或30個字母</string>
+
+    <!-- permission -->
+    <string name="no_camera_permission_prompt">照相機打開失敗，請檢查權限是否未獲取</string>
+    <string name="no_contact_permission_prompt">通訊錄訪問失敗，請檢查權限是否未獲取</string>
+    <string name="no_gallery_permission_prompt">相冊打開失敗，請檢查權限是否未獲取</string>
+    <string name="no_location_permission_prompt">手機定位失敗，請檢查權限是否未獲取</string>
+    <string name="no_video_permission_prompt">視頻通話失敗，請檢查權限是否未獲取</string>
+
+    <!-- prompt -->
+    <string name="input_true_mobile_prompt">請輸入正確的手機號碼</string>
+    <string name="input_true_email_prompt">請輸入正確的郵箱</string>
+    <string name="read_protocol_prompt">請閱讀並同意相關政策</string>
+    <string name="request_error_prompt">請求失敗</string>
+    <string name="request_success_prompt">請求成功</string>
+    <string name="not_result_prompt">查詢沒結果</string>
+    <string name="device_ont_online_prompt">設備不在線</string>
+    <string name="wait_online_update_prompt">設置成功，設備上線會同步</string>
+    <string name="request_unkonow_prompt">網絡出現異常</string>
+    <string name="repeat_request_prompt">賬號重復註冊</string>
+    <string name="not_exist_param_prompt">必要參數不存在</string>
+    <string name="login_success_prompt">登入成功</string>
+    <string name="register_success_prompt">註冊成功</string>
+    <string name="account_not_exist_prompt">賬號不存在</string>
+    <string name="token_error_prompt">妳的賬號在其他地方登入,請重新登入</string>
+    <string name="old_pwd_error_prompt">原密碼錯誤</string>
+    <string name="wait_admin_confirm_prompt">等待管理員確認</string>
+    <string name="user_already_bind_prompt">用戶已經綁定過</string>
+    <string name="user_not_request_bind_prompt">用戶未請求過綁定</string>
+    <string name="not_turn_myself_prompt">不可以轉讓給自己</string>
+    <string name="device_not_active_prompt">該設備未開通</string>
+    <string name="watch_not_register_prompt">手表不存在</string>
+    <string name="bind_member_to_max_prompt">綁定用戶超過8個</string>
+    <string name="service_busy_prompt">服務器繁忙，請稍後再試</string>
+    <string name="permissions_error_prompt">權限申請被拒絕:%s</string>
+    <string name="empty_data_prompt">目前沒有數據</string>
+    <string name="seach_result_empty_prompt">沒有匹配的結果</string>
+    <string name="user_unbind_device_prompt">用戶未綁定手表</string>
+    <string name="reset_pwd_input_different_prompt">兩次輸入的密碼不一致</string>
+    <string name="reset_pwd_success_prompt">重置密碼成功</string>
+    <string name="no_device_gps_prompt">沒有設備的定位信息</string>
+    <string name="no_query_data_prompt">沒有查詢記錄</string>
+    <string name="update_success_prompt">修改成功</string>
+    <string name="select_at_least_one_prompt">請至少選擇一項</string>
+    <string name="old_pwd_input_prompt">請輸入6&#8211;16位字母和數字組合的舊密碼</string>
+    <string name="old_same_new_pwd_prompt">輸入的舊密碼和新密碼一樣</string>
+    <string name="change_pwd_success_prompt">修改密碼成功，請重新登入</string>
+    <string name="address_not_find_prompt">無法查找地址</string>
+    <string name="device_not_set_phone_prompt">設備沒有設置手機號碼</string>
+    <string name="contacts_to_max_prompt">最多設置15個聯系人</string>
+    <string name="sos_number_to_max_prompt">緊急通話權限的號碼已達3個上限，無法繼續添加</string>
+    <string name="contacts_type_equal_prompt">聯系人不能設置相同的類型</string>
+    <string name="contacts_name_equal_prompt">聯系人不能設置相同的名稱</string>
+    <string name="contacts_phone_equal_prompt">此號碼已在通訊錄中，無需重復添加</string>
+    <string name="contacts_name_equal_edit_prompt">此聯系人昵稱與通訊錄已有聯系人重名，是否更改編輯到已有聯系人</string>
+    <string name="clear_cache_success_prompt">緩存已清理</string>
+    <string name="manager_agree_success_prompt">同意綁定設備成功</string>
+    <string name="verification_code_input_error_prompt">輸入的驗證碼不正確</string>
+    <string name="no_active_code_prompt">獲取綁定號出錯</string>
+    <string name="upload_file_prompt">正在上傳中&#8230;</string>
+    <string name="ban_classes_to_max_prompt">最多設置4個上課禁用</string>
+    <string name="fence_to_max_prompt">最多設置2個電子圍欄</string>
+    <string name="alarm_clock_to_max_prompt">最多設置4個鬧鐘</string>
+    <string name="manager_transfer_success_prompt">轉讓管理員成功</string>
+    <string name="manager_refuse_success_prompt">拒絕用戶綁定成功</string>
+    <string name="manager_agree_user_bind_prompt">管理員已同意妳綁定設備</string>
+    <string name="manager_refuse_user_bind_prompt">管理員已拒絕妳綁定設備</string>
+    <string name="no_message_prompt">暫無消息</string>
+    <string name="no_data_prompt">暫無數據</string>
+    <string name="no_remote_photo_take_prompt">沒有遠程拍照</string>
+    <string name="no_contacts_prompt">未添加任何號碼</string>
+    <string name="send_success_prompt">發送成功</string>
+    <string name="send_error_prompt">發送失敗</string>
+    <string name="network_error_prompt">網絡連接不可用，請稍後再試</string>
+    <string name="upload_file_error_prompt">圖片上傳失敗</string>
+    <string name="no_alarm_clock_prompt">暫未添加鬧鐘</string>
+    <string name="change_language_prompt">修改語言需要重啟APP才生效</string>
+    <string name="name_equal_prompt">不能設置相同的名稱</string>
+    <string name="fence_equal_prompt">不能設置相同的區域</string>
+    <string name="time_equal_prompt">不能設置重復的時間</string>
+    <string name="watch_loss_prompt">手表處於掛失中，無法使用該功能</string>
+    <string name="video_time_prompt">為防止手表溫度過高，通話將在%1$d分鐘結束，稍後可正常使用</string>
+    <string name="operation_is_too_frequent_prompt">%s操作太頻繁，請稍後再試</string>
+    <string name="location_no_net_prompt">定位請求已發出，設備聯網後返回位置</string>
+    <string name="request_too_busy_prompt">請勿頻繁操作</string>
+    <string name="query_too_min_day_prompt">只允許查詢近三個月的數據</string>
+
+    <!-- time -->
+    <string name="today">今天</string>
+    <string name="yestoday">昨天</string>
+    <string name="before_yestoday">前天</string>
+    <string name="now">剛剛</string>
+    <string name="year_ago">%1$d年前</string>
+    <string name="month_ago">%1$d個月前</string>
+    <string name="day_ago">%1$d天前</string>
+    <string name="hour_ago">%1$d小時前</string>
+    <string name="minutes_ago">%1$d分鐘前</string>
+    <string name="minutes">%s分鐘</string>
+    <string name="hour">%1$d時</string>
+    <string name="minute">%1$d分</string>
+    <string name="second">%1$d秒</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="everyday">每天</string>
+    <string name="picker_year">年</string>
+    <string name="picker_month">月</string>
+    <string name="picker_day">日</string>
+    <string name="picker_hour">時</string>
+    <string name="picker_minute">分</string>
+    <string name="picker_second">秒</string>
+
+    <!-- other -->
+    <string name="prompt">溫馨提示</string>
+    <string name="search">搜索</string>
+    <string name="confirm">確認</string>
+    <string name="refuse">拒絕</string>
+    <string name="next_handle">下次再處理</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="del">刪除</string>
+    <string name="edit">編輯</string>
+    <string name="send">發送</string>
+    <string name="unknow">未知</string>
+    <string name="not_set">未設置</string>
+    <string name="i_know">我知道了</string>
+    <string name="open">開</string>
+    <string name="close">關閉</string>
+    <string name="notification_name">消息通知</string>
+    <string name="notification_description">消息通知</string>
+
+    <!-- help text -->
+    <string name="phone_no_receive_content">請確認輸入的是手機上的號碼而不是手表號碼；\n驗證碼被安全軟件當成垃圾信息被攔截了，可以在手機上查找已被攔截的短信；\n嘗試重啟手機；</string>
+    <string name="email_no_receive_content">請確認輸入的郵箱格式是正確的；\n郵箱自動把驗證碼郵件歸類到垃圾信箱了，可在垃圾箱中查找；\n郵箱設置的自動收件時間過長，可打開郵箱手動點擊收信；</string>
+    <string name="not_found_device_imei_content">1.手表插卡，開機\n2.點擊手表的【綁定】菜單\n3.會顯示一個10位綁定碼；若沒有，請確認手表是否連接網絡，綁定碼需要手表連接網絡後才會生成</string>
+
+    <!-- picture selector -->
+    <string name="picture_audio">獲取系統錄音權限被拒絕</string>
+    <string name="picture_camera">獲取系統相機權限被拒絕</string>
+    <string name="picture_camera_roll">相機膠卷</string>
+    <string name="picture_cancel">取消</string>
+    <string name="picture_completed">已完成</string>
+    <string name="picture_confirm">確定</string>
+    <string name="picture_done">完成</string>
+    <string name="picture_done_front_num">%1$d/%2$d 完成</string>
+    <string name="picture_empty">妳可以使用相機拍攝照片或視頻</string>
+    <string name="picture_empty_title">無視頻或照片\n</string>
+    <string name="picture_error">圖片已損壞</string>
+    <string name="picture_jurisdiction">讀取內存卡權限被拒絕</string>
+    <string name="picture_long_chart">長圖</string>
+    <string name="picture_message_max_num">您最多可以選擇%1$s張圖片</string>
+    <string name="picture_min_img_num">圖片最低選擇不能少於%1$s張</string>
+    <string name="picture_pause_audio">暫停</string>
+    <string name="picture_photograph">拍照</string>
+    <string name="picture_please">請稍候&#8230;</string>
+    <string name="picture_please_select">請選擇</string>
+    <string name="picture_preview">預覽</string>
+    <string name="picture_prompt">提示</string>
+    <string name="picture_prompt_content">是否保存圖片至手機？</string>
+    <string name="picture_quit_audio">退出</string>
+    <string name="picture_rule">不能同時選擇圖片或視頻</string>
+    <string name="picture_save_error">圖片保存失敗</string>
+    <string name="picture_save_success">圖片保存成功至</string>
+    <string name="picture_stop_audio">停止</string>
+    <string name="picture_take_picture">拍攝</string>
+
+    <!-- PictureSelectorActivity -->
+    <string name="rc_picsel_toolbar">相機膠卷</string>
+    <string name="rc_picsel_toolbar_send">發送</string>
+    <string name="rc_picsel_toolbar_send_num">發送(%d/9)</string>
+    <string name="rc_picsel_pictype">相機膠卷</string>
+    <string name="rc_picsel_toolbar_preview">預覽</string>
+    <string name="rc_picsel_toolbar_preview_num">預覽(%d)</string>
+    <string name="rc_picsel_selected_max_pic_count">您最多可以選擇9張圖片</string>
+    <string name="rc_picsel_take_picture">拍攝</string>
+    <string name="rc_picsel_catalog_number">%d</string>
+    <string name="rc_picsel_selected_max_gif_size_span_with_param">該GIF圖尺寸過大，無法發送</string>
+    <string name="rc_picsel_catalog_allpic">所有圖片</string>
+
+    <!-- PicturePreviewActivity -->
+    <string name="rc_picprev_origin">原圖</string>
+    <string name="rc_picprev_origin_size">原圖(%s)</string>
+    <string name="rc_picprev_select">選擇</string>
+
+    <!-- rong im -->
+    <string name="rc_audio_input">按住 說話</string>
+    <string name="rc_audio_input_hover">松開 發送</string>
+    <string name="rc_ext_send">發送</string>
+    <string name="rc_ext_cancel">取消</string>
+    <string name="rc_message_unread_count">"···"</string>
+    <string name="rc_input_voice">按住 說話</string>
+    <string name="rc_voice_rec">手指上滑，取消發送</string>
+    <string name="rc_voice_cancel">松開手指，取消發送</string>
+    <string name="rc_voice_short">錄音時間太短</string>
+    <string name="rc_voice_failure">錄音失敗！</string>
+    <string name="rc_voice_too_long">錄制時間超長</string>
+    <string name="rc_voip_occupying">聲音通道被占用，請稍後再試</string>
+    <string name="rc_dialog_item_message_delete">刪除消息</string>
+    <string name="rc_dialog_item_message_copy">復制消息</string>
+    <string name="rc_dialog_item_message_recall">撤回消息</string>
+    <string name="rc_dialog_item_message_more">更多</string>
+    <string name="rc_recall_success">消息已撤回</string>
+    <string name="rc_recall_failed">撤回失敗</string>
+    <string name="rc_you_recalled_a_message">妳撤回了一條消息</string>
+    <string name="rc_you_recalled_edit">重新編輯</string>
+    <string name="rc_admin_recalled_a_message">管理員撤回了一條消息</string>
+    <string name="rc_recalled_a_message">&#160;撤回了一條消息</string>
+    <string name="rc_admin_recalled_message">管理員&#160;撤回了一條消息</string>
+    <string name="rc_exceeded_max_limit">超出最大限制</string>
+    <string name="rc_exceeded_max_limit_100">聊天記錄選擇不能超過 100 條</string>
+    <string name="seal_conversation_remote_side_is_typing">對方正在輸入&#046;&#046;&#046;</string>
+    <string name="seal_conversation_remote_side_speaking">對方正在講話&#046;&#046;&#046;</string>
+    <string name="rc_send_format">發送(%1$s)</string>
+    <string name="rc_yesterday_format">昨天</string>
+    <string name="rc_year_format">年</string>
+    <string name="rc_month_format">月</string>
+    <string name="rc_day_format">日</string>
+    <string name="rc_monday_format">周一</string>
+    <string name="rc_tuesday_format">周二</string>
+    <string name="rc_wednesday_format">周三</string>
+    <string name="rc_thuresday_format">周四</string>
+    <string name="rc_friday_format">周五</string>
+    <string name="rc_saturday_format">周六</string>
+    <string name="rc_sunsay_format">周日</string>
+    <string name="rc_daybreak_format">淩晨</string>
+    <string name="rc_morning_format">上午</string>
+    <string name="rc_noon_format">中午</string>
+    <string name="rc_afternoon_format">下午</string>
+    <string name="rc_night_format">晚上</string>
+    <string name="rc_waiting">等待中</string>
+    <string name="rc_file_not_exist">文件不存在</string>
+    <string name="rc_network_is_busy">網絡繁忙</string>
+    <string name="rc_network_error">網絡連接錯誤</string>
+    <string name="rc_called_on_hook">對方已掛機</string>
+    <string name="rc_called_is_calling">對方正在通話中</string>
+    <string name="rc_exit_calling">是否退出通話界面？</string>
+    <string name="rc_yes">是</string>
+    <string name="rc_called_not_accept">對方未接聽</string>
+    <string name="rc_called_accept">對方接受了通話請求</string>
+    <string name="callkit_voip_ok">確定</string>
+    <string name="rc_voip_video">視頻通話</string>
+    <string name="rc_voip_call_waiting">正在等待對方接受邀請&#8230;</string>
+    <string name="rc_voip_call_connecting">連接中</string>
+    <string name="rc_voip_call_busy">忙線中</string>
+    <string name="rc_voip_call_no_response">無響應</string>
+    <string name="rc_voip_call_hangup">已掛斷</string>
+    <string name="rc_voip_call_network_error">當前網絡不可用,請檢查妳的網絡設置</string>
+    <string name="rc_voip_call_interrupt">已掛斷</string>
+    <string name="rc_voip_call_terminalted">通話結束</string>
+    <string name="rc_voip_call_started">開始通話</string>
+    <string name="rc_voip_call_video_start_fail">正在進行視頻通話，請稍後再試</string>
+    <string name="rc_voip_call_other">其它設備已處理</string>
+    <string name="rc_voip_audio_call_inviting">邀請您進行語音通話&#8230;</string>
+    <string name="rc_voip_video_call_inviting">邀請您進行視頻通話&#8230;</string>
+    <string name="rc_voip_notificatio_video_call_inviting">邀請您進行視頻通話</string>
+    <string name="rc_voip_notificatio_audio_call_inviting">邀請您進行語音通話</string>
+    <string name="rc_voip_notificatio_audio_call_inviting_general">妳有一個語音通話邀請</string>
+    <string name="rc_voip_notificatio_video_call_inviting_general">妳有一個視頻通話邀請</string>
+    <string name="rc_voip_video_ended">視頻通話已結束</string>
+    <string name="rc_voip_video_no_response">視頻通話未接聽</string>
+    <string name="rc_voip_audio_ended">語音通話已結束</string>
+    <string name="rc_voip_audio_no_response">語音通話未接聽</string>
+    <string name="rc_voip_mute">靜音</string>
+    <string name="rc_voip_hangup">掛斷</string>
+    <string name="rc_voip_answer">接聽</string>
+    <string name="rc_voip_camera">攝像頭</string>
+    <string name="rc_voip_handfree">免提</string>
+    <string name="rc_voip_disable_camera">關閉攝像頭</string>
+    <string name="rc_voip_enable_camera">開啟攝像頭</string>
+    <string name="rc_voip_participant_users">群聊成員</string>
+    <string name="rc_voip_mo_cancel">已取消</string>
+    <string name="rc_voip_mo_reject">已拒絕</string>
+    <string name="rc_voip_mo_no_response">未接聽</string>
+    <string name="rc_voip_mt_cancel">對方已取消</string>
+    <string name="rc_voip_mt_reject">對方已拒絕</string>
+    <string name="rc_voip_mt_no_response">對方未接聽</string>
+    <string name="rc_voip_call_time_length">通話時長&#160;</string>
+    <string name="rc_voip_mt_busy">對方忙</string>
+    <string name="rc_voip_message_audio">[語音通話]</string>
+    <string name="rc_voip_message_video">[視頻通話]</string>
+    <string name="rc_voip_switch_to_audio">語音通話</string>
+    <string name="rc_voip_remote_switched_to_audio">對方已切換到語音通話</string>
+    <string name="rc_voip_switched_to_audio">已切換到語音通話</string>
+    <string name="rc_voip_float_window_not_allowed">請打開懸浮窗權限</string>
+    <string name="rc_call_on_going">通話中&#160;</string>
+    <string name="rc_video_call_on_going">視頻通話中，輕擊以繼續</string>
+    <string name="rc_voip_over_limit">您最多只能選擇%d人</string>
+    <string name="rc_voip_ok">確認</string>
+    <string name="rc_voip_cancel">取消</string>
+    <string name="rc_voip_mic">麥克風</string>
+    <string name="rc_voip_camera_mic">攝像頭和麥克風</string>
+    <string name="rc_voip_open">打開</string>
+    <string name="rc_voip_close">關閉</string>
+    <string name="rc_voip_unstable_call_connection">當前通話連接質量不佳</string>
+    <string name="rc_voip_connecting">連接中&#160;</string>
+    <string name="rc_voip_audio_refuse">語音通話已拒絕</string>
+    <string name="rc_plugin_image">圖片</string>
+    <string name="rc_message_content_image">[圖片]</string>
+    <string name="rc_message_content_voice">[語音]</string>
+    <string name="rc_voip_call_terminalted_notify">[結束通話]</string>
+
+    <string name="crash_error_tips">很抱歉,程序出現異常,即將退出&#8230;</string>
+    <string name="login_failure_tips">登入失敗</string>
+    <string name="destination">我的目的地</string>
+    <string name="no_gaode_map_tips">您尚未安裝高德地圖</string>
+    <string name="no_baidu_map_tips">您尚未安裝百度地圖</string>
+    <string name="no_tencent_map_tips">您尚未安裝騰訊地圖</string>
+    <string name="no_google_map_tips">您尚未安裝Google&#160;&#160;Map</string>
+    <string name="gaode_map">高德地圖</string>
+    <string name="baidu_map">百度地圖</string>
+    <string name="tencent_map">騰訊地圖</string>
+    <string name="north">正北</string>
+    <string name="south">正南</string>
+    <string name="east">正東</string>
+    <string name="west">正西</string>
+    <string name="northwest">西北</string>
+    <string name="northeast">東北</string>
+    <string name="southwest">西南</string>
+    <string name="southeast">東南</string>
+    <string name="no_device_gps_tips">沒有設備的定位信息</string>
+    <string name="no_mobile_gps_tips">沒有手機的定位信息</string>
+    <string name="no_amap_permission">拒絕定位所需的權限</string>
+    <string name="online">在線</string>
+    <string name="offline">離線</string>
+    <string name="on">開</string>
+    <string name="off">關</string>
+
+    <!-- tracking -->
+    <string name="tracking_count_down">%1$d秒後刷新</string>
+    <string name="tracking_my_address">我的位置</string>
+    <string name="tracking_distance">相距&#160;&#160;%1$s</string>
+    <string name="tracking_address_not_find">無法查找地址</string>
+    <string name="tracking_address_finding">正在查找地址&#8230;</string>
+    <string name="tracking_device_info">GPS+北鬥&#160;%1$s&#160;ACC%2$s\n%3$s\n速度:%4$s&#160;方向:%5$s</string>
+    <string name="tracking_device_info_track">GPS+北鬥&#160;%1$s&#160;ACC%2$s,電量%3$s%%\n%4$s\n速度:%5$s&#160;方向:%6$s</string>
+    <string name="tracking_device_info_track_new">GPS+北鬥&#160;%1$s&#160;ACC%2$s,電量%3$s%%\n%4$s\n速度:%5$s&#160;方向:%6$s\n昵稱:%7$s\nIMEI:%8$s</string>
+    <string name="tracking_device_info_of_pigeon">IMEI:%1$s\n電量%2$s%%\n定位時間:%3$s\n日誌時間:%4$s\n昵稱:%5$s\n%6$s\n定位點數:%7$d</string>
+    <string name="tracking_device_info_stop">GPS+北鬥&#160;%1$s&#160;ACC%2$s\n%3$s\n停留時长:%4$s</string>
+    <string name="tracking_device_info_title">GPS+北鬥&#160;%1$s&#160;ACC%2$s</string>
+    <string name="tracking_device_info_content">%1$s\n速度:%2$s&#160;方向:%3$s</string>
+    <string name="tracking_device_info_stop_content">%1$s\n停留時长:%2$s</string>
+    <string name="tracking_share_no_address">分享一個位置信息</string>
+    <string name="tracking_share_title">分享位置</string>
+
+    <!-- home -->
+    <string name="home_tracking">即時追蹤</string>
+    <string name="home_history">軌跡回放</string>
+    <string name="home_electronic">電子圍欄</string>
+    <string name="home_setting">設置信息</string>
+    <string name="home_message">設備消息</string>
+    <string name="home_recharge">充值續費</string>
+    <string name="home_report">報表統計</string>
+    <string name="home_alarm">報警提醒</string>
+    <string name="home_user">用戶信息</string>
+    <string name="home_risk_management">風控</string>
+    <string name="home_loginout">註銷</string>
+    <string name="home_bind">綁定設備</string>
+    <string name="home_voice">語音對講</string>
+    <string name="home_voice_monitoring">語音監護</string>
+    <string name="home_message_noti">消息提醒</string>
+    <string name="home_send_order">遠程控製</string>
+    <string name="flight_training">訓飛</string>
+    <string name="flight_training_trajectory">訓飛軌跡</string>
+    <string name="home_safe">風控查詢</string>
+    <string name="home_navi">周邊導航</string>
+    <string name="home_offline_map">離線地圖</string>
+    <string name="home_system_configure">繫統工具</string>
+
+    <string name="hours">%1$d時</string>
+    <string name="track_minutes">%1$d分</string>
+    <string name="seconds">%1$d秒</string>
+    <string name="day_tips">%1$d天前</string>
+    <string name="hour_tips">%1$d小時前</string>
+    <string name="minutes_tips">%1$d分鐘前</string>
+    <string name="seconds_tips">%1$d秒前</string>
+    <string name="now_time">剛剛</string>
+
+    <!-- other -->
+    <string name="tips">溫馨提示</string>
+    <string name="start">開始</string>
+    <string name="stop">暫停</string>
+    <string name="end">結束</string>
+    <string name="bg">背景</string>
+    <string name="yesterday">昨天</string>
+    <string name="custom">自定義</string>
+    <string name="year">年</string>
+    <string name="mouth">月</string>
+    <string name="day">日</string>
+    <string name="day_new">天</string>
+    <string name="copy">復制</string>
+    <string name="delete">刪除</string>
+    <string name="update">更新</string>
+    <string name="select_all">全選</string>
+
+    <!-- history -->
+    <string name="history_start_date">開始時間</string>
+    <string name="history_end_date">結束時間</string>
+    <string name="history_progress">進度</string>
+    <string name="history_speed">速度</string>
+    <string name="select_time">選擇時間</string>
+
+    <!-- electronic -->
+    <string name="electronic_add">添加電子圍欄</string>
+    <string name="electronic_edit">編輯電子圍欄</string>
+    <string name="electronic_description">經度:%s&#160;&#160;緯度:%s&#160;&#160;半徑:%s</string>
+    <string name="electronic_hint">請輸入電子圍欄名稱&#8230;</string>
+
+    <!-- alarm -->
+    <string name="alarm_onoff">是否啟用</string>
+    <string name="alarm_voice">聲音提醒</string>
+    <string name="alarm_vibrator">震動提醒</string>
+    <string name="alarm_mobile_location">是否即時更新手機位置</string>
+    <string name="alarm_vibrator_tips">震動報警</string>
+    <string name="alarm_offline">離線報警</string>
+    <string name="alarm_over_speed">超速報警</string>
+    <string name="alarm_displacement">位移報警</string>
+
+    <!-- user -->
+    <string name="user_nick">客戶名稱</string>
+    <string name="user_name">用戶名</string>
+    <string name="user_contact">聯系人</string>
+    <string name="user_mobile">聯系電話</string>
+    <string name="user_email">郵箱</string>
+    <string name="user_address">地址</string>
+
+    <!-- setting -->
+    <string name="setting_device_info">設備信息</string>
+    <string name="setting_change_password">修改密碼</string>
+
+    <!-- device info -->
+    <string name="device_info_name">設備名稱</string>
+    <string name="device_info_no">設備編號</string>
+    <string name="device_info_expire_date">到期時間</string>
+    <string name="device_info_car_no">車牌號碼</string>
+    <string name="device_info_model">設備型號</string>
+    <string name="device_info_mobile">設備電話</string>
+    <string name="device_info_remark">備註</string>
+    <string name="device_info_unbind">解除綁定</string>
+    <string name="device_info_upload_photo">拍照上傳</string>
+
+    <!-- change password -->
+    <string name="password_now">原密碼</string>
+    <string name="password_new">新密碼</string>
+    <string name="password_repwd">重復新密碼</string>
+
+    <!-- report -->
+    <string name="report_mileage">里程統計</string>
+    <string name="report_stop">停靠報表</string>
+    <string name="report_mileage_unit">里程:%1$s</string>
+    <string name="report_mileage_alarm">報警次數:%1$s次</string>
+    <string name="report_mileage_stop">停留:%1$s次</string>
+    <string name="report_mileage_over_speed">超速:%1$s次</string>
+    <string name="report_stop_start">開始:%1$s</string>
+    <string name="report_stop_end">結束:%1$s</string>
+    <string name="report_stop_time">停靠時長:%1$s</string>
+    <string name="report_stop_latlng">經度:%1$s&#160;&#160;緯度:%2$s</string>
+
+    <!-- user list -->
+    <string name="user_list">用戶列表</string>
+    <string name="user_list_tips">長按選擇用戶</string>
+
+    <!-- search device -->
+    <string name="search_device">搜索設備</string>
+    <string name="search_device_hint">請輸入設備名稱/設備型號/ID號&#160;&#160;搜索</string>
+
+    <!-- recharge -->
+    <string name="recharge_id">設備編號:&#160;&#160;&#160;&#160;%1$s</string>
+    <string name="recharge_date">到期時間:&#160;&#160;&#160;&#160;%1$s</string>
+    <string name="recharge_text">充值金額</string>
+    <string name="recharge_cost">平臺續費一年/60元</string>
+    <string name="recharge_tips">平臺續費是指平臺軟件使用期限，跟定位器裏面的SIM卡無關，定位器設備SIM卡欠費請聯系代理商或運營商充值。</string>
+    <string name="recharge_type">支付方式</string>
+    <string name="recharge_pepay">Pepay</string>
+    <string name="recharge_googlepay">Google&#160;&#160;Pay</string>
+    <string name="recharge_wxpay">微信支付</string>
+    <string name="recharge_alipay">支付寶支付</string>
+
+    <!-- device -->
+    <string name="device_acc">ACC%1$s</string>
+    <string name="device_sport">運動</string>
+    <string name="device_motionless">靜止</string>
+
+    <!-- pay -->
+    <string name="pay_life_renewal">平臺續費一年</string>
+    <string name="gps_platform_item_1">gps_platform_item_1</string>
+    <string name="gps_platform_test_item_1">gps_platform_test_item_1</string>
+    <string name="google_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjyaraPX9d6jxefgPj/BLvIi6Cb7/joe3gR59AxdtZuNbVNmiAhbpPEkIWkea6hptKscOgL55D/7xJWHnX+uQ9yHDkZimq+fjdBKl1gfwNhfniuWn5BKXujmh8GyX73NgSiniJRu4QiNzpG65bBiteWuigOmzI9LG2o0LjKhh4Sit5FtpEuDath/+NDzSfN3Y1I83feNI6UqA2O06+t829NU/gS6sZCG20PO8Xhftn6zJHMY+ipgA/rgOyHFWm+1DdazierOY3DB0EnKVWuwzSV9Vkz/6sy4JEtN+rFE9RdL4vi9posXzxt8kRsb+DfEtg/QN3IhDk/qFmKgJbsUL+QIDAQAB</string>
+
+    <!-- bind -->
+    <string name="bind_device_imei_hint">請輸入設備號</string>
+    <string name="bind_device_pwd_hint">請輸入設備密碼</string>
+    <string name="bind_device_btn">綁定</string>
+
+    <!-- qrcode scanner -->
+    <string name="qrcode_scanner">掃描二維碼</string>
+    <string name="qrcode_scanner_tips">將二維碼/條碼放入框內，即可自動掃描</string>
+    <string name="qrcode_scanner_flash_open">輕點照亮</string>
+    <string name="qrcode_scanner_flash_close">輕點關閉</string>
+
+    <!-- chat -->
+    <string name="chat_send">發送</string>
+    <string name="chat_record_normal">按住&#160;&#160;&#160;&#160;說話</string>
+    <string name="chat_recording">松開&#160;&#160;&#160;&#160;結束</string>
+    <string name="chat_record_cancel">松開&#160;&#160;&#160;&#160;取消</string>
+    <string name="chat_other_message">[未知信息]</string>
+    <string name="chat_item_photo">照片</string>
+    <string name="chat_item_camera">拍攝</string>
+    <string name="chat_resend">重發消息</string>
+
+    <!-- send order -->
+    <string name="send_order_type">恢復油電</string>
+    <string name="send_order_type2">斷油電</string>
+    <string name="send_order_type3">設防</string>
+    <string name="send_order_type4">撤防</string>
+    <string name="send_order_type5">遠程重啟</string>
+    <string name="main_control_num">主控號碼</string>
+    <string name="send_order_type6">強制定位</string>
+    <string name="sos_num">SOS號碼</string>
+    <string name="passthrough">透傳</string>
+
+    <!-- nearby navi -->
+    <string name="nearby_navi_type">停車場</string>
+    <string name="nearby_navi_type2">銀行</string>
+    <string name="nearby_navi_type3">美食</string>
+    <string name="nearby_navi_type4">酒店</string>
+    <string name="nearby_navi_type5">加油站</string>
+    <string name="nearby_navi_type6">醫院</string>
+    <string name="nearby_navi_type7">公交站</string>
+    <string name="nearby_navi_type8">超市</string>
+    <string name="nearby_navi_type9">娛樂場</string>
+
+    <!-- offline map -->
+    <string name="city_list">城市列表</string>
+    <string name="download_manager">下載管理</string>
+
+    <!-- url -->
+    <string name="image_thumb_url">http://lineliao.com:8088/file/%1$s/images/%2$s_Thumb</string>
+    <string name="image_url">http://lineliao.com:8088/file/%1$s/images/%2$s</string>
+
+    <!-- trackcar  -->
+    <!-- home -->
+    <string name="home_trip_report">旅程報表</string>
+    <string name="home_summary_record">歷史記錄</string>
+    <string name="home_fuel_report">油量報告</string>
+    <string name="home_device_setting">設定參數</string>
+    <string name="home_e_message">發送消息</string>
+    <string name="home_alarm_record">報警列表</string>
+    <string name="home_user_setting">用戶設置</string>
+    <string name="home_sports_report">運動報表</string>
+
+    <!-- common -->
+    <string name="common_type_first">停車</string>
+    <string name="common_type_second">恢復</string>
+    <string name="common_type_third">開門</string>
+    <string name="common_type_forth">關門</string>
+    <string name="common_type_fifth">啟動</string>
+    <string name="common_type_sixth">尋車</string>
+    <string name="common_type_seventh">報警提醒</string>
+    <string name="common_type_eightth">拍照</string>
+    <string name="common_result_wait">等待發送</string>
+    <string name="common_result_sending">發送中</string>
+    <string name="common_result_sent">已發送</string>
+    <string name="common_result_fail">發送失敗</string>
+
+    <!-- device setting -->
+    <string name="device_setting_type_first">設置授權號碼</string>
+    <string name="device_setting_type_second">設置超速報警的速度值</string>
+    <string name="device_setting_type_third">設置移動報警</string>
+    <string name="device_setting_type_fourth">停車（10km執行）</string>
+    <string name="device_setting_type_fifth">總的輸出控製（沒有速度限製）</string>
+    <string name="device_setting_type_sixth">設置監聽號碼</string>
+    <string name="device_setting_type_seventh">設置時區</string>
+    <string name="device_setting_type_eightth">設置角度</string>
+    <string name="device_setting_type_ninth">設置距離值</string>
+    <string name="device_setting_type_tenth">拍照</string>
+    <string name="device_setting_type_eleventh">設置RFID號碼</string>
+    <string name="device_setting_type_twelfth">設置時間間隔</string>
+    <string name="unit_metre">米</string>
+    <string name="device_setting_close_over_speed">關閉超速報警</string>
+    <string name="device_setting_view">查看</string>
+    <string name="device_setting_close_movement">關閉移動報警</string>
+    <string name="device_setting_key_no">按鍵序號</string>
+
+    <!-- sport report -->
+    <string name="report_data">日期</string>
+    <string name="ride_human">人力騎行(小時)</string>
+    <string name="ride_pas">助力騎行(小時)</string>
+    <string name="ride_odometer">里程(Km)</string>
+    <string name="ride_calorie">卡路里(卡)</string>
+
+    <!-- history record -->
+    <string name="report_time">時間</string>
+    <string name="history_record_latlng">經緯度</string>
+    <string name="history_record_direct">方向</string>
+    <string name="history_record_speed">速度</string>
+    <string name="history_record_fuel">油量</string>
+    <string name="history_record_mileage">里程</string>
+    <string name="history_record_temp">溫度</string>
+    <string name="history_record_alarm">報警</string>
+    <string name="history_record_status">ACC狀態</string>
+
+    <!-- trip report -->
+    <string name="trip_report_fuel">消耗油量</string>
+    <string name="trip_report_avg_speed">平均速度</string>
+    <string name="trip_report_max_speed">最大速度</string>
+
+    <!-- alarm report -->
+    <string name="alarm_report_content">報警信息</string>
+    <string name="expire_time_prompt">你的賬號還有%s天就到期了，請及時續費！</string>
+
+    <!-- appointment parameter -->
+    <string name="recording_mode">記錄模式</string>
+    <string name="preset_params_custom_mode">自定義模式</string>
+    <string name="pigeon_ring_number">鴿環編號</string>
+    <string name="appointment_parameter">預約設定</string>
+    <string name="please_select_schedule_start_time">請選擇預約開機時間</string>
+    <string name="schedule_start_time_cannot_be_earlier_than_the_current_time">預約開機時間不能早於當前時間</string>
+    <string name="please_select_a_recording_mode">請選擇記錄模式</string>
+    <string name="please_select_at_least_one_device_to_apply_this_configuration">請至少選擇一個設備應用此配置</string>
+
+    <!-- trajectory analysis -->
+    <string name="trajectory_analysis">軌跡分析</string>
+
+    <!-- blue tooth -->
+    <string name="blue_tooth">藍牙資料傳輸</string>
+    <string name="blue_tooth_searching">搜索中</string>
+    <string name="blue_tooth_connecting">連接中</string>
+    <string name="blue_tooth_connect_success">連接成功</string>
+    <string name="blue_tooth_connect_time">藍牙連接時間:%s</string>
+    <string name="blue_tooth_disconnect_time">藍牙斷開時間:%s</string>
+    <string name="blue_tooth_upload_status">傳輸狀態:%s</string>
+    <string name="blue_tooth_upload_record">傳輸記錄:%d/%d</string>
+    <string name="blue_tooth_status_first">等待連接</string>
+    <string name="blue_tooth_status_second">傳輸中</string>
+    <string name="blue_tooth_status_third">獲取配置信息</string>
+    <string name="blue_tooth_status_fourth">已完成</string>
+    <string name="blue_tooth_status_fifth">已斷開連接</string>
+    <string name="blue_tooth_data_check">查看</string>
+    <string name="blue_tooth_data_prompt">有%d個定位數據需要補傳，在停留本頁面時將自動上傳</string>
+    <string name="blue_tooth_reset">恢復出廠設置</string>
+
+    <!-- Ble scan error messages -->
+    <string name="error_bluetooth_not_available">Bluetooth is not available</string>
+    <string name="error_bluetooth_disabled">Enable bluetooth and try again</string>
+    <string name="error_location_permission_missing">On Android 6.0 location permission is required. Please enable it in phone settings</string>
+    <string name="error_location_services_disabled">Location services need to be enabled on Android 6.0</string>
+    <string name="error_scan_failed_already_started">Scan with the same filters is already started</string>
+    <string name="error_scan_failed_application_registration_failed">Failed to register application for bluetooth scan</string>
+    <string name="error_scan_failed_feature_unsupported">Scan with specified parameters is not supported</string>
+    <string name="error_scan_failed_internal_error">Scan failed due to internal error</string>
+    <string name="error_scan_failed_out_of_hardware_resources">Scan cannot start due to limited hardware resources</string>
+    <string name="error_undocumented_scan_throttle">Android 7+ does not allow more scans.</string>
+    <string name="error_undocumented_scan_throttle_retry">Try in %d seconds</string>
+    <string name="error_bluetooth_cannot_start">Unable to start scanning</string>
+    <string name="error_unknown_error">Unknown error</string>
+
+    <!-- device list -->
+    <string name="device_list_selector_all">全部</string>
+    <string name="device_list_selector_usable">可用</string>
+    <string name="device_list_selector_lost">飛丟</string>
+    <string name="device_list_selector_unbound">已解綁</string>
+    <string name="device_list_selector_unbind">解綁</string>
+    <string name="device_list_selector_activated">開通</string>
+    <string name="device_list_selector_not_active">未開通</string>
+    <string name="device_list_selector_find">找回</string>
+    <string name="device_list_selector_expire">期限</string>
+    <string name="device_list_ring_no">鴿環編號:%s</string>
+    <string name="device_list_selector_activated_time">開通時間:%s</string>
+    <string name="device_list_selector_expire_time">使用期到:%s</string>
+    <string name="device_list_selector_bind_time">綁定時間:%s</string>
+    <string name="device_list_selector_unbind_time">解綁時間:%s</string>
+    <string name="device_list_selector_lose_time">飛丟時間:%s</string>
+    <string name="device_list_selector_retrieve_time">找回時間:%s</string>
+    <string name="device_list_selector_last_gps_time">最後定位時間:%s</string>
+    <string name="device_list_expire_date_select">選擇使用期</string>
+    <string name="device_list_expire_date_prompt">使用期間即將到期\n請與經銷商聯繫續費\n延長使用</string>
+    <string name="device_list_expire_date_pass_prompt">使用期間已到期\n請與經銷商聯繫續費\n延長使用</string>
+    <string name="device_list_race_status">當前模式:%s</string>
+
+    <!-- hint -->
+    <string name="hint_sos_num">SOS號碼1</string>
+    <string name="hint_sos_num_second">SOS號碼2</string>
+    <string name="hint_wiretapping_num">請輸入監聽號碼</string>
+    <string name="hint_auth_num_first">請輸入授權號碼1</string>
+    <string name="hint_auth_num_second">請輸入授權號碼2</string>
+    <string name="hint_rfid_num_first">請輸入RFID號碼1</string>
+    <string name="hint_rfid_num_second">請輸入RFID號碼2</string>
+    <string name="hint_rfid_num_third">請輸入RFID號碼3</string>
+    <string name="hint_rfid_num_fourth">請輸入RFID號碼4</string>
+    <string name="hint_rfid_num_fifth">請輸入RFID號碼5</string>
+    <string name="hint_phone_num">請輸入手機號碼</string>
+    <string name="hint_message">請輸入消息內容</string>
+
+    <!-- tips -->
+    <string name="no_read_phone_state_permission">拒絕讀取本機識別碼</string>
+    <string name="no_camera_permission">拒絕開啟攝像頭所需的權限</string>
+    <string name="no_record_permission">拒絕錄音所需的權限</string>
+    <string name="server_empty_tips">請輸入網站地址</string>
+    <string name="username_empty_tips">請輸入用戶名或ID號</string>
+    <string name="car_no_empty_tips">請輸入ID號</string>
+    <string name="pwd_empty_tips">請輸入密碼</string>
+    <string name="loading_tips">加載中，請稍等&#8230;</string>
+    <string name="requesting_tips">請求中，請稍等&#8230;</string>
+    <string name="logining_tips">正在登入，請稍等&#8230;</string>
+    <string name="login_success_tips">登入成功</string>
+    <string name="login_pwd_error_tips">登入密碼錯誤</string>
+    <string name="login_pwd_change_tips">登入密碼已變更，請重新登入</string>
+    <string name="no_gps_tips">沒有定位信息</string>
+    <string name="no_history_tips">該時間段無歷史軌跡記錄</string>
+    <string name="no_mileage_tips">該時間段無里程記錄</string>
+    <string name="no_stop_tips">該時間段無停靠記錄</string>
+    <string name="set_error_tips">設置失敗</string>
+    <string name="no_device_tips">沒有綁定設備</string>
+    <string name="query_error_tips">查詢失敗</string>
+    <string name="input_now_pwd_tips">請輸入原密碼</string>
+    <string name="input_new_pwd_tips">請輸入新密碼</string>
+    <string name="input_repwd_error_tips">您輸入的兩次新密碼不一致</string>
+    <string name="input_now_pwd_error_tips">您輸入的原密碼錯誤</string>
+    <string name="add_error_tips">添加失敗</string>
+    <string name="edit_error_tips">編輯失敗</string>
+    <string name="del_error_tips">刪除失敗</string>
+    <string name="edit_success_tips">修改成功</string>
+    <string name="rename_error_tips">該名稱已存在，請換一個名稱</string>
+    <string name="loginout_tips">您確定要註銷嗎？</string>
+    <string name="electronic_name_empty_tips">請輸入電子圍欄名稱</string>
+    <string name="no_support_google_tips">不支持使用Google&#160;&#160;Map</string>
+    <string name="empty_data_electronic_tips">目前沒有電子圍欄信息</string>
+    <string name="empty_data_message_tips">目前沒有報警信息</string>
+    <string name="empty_data_device_tips">目前沒有設備信息</string>
+    <string name="empty_data_mileage_tips">目前沒有里程信息</string>
+    <string name="empty_data_stop_tips">目前沒有停靠信息</string>
+    <string name="empty_data_tips">目前沒有數據</string>
+    <string name="bind_device_success_tips">綁定成功!</string>
+    <string name="bind_device_error_tips">綁定失敗!</string>
+    <string name="bind_device_imei_error_tips">設備不存在，請重試!</string>
+    <string name="bind_device_pwd_error_tips">設備密碼不正確，請重試!</string>
+    <string name="bind_device_rebind_tips">已綁定該設備，不允許重復綁定!</string>
+    <string name="unbind_device_success_tips">解綁成功!</string>
+    <string name="unbind_device_error_tips">解綁失敗!</string>
+    <string name="unbind_device_nobind_tips">您未綁定該設備，解綁失敗!</string>
+    <string name="chat_delete_all_message_tips">您確認要刪除該設備本地的所有消息記錄嗎？</string>
+    <string name="module_no_opening_tips">該功能尚未開放</string>
+    <string name="send_order_tips">請確認是否需要發送%s指令</string>
+    <string name="check_download_offline_package">確認要下載&#160;%s&#160;的離線包嗎？</string>
+    <string name="check_del_offline_package">確認要刪除&#160;%s&#160;的離線包嗎？</string>
+    <string name="send_success_tips">發送成功!</string>
+    <string name="photo_uploading_tips">圖片正在上傳中</string>
+    <string name="upload_success_tips">上傳成功!</string>
+    <string name="upload_error_tips">上傳失敗!</string>
+    <string name="request_token_expired_prompt">登入信息已過期</string>
+    <string name="bind_success_agent_prompt">綁定成功：綁定設備請聯繫經銷商開通後才可以正常使用</string>
+    <string name="activated_device_prompt">是否將設備%s(%s)開通?</string>
+    <string name="activated_device_success_prompt">開通成功</string>
+    <string name="select_device_prompt">至少選擇一個設備</string>
+    <string name="update_expire_date_prompt">是否更新設備%s(%s)的使用期?</string>
+
+    <!-- crash error -->
+    <string name="customactivityoncrash_error_activity_error_occurred_explanation">發生了意外錯誤。不便之處，敬請原諒。</string>
+    <string name="customactivityoncrash_error_activity_restart_app">重啟&#160;&#160;APP</string>
+    <string name="customactivityoncrash_error_activity_close_app">關閉&#160;&#160;APP</string>
+    <string name="customactivityoncrash_error_activity_error_details">顯示錯誤詳情</string>
+    <string name="customactivityoncrash_error_activity_error_details_title">顯示錯誤詳情</string>
+    <string name="customactivityoncrash_error_activity_error_details_close">關閉</string>
+    <string name="customactivityoncrash_error_activity_error_details_copy">復制到剪切板</string>
+    <string name="customactivityoncrash_error_activity_error_details_copied">復制到剪切板</string>
+    <string name="customactivityoncrash_error_activity_error_details_clipboard_label">錯誤信息</string>
+
+
+    <string name="add_device_new">添加設備</string>
+    <string name="switch_device_new">切換設備</string>
+    <string name="unbind_device_new">解綁設備</string>
+    <string name="device_qrcode_new">設備二維碼</string>
+    <string name="scan_qrcode_new">掃描設備二維碼</string>
+    <string name="scan_qrcode_prompt_new">將設備二維碼對準框內，即可掃描</string>
+
+
+    <string name="map">地圖</string>
+    <string name="map_title">地圖</string>
+    <string name="home">首頁</string>
+    <string name="map_center">即時地圖</string>
+    <string name="device_number">設備號碼</string>
+    <string name="scan_bind_device_new">掃碼綁定設備</string>
+    <string name="change_device_prompt">請填寫正確的設備號碼，號碼填寫錯誤可能導致無法正常使用。</string>
+    <string name="login_out_prompt_new">退出登入後不會刪除任何設備或App的數據，確定退出嗎？</string>
+    <string name="hour_new">時</string>
+    <string name="minute_new">分</string>
+    <string name="second_new">秒</string>
+    <string name="add_server_address_title">添加服務器地址</string>
+    <string name="device_list">設備列表</string>
+    <string name="meter">米</string>
+    <string name="kilometer">公里</string>
+    <string name="kilometerPerHour">公里/小時</string>
+
+    <string name="pigeon_ring">鴿環</string>
+    <string name="number_of_foot_ring_prompt">輸入脚環的編號</string>
+    <string name="number">編號</string>
+    <string name="nickname">昵稱</string>
+    <string name="plumage_color">羽色</string>
+    <string name="operation">操作</string>
+    <string name="number_of_pigeon_ring">鴿環編號</string>
+    <string name="my_smart_pigeon_ring">我的智能鴿環</string>
+    <string name="enter_number_of_pigeon">請輸入鴿子編號</string>
+    <string name="enter_nickname_of_pigeon">請輸入鴿子昵稱</string>
+    <string name="enter_color_of_plumage">請輸入羽色</string>
+    <string name="cannot_empty_prompt">不能爲空</string>
+    <string name="add_pigeon">添加賽鴿</string>
+    <string name="delete_pigeon_ring_prompt">是否刪除當前鴿環設備</string>
+    <string name="pigeon">賽鴿</string>
+    <string name="delete_pigeon_prompt">是否刪除當前賽鴿</string>
+    <string name="cannot_find_pigeon_by_number_prompt">無法找到該編號的賽鴿</string>
+    <string name="race_live_broadcast">比賽直播</string>
+    <string name="delete_server_address">删除當前伺服器地址</string>
+    <string name="unnamed">未命名</string>
+    <string name="choose_color_of_polyline">選擇軌跡線顏色</string>
+    <string name="change_a_batch_of_color">換一批顏色</string>
+    <string name="live_broadcast">直播</string>
+    <string name="live_broadcast_list">直播清單</string>
+    <string name="device_power">電量</string>
+    <string name="device_nickname">昵稱:%s</string>
+    <string name="track_playback">軌跡回放</string>
+
+    <string name="which_devices_be_shown">選擇要顯示的設備</string>
+    <string name="selected_device_cannot_be_hidden">不可隱藏選中的設備</string>
+
+    <string name="start_downloading_ephemeris_time">開始下載星曆時間</string>
+    <string name="delay_start_time_of_game">比賽延遲開始時間</string>
+    <string name="scheduled_start_time">預約開機時間</string>
+    <string name="positioning_frequency">定位頻率</string>
+    <string name="upload_frequency">上傳頻率</string>
+    <string name="data_upload_start_time">數據上傳啟動時間</string>
+    <string name="low_battery_threshold">低電量門限</string>
+    <string name="second_stage_start_time">第二段開始時間</string>
+    <string name="second_stage_end_time">第二段結束時間</string>
+    <string name="positioning_frequency_in_second_stage">第二段定位頻率</string>
+    <string name="data_upload_frequency_in_second_stage">第二段數據上傳頻率</string>
+    <string name="positioning_frequency_in_third_stage">第三段定位頻率</string>
+    <string name="data_upload_frequency_in_third_stage">第三段數據上傳頻率</string>
+    <string name="positioning_frequency_in_low_battery_mode">低電量模式定位頻率</string>
+    <string name="data_upload_frequency_in_low_battery_mode">低電量模式上傳頻率</string>
+    <string name="Continue_the_last_race_data">續傳上次比賽數據</string>
+    <string name="clear_the_last_race_data">清除上次比賽數據</string>
+    <string name="race_number">比賽編號</string>
+    <string name="configuration_data_modification_time">上充電座參數更新成功時間</string>
+    <string name="position_frequency_unit">分鐘/次</string>
+    <string name="enter_positioning_frequency_hint">請輸入定位頻率</string>
+    <string name="update_time_later_than_now">你已修改送出參數，請將設備拔出再重新上充電座，等待設備閃綠燈，配置數據下發時間：變更為當前時間，此時修改的參數才生效，請確認。</string>
+    <string name="frequency">頻率</string>
+    <string name="threshold">閥值</string>
+    <string name="enter_range_1_to_100">輸入範圍為1&#8211;100</string>
+    <string name="update_succeed_prompt">更新成功</string>
+    <string name="update_failed_prompt">更新失敗</string>
+    <string name="discard_modification_prompt">是否放弃修改並退出</string>
+    <string name="modify_and_send_out">修改送出</string>
+    <string name="set_value_to_empty">設為空值</string>
+    <string name="make_modification">進行修改</string>
+    <string name="point_count">點數</string>
+    <string name="valid_end_time">有效結束時間</string>
+    <string name="valid_point_count">有效點數</string>
+    <string name="total_time">總時長</string>
+    <string name="position_frequency_too_high_prompt">定位頻率太高，最多兩分鐘一次</string>
+    <string name="whether_delete_flight_training_plan">是否删除該訓飛計畫</string>
+    <string name="delete_succeed_prompt">删除成功</string>
+    <string name="during_this_period_no_flight_training_tips">該段時間無訓飛軌跡</string>
+    <string name="configuration_cannot_be_modified_in_race_mode_prompt">比賽模式不能更改配置參數</string>
+    <string name="track_information">開始時間:%1$s\n結束時間:%2$s\直線距離:%3$s\n總定位點數:%4$s\n總時長:%5$s</string>
+    <string name="first_location_time">第一次定位時間</string>
+    <string name="track_info_prompt">軌跡基礎資訊</string>
+    <string name="track_sharing_circle">軌跡分享圈</string>
+    <string name="share">分享</string>
+    <string name="enter_the_content_what_wnat_to_share_prompt">請輸入想要分享的內容</string>
+    <string name="share_to_track_sharing_circle">分享至軌跡圈</string>
+    <string name="post">發送</string>
+    <string name="failed_to_load_data">獲取數據失敗</string>
+    <string name="content">內容</string>
+    <string name="device_imei_new">設備號</string>
+    <string name="input_device_imei_prompt">請輸入裝置綁定號</string>
+    <string name="cannot_find_out_any_device_prompt">蒐索不到設備，請檢查輸入的設備號後重新搜索</string>
+    <string name="latitude">緯度</string>
+    <string name="longitude">經度</string>
+    <string name="straight_line_distance">直線距離</string>
+    <string name="count_views">流覽次數</string>
+    <string name="whether_delete_track_prompt">是否删除此軌跡</string>
+    <string name="create_pigeon_competition">創建比賽</string>
+    <string name="competition_time">比賽時間</string>
+    <string name="competition_name">比賽名稱</string>
+    <string name="competition_start_and_end_point">比賽的起點與終點</string>
+    <string name="enter_the_name_of_competition_prompt">請輸入比賽名稱</string>
+    <string name="whether_delete_this_competition_prompt">是否删除該比賽</string>
+    <string name="start_point_longitude">起點經度</string>
+    <string name="start_point_latitude">起點緯度</string>
+    <string name="end_point_longitude">終點緯度</string>
+    <string name="end_point_latitude">終點緯度</string>
+    <string name="rule_valid_range_of_longitude">經度值有效範圍為-180到180之間</string>
+    <string name="rule_valid_range_of_latitude">緯度值有效範圍為-90到90之間</string>
+    <string name="race_information">比賽資訊</string>
+    <string name="manage_competition">賽事管理</string>
+    <string name="succeed">成功</string>
+    <string name="failed">失敗</string>
+    <string name="private_mode">個人模式</string>
+    <string name="competition_mode">比賽模式</string>
+    <string name="competition_parameter">賽事參數</string>
+    <string name="manage_device_of_competition">賽事設備管理</string>
+    <string name="whether_delete_this_device_from_the_competition_prompt">是否從比賽中删除此設備</string>
+    <string name="location_refresh_interval">定位重繪間隔</string>
+    <string name="set_location_refresh_interval">設定定位重繪間隔</string>
+    <string name="set_positioning_refresh_interval_prompt">設定定位重繪間隔(15&#8211;300)秒</string>
+    <string name="whether_capture_the_map_and_share_it_prompt">是否截取地圖並分享</string>
+    <string name="my">我的</string>
+    <string name="user_id">用戶ID</string>
+    <string name="create_time">創建時間:%s</string>
+    <string name="location_time">定位時間</string>
+    <string name="update_time">上傳時間</string>
+    <string name="positioning_points">定位點數</string>
+    <string name="fuel">油量</string>
+    <string name="weather">天氣</string>
+    <string name="pack_up">收起</string>
+    <string name="standby_time">前次離電時間</string>
+    <string name="total_positioning_time">定位總時長</string>
+    <string name="total_standby_time">待機總時長</string>
+    <string name="last_log_time">最後日誌時間</string>
+    <string name="please_enter_user_account">請輸入用戶賬號</string>
+    <string name="user_management">用戶管理</string>
+    <string name="device_management">設備管理</string>
+    <string name="unbind_succeed_prompt">成功解除綁定</string>
+    <string name="agent_sale_device_management">經銷設備管理</string>
+    <string name="dealer_manage">經銷商管理</string>
+    <string name="please_enter_the_reseller_user_account">請輸入經銷商用戶賬號</string>
+    <string name="precautions">注意事項</string>
+    <string name="precautions_of_pigeon_location_device">設備上充電座先亮紅燈\n再來紅綠閃：表示正在搜尋網路訊號\n之後閃綠燈：表示已搜尋到網路訊號並下載最新的配置參數設定；你會在配置資訊》裡面的配置數據修改時間〉那邊看到時間有更新；然後進行充電\n恆亮綠燈表示充飽電\n\n在充電座上有通電的狀況下是不定位的\n\n在配置資訊》設定預約開機時間〉設置為空值：從充電座拔起來或是離電插座把起來狀態就會開始搜尋定位\n\n如果有設置預約開啟時間：要注意從充電座拔起來的時間如果是在預約啟動時間之後那設備就不會工作，必須重新設定預約啟動時間》右上修改送出〉之後再把設備上充電座抓取最新參數，並且看配置數據修改時間有沒有變更\n\n設備要在戶外鴿子身上或放在車子外面才抓的到定位如果在室內抓不到定位並且會非常耗電很快就沒電了</string>
+    <string name="log_off">註銷帳號</string>
+    <string name="account_cancellation_succeed">帳號註銷成功</string>
+    <string name="confirm_account_cancellation">确认註銷帳號</string>
+    <string name="hint_account_cancellation">注意!帳號註銷後無法恢復,請確認是否馬上註銷帳號</string>
+    <string name="word_default">默認</string>
+    <string name="invalid_imei_number">IMEI碼無效，請重新掃描</string>
+    <string name="camera_permission_is_denied">無相機許可權，打開相機出錯</string>
+    <string name="log_time">日誌時間</string>
+    <string name="distance_from_previous_point">距上一點距離</string>
+    <string name="time_from_previous_point">距上一點時間</string>
+    <string name="cumulative_distance">累積里程</string>
+    <string name="cumulative_time">累積時間</string>
+    <string name="direction">方向</string>
+    <string name="signal_intensity">信號強度</string>
+    <string name="altitude">海拔高度</string>
+    <string name="flight_lost">飛丟</string>
+    <string name="unbind_shrank">解綁</string>
+    <string name="retrieve">找回</string>
+    <string name="tip_mark_as_lost">是否將該設備標記為已遺失</string>
+    <string name="tip_mark_as_found">是否將該設備標記為已找回</string>
+    <string name="select_which_device_update">選擇更改配寘的設備</string>
+    <string name="speed_per_minute">分速</string>
+    <string name="speed_per_hour">時速</string>
+    <string name="average_speed_per_minute">平均分速</string>
+    <string name="average_speed_per_hour">平均時速</string>
+    <string name="meter_per_minute">米/分鐘</string>
+    <string name="dealer">經銷商</string>
+    <string name="enter_dealer_account">請輸入經銷商帳號</string>
+    <string name="add_subordinate_dealer">添加下級經銷商</string>
+    <string name="enter_password">請輸入密碼</string>
+    <string name="passwords_inconsistent">輸入的密碼不一致</string>
+    <string name="create_and_bind_dealer_account">創建并綁定經銷商帳號</string>
+    <string name="switch_to_sub_dealer_account_tip">是否切換到此經銷商帳號</string>
+    <string name="user_no_bound_device_tips">用戶未綁定設備，請先綁定設備</string>
+    <string name="login_to_subordinate_dealer_account">登入到子經銷商帳號</string>
+    <string name="remove_subordinate_dealer_tip">是否移除此經銷商</string>
+    <string name="remove_sub_dealer_succeed">成功移除經銷商</string>
+    <string name="create">創建</string>
+    <string name="add">添加</string>
+    <string name="create_dealer_account_succeed">成功創建經銷商帳號</string>
+    <string name="expand">展開</string>
+    <string name="collapse">折疊</string>
+    <string name="device_version">設備版本</string>
+    <string name="no_unbind_permission">无解綁許可權</string>
+    <string name="invalid_position">無效定位</string>
+    <string name="base_station">基站</string>
+    <string name="base_station_nb">NB基站定位</string>
+    <string name="communication_time">通訊時間</string>
+    <string name="satellite_num">衛星數</string>
+    <string name="charge_status">正在充電中</string>
+    <string name="set_position_interval">設置定位間隔</string>
+    <string name="restart_device">重啟設備</string>
+    <string name="shut_down_device">設備關機</string>
+    <string name="immedial_location_device">立即定位設備</string>
+    <string name="find_device_end">停止查找設備</string>
+    <string name="hint_set_position_interval">請輸入0-1440分鐘</string>
+    <string name="unit_minute">(單位/分鐘)</string>
+    <string name="pet_location_type_first">精確定位：持續定位,功耗大</string>
+    <string name="pet_location_type_second">省電模式：%d分鐘/次</string>
+    <string name="pet_location_type_third">睡眠模式：一直待機,超級省電</string>
+    <string name="pet_location_mode_first">精確定位</string>
+    <string name="pet_location_mode_third">睡眠模式</string>
+    <string name="track_mode">軌跡</string>
+    <string name="device_type">設備類型</string>
+    <string name="activated_status">激活狀態</string>
+    <string name="activated_time">激活時間</string>
+    <string name="expire_time">有效期</string>
+    <string name="bind_time">綁定時間</string>
+    <string name="unbind_time">解綁時間</string>
+    <string name="lose_time">飛丟時間</string>
+    <string name="retrieve_time">找回時間</string>
+    <string name="last_gps_time">最後定位時間</string>
+    <string name="guarantee_time">保固期</string>
+    <string name="guarantee_time_limit">保固期限</string>
+    <string name="expire_time_limit">有效期限</string>
+    <string name="device_list_selector_guarantee_time">保固期到:%s</string>
+    <string name="device_list_guarantee_date_select">選擇保固期</string>
+    <string name="update_guarantee_date_prompt">是否更新設備%s(%s)的保固期?</string>
+    <string name="online_status">在線狀態</string>
+    <string name="track_mode_show">顯示軌跡</string>
+    <string name="track_mode_hide">隱藏軌跡</string>
+    <string name="location_mode_gps">顯示GPS定位</string>
+    <string name="location_mode_base_station">顯示基站定位</string>
+    <string name="location_card_show">顯示設備信息</string>
+    <string name="location_card_hide">隱藏設備信息</string>
+    <string name="message_center">消息中心</string>
+    <string name="send_command_message">指令消息</string>
+    <string name="send_command_type_first">待發送</string>
+    <string name="send_command_type_second">已發送</string>
+    <string name="send_command_type_third">已確認</string>
+    <string name="send_command_type_fourth">已接收</string>
+    <string name="send_command_type_fifth">已回復</string>
+    <string name="pet_real_time">傳信鴿:即時</string>
+    <string name="update_race_status_first_prompt">是否將該設備設為個人模式</string>
+    <string name="update_race_status_second_prompt">是否將該設備設為比賽模式</string>
+
+<!--請求錯誤提示詞-->
+    <string name="tip_request_error">請求失敗,請稍後重試</string>
+    <string name="tip_account_permission">帳號許可權</string>
+    <string name="tip_internal_error">內部錯誤,請聯系管理員</string>
+    <string name="tip_request_parameter_error">請求參數錯誤</string>
+    <string name="tip_illegal_request">非法請求</string>
+    <string name="tip_token_has_expired">Token已過期,請重新登陸</string>
+    <string name="tip_token_in_request_header_cannot_be_empty">請求頭中的Token不允許為空</string>
+    <string name="tip_token_incorrect">請求頭中的Token出錯</string>
+    <string name="tip_user_not_logged_in">用戶未登錄,請於登陸後重試</string>
+    <string name="tip_user_id_in_request_header_cannot_be_empty">請求頭中的UserId不允許為空</string>
+    <string name="tip_user_id_incorrect">請求頭中的的UserId出錯</string>
+    <string name="tip_clientFlag_cannot_be_empty_in_request_header">請求頭中沒有clientFlag標記</string>
+    <string name="tip_clientFlag_only_equal_1_or_2">clientFlag標記只能等於1或2</string>
+    <string name="tip_no_session_in_request_header">請求頭中沒有session</string>
+    <string name="tip_verification_code_error">驗證碼錯誤</string>
+    <string name="tip_verification_code_expired_or_invalid">驗證碼不存在或者已失效</string>
+    <string name="tip_account_not_exist_or_password_incorrect">帳戶不存在或密碼不正確</string>
+    <string name="tip_user_does_not_exist">用戶不存在</string>
+    <string name="tip_device_does_not_exist">設備不存在</string>
+    <string name="tip_old_password_incorrect">舊密碼錯誤,請重新輸入</string>
+    <string name="tip_password_error">密碼錯誤,請重新輸入</string>
+    <string name="tip_device_cannot_bind_repeatedly">設備已綁定,請勿重複綁定</string>
+    <string name="tip_no_authorization_to_unbind">此設備為鴿棚專案,不允許解綁</string>
+    <string name="tip_no_authorization_to_operate">對不起,您無權操作該設備</string>
+
+
+</resources>

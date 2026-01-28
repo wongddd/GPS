@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="248dp"
+                android:background="@drawable/gradient_heart_rate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.xuexiang.xui.widget.tabbar.TabSegment
+                android:id="@+id/tabSegment"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:textSize="@dimen/simple_font"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:ts_mode="fixed"
+                app:ts_normal_color="@color/white"
+                app:ts_selected_color="@color/white"
+                app:ts_space="0dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabSegment" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clHeartRateNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_16"
+                app:layout_constraintEnd_toEndOf="@id/viewPager"
+                app:layout_constraintStart_toStartOf="@id/viewPager"
+                app:layout_constraintTop_toTopOf="@id/viewPager">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvHeartRateUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_rate_unit"
+                    android:textAppearance="@style/small_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvHeartRateNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_4"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvHeartRateUnit"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/small_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clHeartRateNum" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewPager">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clHeartAnalysis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvChart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:maxLines="1"
+                        android:text="@string/heart_rate_analysis_content"
+                        android:textAppearance="@style/edit_black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:maxLines="1"
+                        android:textAppearance="@style/normal_black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineHeartRate"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/line_size"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:background="@color/colorLine"
+                        app:layout_constraintEnd_toEndOf="@id/tvTime"
+                        app:layout_constraintStart_toStartOf="@id/tvChart"
+                        app:layout_constraintTop_toBottomOf="@id/tvChart" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/lineHeartRate"
+                        app:layout_constraintStart_toStartOf="@id/lineHeartRate"
+                        app:layout_constraintTop_toBottomOf="@id/lineHeartRate">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clTypeFirst"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTitleTypeFirst"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/heart_rate_type_first"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTimeTypeFirst"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="3"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                                android:id="@+id/mpbTypeFirst"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="@dimen/margin_4"
+                                android:progress="0"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTimeTypeFirst"
+                                app:layout_constraintStart_toEndOf="@id/tvTitleTypeFirst"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:mpb_progressBackgroundTint="#08000000"
+                                app:mpb_progressStyle="horizontal"
+                                app:mpb_progressTint="#FFD700"
+                                app:mpb_useIntrinsicPadding="false" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clTypeSecond"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/clTypeFirst">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTitleTypeSecond"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/heart_rate_type_second"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTimeTypeSecond"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="3"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                                android:id="@+id/mpbTypeSecond"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="@dimen/margin_4"
+                                android:progress="0"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTimeTypeSecond"
+                                app:layout_constraintStart_toEndOf="@id/tvTitleTypeSecond"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:mpb_progressBackgroundTint="#08000000"
+                                app:mpb_progressStyle="horizontal"
+                                app:mpb_progressTint="#FFA500"
+                                app:mpb_useIntrinsicPadding="false" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clTypeThird"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/clTypeSecond">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTitleTypeThird"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/heart_rate_type_third"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTimeTypeThird"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="3"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                                android:id="@+id/mpbTypeThird"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="@dimen/margin_4"
+                                android:progress="0"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTimeTypeThird"
+                                app:layout_constraintStart_toEndOf="@id/tvTitleTypeThird"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:mpb_progressBackgroundTint="#08000000"
+                                app:mpb_progressStyle="horizontal"
+                                app:mpb_progressTint="#FF8C00"
+                                app:mpb_useIntrinsicPadding="false" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clTypeForth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/clTypeThird">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTitleTypeForth"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/heart_rate_type_forth"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTimeTypeForth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="3"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                                android:id="@+id/mpbTypeForth"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="@dimen/margin_4"
+                                android:progress="0"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTimeTypeForth"
+                                app:layout_constraintStart_toEndOf="@id/tvTitleTypeForth"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:mpb_progressBackgroundTint="#08000000"
+                                app:mpb_progressStyle="horizontal"
+                                app:mpb_progressTint="#FF4500"
+                                app:mpb_useIntrinsicPadding="false" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/clTypeFifth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/clTypeForth">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTitleTypeFifth"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/heart_rate_type_fifth"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tvTimeTypeFifth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="3"
+                                android:textAppearance="@style/small_black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                                android:id="@+id/mpbTypeFifth"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="@dimen/margin_4"
+                                android:progress="0"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/tvTimeTypeFifth"
+                                app:layout_constraintStart_toEndOf="@id/tvTitleTypeFifth"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:mpb_progressBackgroundTint="#08000000"
+                                app:mpb_progressStyle="horizontal"
+                                app:mpb_progressTint="#FF0000"
+                                app:mpb_useIntrinsicPadding="false" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:background="@drawable/bg_heart_rate_info"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clHeartAnalysis">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvAnalysis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:text="@string/heart_rate_analysis"
+                        android:textColor="@color/health_heart_rate"
+                        android:textSize="@dimen/edit_font"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvQuiet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:text="@string/heart_rate_quiet"
+                        android:textColor="@color/health_heart_rate"
+                        android:textSize="@dimen/normal_font"
+                        app:layout_constraintEnd_toEndOf="@id/tvAnalysis"
+                        app:layout_constraintStart_toStartOf="@id/tvAnalysis"
+                        app:layout_constraintTop_toBottomOf="@id/tvAnalysis" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:text="@string/heart_rate_sport"
+                        android:textColor="@color/health_heart_rate"
+                        android:textSize="@dimen/normal_font"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvAnalysis"
+                        app:layout_constraintStart_toStartOf="@id/tvAnalysis"
+                        app:layout_constraintTop_toBottomOf="@id/tvQuiet" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/tracking_google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tracking_google_message_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:background="@drawable/translucent_white"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="@dimen/margin_4"
+        android:textAppearance="@style/simple_lightslategray"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_map_type_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:background="@drawable/map_type"
+        android:contentDescription=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tracking_google_message_content" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_locus_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/locus"
+        android:contentDescription=""
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/tracking_google_map_type_btn"
+        app:layout_constraintTop_toBottomOf="@id/tracking_google_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_zoom_out_btn"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:background="@drawable/zoom_out"
+        android:contentDescription=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tracking_google_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_zoom_in_btn"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:background="@drawable/zoom_in"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/tracking_google_zoom_out_btn"
+        app:layout_constraintEnd_toEndOf="@id/tracking_google_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_distance_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/location_distance"
+        android:contentDescription=""
+        app:layout_constraintBottom_toBottomOf="@id/tracking_google_zoom_out_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_mobile_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/location_mobile"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/tracking_google_distance_btn"
+        app:layout_constraintStart_toStartOf="@id/tracking_google_distance_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_google_car_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/location_car"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/tracking_google_mobile_btn"
+        app:layout_constraintStart_toStartOf="@id/tracking_google_distance_btn" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tracking_google_distance_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/map_alert_bg"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAppearance="@style/simple_black"
+        app:layout_constraintBottom_toBottomOf="@id/tracking_google_zoom_out_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tracking_google_count_down_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:maxLines="1"
+        android:textAppearance="@style/simple_lightslategray"
+        app:layout_constraintStart_toStartOf="@id/tracking_google_distance_btn"
+        app:layout_constraintTop_toBottomOf="@id/tracking_google_message_content" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ibControl"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/home_send_order"
+        android:contentDescription=""
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tracking_google_map_type_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

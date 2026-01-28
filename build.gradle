@@ -5,9 +5,9 @@ buildscript {
 //    ext.kotlin_version = '1.3.50'
     apply from: './versions.gradle'
     repositories {
-        google()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
+
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://oss.sonatype.org/content/repositories/public' }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/releases/' }
         maven { url 'https://developer.huawei.com/repo/' }
@@ -16,6 +16,9 @@ buildscript {
         maven {url 'https://maven.aliyun.com/repository/central'}
         maven {url "https://github.com/apache/maven"}
         maven {url "https://mvnrepository.com/"}
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 //    addRepos(repositories) //增加代码仓库
     dependencies {
@@ -54,13 +57,18 @@ buildscript {
 allprojects {
 //    addRepos(repositories)
     repositories {
-        google()
-        mavenCentral()
+
         maven { url "https://jitpack.io" }
         maven { url 'https://oss.sonatype.org/content/repositories/public' }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/releases/' }
         maven { url 'https://developer.huawei.com/repo/' }
         maven { url 'https://repo1.maven.org/maven2/'}
+        maven {url 'https://maven.aliyun.com/repository/public/'}
+        maven {url 'https://maven.aliyun.com/repository/central'}
+        maven {url "https://github.com/apache/maven"}
+        maven {url "https://mvnrepository.com/"}
+        google()
+        mavenCentral()
     }
 }
 

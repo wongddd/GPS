@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/tracking_map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/tracking_message_panel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/translucent_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tracking_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2dp"
+            android:maxLines="2"
+            android:minLines="1" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tracking_weather_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tracking_message_content"
+            android:layout_marginHorizontal="2dp"
+            android:maxLines="2" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_map_type_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_24"
+        android:background="@drawable/map_type"
+        android:contentDescription=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tracking_message_panel" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_locus_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/locus"
+        android:contentDescription=""
+        app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn"
+        app:layout_constraintTop_toBottomOf="@id/tracking_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_zoom_out_btn"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:background="@drawable/zoom_out"
+        android:contentDescription=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/tracking_zoom_in_btn"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:background="@drawable/zoom_in"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/tracking_zoom_out_btn"
+        app:layout_constraintEnd_toEndOf="@id/tracking_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tracking_count_down_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_24"
+        android:maxLines="1"
+        android:textAppearance="@style/simple_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tracking_message_panel" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tracking_distance_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/map_alert_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:maxLines="1"
+        android:textAppearance="@style/simple_black"
+        app:layout_constraintBottom_toBottomOf="@id/tracking_zoom_out_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/gray"
+        android:id="@+id/right_slide">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

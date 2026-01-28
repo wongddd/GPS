@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/dialog_border_default"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_number_of_pigeon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/enter_number_of_pigeon"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/dialog_border_default"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_nickname_of_pigeon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/enter_nickname_of_pigeon"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/dialog_border_default"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plumage_color"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_color_of_pigeon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:background="@null"
+            android:hint="@string/enter_color_of_plumage"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

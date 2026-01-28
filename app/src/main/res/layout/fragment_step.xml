@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="248dp"
+                android:background="@drawable/gradient_step"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.xuexiang.xui.widget.tabbar.TabSegment
+                android:id="@+id/tabSegment"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:textSize="@dimen/simple_font"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:ts_mode="fixed"
+                app:ts_normal_color="@color/white"
+                app:ts_selected_color="@color/white"
+                app:ts_space="0dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabSegment" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clStepNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_16"
+                app:layout_constraintEnd_toEndOf="@id/viewPager"
+                app:layout_constraintStart_toStartOf="@id/viewPager"
+                app:layout_constraintTop_toTopOf="@id/viewPager">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvStepUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/small_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvStepNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_4"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvStepUnit"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/small_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clStepNum" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clStepData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewPager">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStepMetre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/clStepCalorie"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ivStepMetre"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="@dimen/margin_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_step_metre" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvStepMetre"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/toolbar_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivStepMetre" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/metre"
+                        android:textAppearance="@style/small_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvStepMetre" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStepCalorie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/clStepTime"
+                    app:layout_constraintStart_toEndOf="@id/clStepMetre"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ivStepCalorie"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="@dimen/margin_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_step_calorie" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvStepCalorie"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/toolbar_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivStepCalorie" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/kilocalorie"
+                        android:textAppearance="@style/small_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvStepCalorie" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clStepTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/clStepCalorie"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/ivStepTime"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="@dimen/margin_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_step_time" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvStepTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/toolbar_title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivStepTime" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvStepTimeUnit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_4"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAppearance="@style/small_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvStepTime" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clStepPrompt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_step_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clStepData">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvStepPrompt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:text="@string/step_info_prompt"
+                    android:textColor="@color/health_step"
+                    android:textSize="@dimen/edit_font"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clSportData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clStepData">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clAnalysis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSportUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:maxLines="1"
+                        android:text="@string/effective_sport_unit"
+                        android:textAppearance="@style/normal_black"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvSportNum"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSportNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:maxLines="1"
+                        android:textColor="@color/health_step"
+                        android:textSize="28dp"
+                        app:layout_constraintEnd_toStartOf="@id/tvSportUnit"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:maxLines="1"
+                        android:text="@string/effective_sport"
+                        android:textAppearance="@style/edit_black"
+                        app:layout_constraintBottom_toBottomOf="@id/tvSportUnit"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clSportWeek"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvSport">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvSportWeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_2"
+                            android:maxLines="1"
+                            android:text="@string/effective_sport_week_num"
+                            android:textAppearance="@style/small_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvSportWeekNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_2"
+                            android:maxLines="1"
+                            android:textAppearance="@style/edit_black"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvSportWeek" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_2"
+                            android:layout_marginBottom="@dimen/margin_2"
+                            android:maxLines="1"
+                            android:text="@string/effective_sport_unit"
+                            android:textAppearance="@style/small_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvSportWeekNum" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/clSportRecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:maxLines="1"
+                        android:text="@string/effective_sport_recommend"
+                        android:textAppearance="@style/small_gray"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clSportWeek" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/bcSport"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clAnalysis" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:background="@drawable/bg_step_info"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bcSport">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvAnalysis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:text="@string/effective_sport_analysis"
+                        android:textColor="@color/health_step"
+                        android:textSize="@dimen/edit_font"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:text="@string/effective_sport_analysis_content"
+                        android:textColor="@color/health_step"
+                        android:textSize="@dimen/normal_font"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/tvAnalysis"
+                        app:layout_constraintStart_toStartOf="@id/tvAnalysis"
+                        app:layout_constraintTop_toBottomOf="@id/tvAnalysis" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clStepPrompt">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvTestTrend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:text="@string/step_test_trend"
+                    android:textAppearance="@style/edit_black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/line_size"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:background="@color/colorLine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvTestTrend"
+                    app:layout_constraintTop_toBottomOf="@id/tvTestTrend" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/line"
+                    app:layout_constraintStart_toStartOf="@id/line"
+                    app:layout_constraintTop_toBottomOf="@id/line">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clFirst"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/clSecond"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbFirst"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvFirst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbFirst" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clSecond"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/clThird"
+                        app:layout_constraintStart_toEndOf="@id/clFirst"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbSecond"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvSecond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbSecond" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clThird"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/clForth"
+                        app:layout_constraintStart_toEndOf="@id/clSecond"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbThird"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvThird"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbThird" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clForth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/clFifth"
+                        app:layout_constraintStart_toEndOf="@id/clThird"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbForth"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvForth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbForth" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clFifth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/clSixth"
+                        app:layout_constraintStart_toEndOf="@id/clForth"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbFifth"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvFifth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbFifth" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clSixth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/clSeventh"
+                        app:layout_constraintStart_toEndOf="@id/clFifth"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbSixth"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvSixth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbSixth" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/clSeventh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/clSixth"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.xuexiang.xui.widget.progress.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/mpbSeventh"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:indeterminate="false"
+                            android:indeterminateOnly="false"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:mpb_progressBackgroundTint="@color/health_step_second"
+                            app:mpb_progressTint="@color/red"
+                            app:mpb_showProgressBackground="true" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvSeventh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:textAppearance="@style/min_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mpbSeventh" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

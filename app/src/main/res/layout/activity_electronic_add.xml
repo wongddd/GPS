@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    tools:context=".ui.activity.ElectronicAddActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/include_toolbar" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/electronic_map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar" />
+
+    <SeekBar
+        android:id="@+id/electronic_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_16"
+        android:max="1900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/electronic_map_type_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@drawable/map_type"
+        android:contentDescription=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/electronic_seekbar" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/electronic_zoom_out_btn"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:background="@drawable/zoom_out"
+        android:contentDescription=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/electronic_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/electronic_zoom_in_btn"
+        android:layout_width="33dp"
+        android:layout_height="42dp"
+        android:background="@drawable/zoom_in"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/electronic_zoom_out_btn"
+        app:layout_constraintEnd_toEndOf="@id/electronic_map_type_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/electronic_distance_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/location_all"
+        android:contentDescription=""
+        app:layout_constraintBottom_toBottomOf="@id/electronic_zoom_out_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/electronic_mobile_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@drawable/location_mobile"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/electronic_distance_btn"
+        app:layout_constraintStart_toStartOf="@id/electronic_distance_btn" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/electronic_car_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/location_btn_appearance"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@id/electronic_mobile_btn"
+        app:layout_constraintStart_toStartOf="@id/electronic_distance_btn" />
+
+</android.support.constraint.ConstraintLayout>

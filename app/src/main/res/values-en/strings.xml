@@ -1,0 +1,1856 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="PrivateResource">TrackMasters</string>
+
+    <!-- shortcut -->
+    <string name="shortcut_label_setting">setting</string>
+
+    <!-- login -->
+    <string name="login_and_register">Login&amp;Register</string>
+    <string name="country_code">Country/Region</string>
+    <string name="pwd">Password</string>
+    <string name="login">Login</string>
+    <string name="phone_number">TEL</string>
+    <string name="forgot_pwd">Forget password</string>
+    <string name="mobile_unuse">The phone number is no longer use？</string>
+    <string name="register_mobile">Phone register</string>
+    <string name="register_email">Email register</string>
+    <string name="login_mobile">Phone login</string>
+    <string name="login_email">Email login</string>
+    <string name="login_account">Account login</string>
+    <string name="login_imei">IMEI login</string>
+    <string name="email">Email</string>
+    <string name="account">Account</string>
+    <string name="imei">IMEI</string>
+    <string name="language">Language</string>
+    <string name="select_language">Choose language</string>
+    <string name="language_type_first">中文简体</string>
+    <string name="language_type_second">English</string>
+    <string name="language_type_third">Indonesian</string>
+    <string name="language_type_fourth">Português</string>
+    <string name="language_type_fifth">Español</string>
+    <string name="language_type_sixth">中文繁體</string>
+    <string name="language_type_seventh">Tiếng Việt</string>
+    <string name="language_type_eighth">日本語</string>
+    <string name="language_type_ninth">русский язык</string>
+    <string name="language_type_tenth">اللغة العربية</string>
+    <string name="language_type_eleventh">Deutsch</string>
+    <string name="language_type_twelfth">Français</string>
+    <string name="server_address">Server</string>
+    <string name="select_server_address">Select server</string>
+    <string name="server_address_east">Eastern hemisphere</string>
+    <string name="server_address_west">Western hemisphere</string>
+    <string name="country_server">Area</string>
+    <string name="country_select_server">Select Area</string>
+    <string name="country_cn">Asia</string>
+    <string name="country_en">America</string>
+    <string name="country_asia">China</string>
+    <string name="country_europe">Europe</string>
+    <string name="country_asia_two">Asia-Pacific</string>
+    <string name="country_en_two">Europe/US</string>
+
+    <!-- register -->
+    <string name="register">Register</string>
+    <string name="parent_mobile_register">Phone register</string>
+    <string name="parent_mobile_register_prompt">Please input your mobile phone correctly</string>
+    <string name="register_protocol">Read and agree 《User Service Agreement》\nand 《Privacy Policy》</string>
+    <string name="read_and_agree">Read and agree</string>
+    <string name="and">and</string>
+    <string name="jion">Join</string>
+    <string name="user_service_agreement">《User Service Agreement》</string>
+    <string name="privacy_protocol">《Privacy Policy》</string>
+    <string name="user_experience">《User Experience Improvement Program》</string>
+
+    <!-- verification code -->
+    <string name="verification_code">Verification code</string>
+    <string name="xui_count_down_finish" tools:ignore="PrivateResource">Reacquire</string>
+    <string name="verification_code_input">Enter verification code</string>
+    <string name="verification_code_prompt">Please enter verification code</string>
+    <string name="no_receive_verification_code">Verification code not received？</string>
+    <string name="next_step">Next</string>
+    <string name="verification_code_to_max_prompt">Verification code send very frequently, please try again in 1 minute later</string>
+
+    <!-- set password -->
+    <string name="set_pwd">Setting login password</string>
+    <string name="set_pwd_prompt">Please set6&#8211;16 bits combination of letters and numbers</string>
+    <string name="complete">Complete</string>
+
+    <!-- country or area -->
+    <string name="china">China</string>
+    <string name="china_mobile_code">+86</string>
+    <string name="taiwan">Taiwan</string>
+    <string name="taiwan_mobile_code">+886</string>
+    <string name="country_code_often">Commonly used areas</string>
+    <string name="country_code_not_result">No results</string>
+
+    <!-- find pwd -->
+    <string name="find_login_pwd">Retrieve password</string>
+    <string name="find_pwd_mobile_prompt">Please enter phone number when you register</string>
+    <string name="find_pwd_email_prompt">Please enter email when you register</string>
+    <string name="find_pwd_email">Find back by email</string>
+    <string name="find_pwd_mobile">Find back by phone number</string>
+    <string name="find_pwd_prompt_mobile_title">Confirm phone number</string>
+    <string name="find_pwd_prompt_mobile_content">We will send SMS code to this number：%s</string>
+    <string name="find_pwd_prompt_email_title">Confirm email</string>
+    <string name="find_pwd_prompt_email_content">We will send code to this eamil：%s</string>
+
+    <!-- reset pwd -->
+    <string name="reset_pwd">Reset password</string>
+    <string name="reset_pwd_new">New password</string>
+    <string name="reset_pwd_confirm">Confirm password</string>
+
+    <!-- bind device -->
+    <string name="bind_device">Bind device</string>
+    <string name="bind_device_prompt">Please find bind number and scan it to bind</string>
+    <string name="not_found_device_bind_imei">Bind number was not found？</string>
+    <string name="find_bind_imei">Find bind number</string>
+    <string name="switch_account">Switch account</string>
+
+    <!-- camera capture -->
+    <string name="scan_qrcode">Scan device QR code</string>
+    <string name="album">Album</string>
+    <string name="no_support_flash_light_prompt">Device don\'t support flash LED</string>
+    <string name="scan_qrcode_prompt">Align QR code in frame and scan</string>
+    <string name="try_input_imei_prompt">Multiple scan still unsuccessful？\nTry enter bind number</string>
+    <string name="multiple_scan_error">Multiple scan still unsuccessful？</string>
+    <string name="try_input_imei">Try enter bind number</string>
+    <string name="scan_imei_result_prompt">The result of the scan is not the binding number of the device</string>
+    <string name="scan_imei_none_prompt">The device did not generate a binding code</string>
+
+    <!-- input imei -->
+    <string name="input_imei">Enter bind number</string>
+    <string name="input_imei_prompt">The IMEI number is a string of 15 to 17 numbers, please check the IMEI number on your device</string>
+    <string name="bind_imei">Bind number</string>
+    <string name="not_found_imei">Can\'t find bind number?</string>
+    <string name="bind">Bind</string>
+    <string name="input_imei_error_prompt">Bind number is invalid</string>
+
+    <!-- bind apply -->
+    <string name="bind_apply">Bind application</string>
+    <string name="bind_apply_prompt">Fill in information to bind device</string>
+    <string name="contact_name">Parents name</string>
+    <string name="send_apply">Send application</string>
+
+    <!-- wait manager confirm -->
+    <string name="wait_manager_confirm">Wait for administrator to confirm</string>
+    <string name="wait_manager_confirm_prompt">Your application information has been sent and is waiting for administrator\'s confirmation</string>
+
+    <!-- bind success -->
+    <string name="bind_success">Bind successfully</string>
+    <string name="bind_success_prompt">Application has been accepted. Please monitor your watch</string>
+    <string name="entry_main_page">Enter homepage</string>
+    <string name="bind_success_contacts_prompt">You haven\'t added a contact yet. Would you like to add it?</string>
+
+    <!-- main page -->
+    <string name="chat">Chat</string>
+    <string name="location">Location</string>
+    <string name="find">Discover</string>
+    <string name="more">More</string>
+    <string name="manager_bind_content">Do you agree with %s\'s application to become guardian of watch</string>
+
+    <!-- chat -->
+    <string name="video_call">Video Call</string>
+    <string name="family_group_chat">Family chat group</string>
+    <string name="chat_to_baby">Try talking with kids</string>
+    <string name="chat_to_family">Try chatting with family members</string>
+    <string name="chat_new_message">Receive a new messages</string>
+
+    <!-- chat group member -->
+    <string name="chat_group_member">Chat Member</string>
+    <string name="chat_group_member_prompt">Family members who with to watch will be automatically added to chat</string>
+    <string name="chat_group_member_add">Add</string>
+    <string name="clear_chat_group_message">Clear chat records</string>
+    <string name="profile_clean_group_chat_history">Confirm to clear the group history?</string>
+
+    <!-- find -->
+    <string name="new_product">New product</string>
+    <string name="charge_base">Charging base</string>
+    <string name="watch_strap">Watchband</string>
+
+    <!-- location -->
+    <string name="baby">Kids</string>
+    <string name="location_refresh">Update location</string>
+    <string name="google_map">Google&#160;&#160;Map</string>
+    <string name="satellite">Satellite</string>
+    <string name="satellite_map">Satellite map</string>
+    <string name="track">Track</string>
+    <string name="find_child">Find him</string>
+    <string name="navi_track">Historical walking route</string>
+    <string name="location_settings">Location setting</string>
+    <string name="location_mode">Location mode</string>
+    <string name="position_info">Position</string>
+    <string name="accuracy_info">(accuracy %d meters)</string>
+    <string name="no_position_info">No location yet</string>
+    <string name="get_position_info">Getting location information&#8230;</string>
+    <string name="get_position_now">Positioning&#8230;</string>
+    <string name="no_address_info">Failed to get address</string>
+    <string name="please_wait">Please wait</string>
+    <string name="location_mode_prompt">Reminder: The lower positioning frequency, the longer device battery life</string>
+
+    <!-- navi track -->
+    <string name="navi_track_no_data">No track record</string>
+    <string name="navi_track_query">Finding track records&#8230;</string>
+    <string name="navi_track_progress">Progress</string>
+    <string name="navi_track_speed">Speed</string>
+    <string name="navi_track_no_data_play">No track records</string>
+    <string name="location_type_prompt">Since you choose Power-saving mode, tracking position is limited. If you wanna more tracking in detail, please set other positioning modes (that will short the battery life)</string>
+
+    <!-- device msg -->
+    <string name="msg_sos">Device made an emergency call</string>
+    <string name="msg_photo">Device uploaded a new photo, please check it in time</string>
+    <string name="msg_call_record">Device just spoke to %s</string>
+    <string name="msg_update_version">Device is latest version</string>
+    <string name="msg_leave_fence">Device left safety zone called %s</string>
+    <string name="msg_entry_fence">Device entered safety zone named %s</string>
+    <string name="msg_low_energy">Power is less than %s%%, please charge in time</string>
+    <string name="msg_shutdown">Device was shutdown</string>
+    <string name="msg_reserved_electric">Device has entered power-saving mode and only can answer calls. It can return to normal after charging</string>
+    <string name="msg_agree_bind">Admin agreed to bind request for %s</string>
+    <string name="msg_refuse_bind">Admin rejected bind request for %s</string>
+    <string name="msg_request_bind">%s request to bind your device</string>
+    <string name="msg_unbind">%s unbound device</string>
+    <string name="msg_manager_unbind">Administrator unbound all devices</string>
+    <string name="msg_transfer_manager">%s become a new administrator</string>
+    <string name="msg_update_contancts">Device added a new friend</string>
+    <string name="msg_wifi_success">Device is connected to WIFI \"%s\"</string>
+    <string name="msg_wifi">WiFi \"%s\" password wrong , please re-enter</string>
+    <string name="msg_open_loss">%s turn on device loss reporting function</string>
+    <string name="msg_close_loss">%s turn off device loss reporting function</string>
+    <string name="msg_pwd_unlock_success">Device successfully unlocked with lost password</string>
+    <string name="msg_pwd_unlock">Failed to unlock device with lost password</string>
+    <string name="msg_step_target">Device completed today\'s goal</string>
+    <string name="msg_change_device_name">%s modified device information</string>
+    <string name="msg_health_data">Report health data</string>
+    <string name="msg_health_data_test_fail">Health data measurement failed</string>
+    <string name="msg_deivce_put_on">Device has put on</string>
+    <string name="msg_deivce_fall_off">Device has taken off</string>
+
+    <!-- settings -->
+    <string name="settings">Setting</string>
+    <string name="settings_close_prompt">You will not be reminded when receiving messages after turn off</string>
+    <string name="watch_setting_change">Setting change</string>
+    <string name="watch_electric">Device power</string>
+    <string name="entry_reserved_electric">Enter power saving mode</string>
+    <string name="address_book_message">Contacts messages</string>
+    <string name="sport">Motion</string>
+    <string name="sos">SOS</string>
+    <string name="update_firmware">Upgrade</string>
+    <string name="upload_photo">Upload picture</string>
+    <string name="call_record_log">Calling records</string>
+
+    <!-- location settings -->
+    <string name="common_location">Commonly used locations</string>
+    <string name="fence">Safety zone</string>
+    <!--    <string name="indoor_map">室内地图</string>-->
+    <string name="locate_mode_explain">Description of positioning method</string>
+    <string name="is_open">On</string>
+    <string name="is_close">Off</string>
+    <string name="location_type_first">High frequency mode: 9 minutes/time</string>
+    <string name="location_type_second">Normal mode: 1 hour/time</string>
+    <string name="location_type_third">Power-saving mode: obtain location manually</string>
+
+    <!-- common location -->
+    <string name="family">Home</string>
+    <string name="common_location_first">Training course</string>
+    <string name="common_location_second">Grandma\'s Home</string>
+    <string name="common_location_third">Classmate\'s home</string>
+    <string name="customize">Custom</string>
+    <string name="common_location_prompt">Warm Tips \n 1. Chils can go to commonly used place set on device by navigation; \n2. When positioning to commonly used place, it will be directly displayed in corresponding place; \n3. Through independent learning and correction of program, the accuracy of positioning results can be gradually improved;</string>
+
+    <!-- edit location -->
+    <string name="edit_location">Edit location</string>
+    <string name="location_name">Location name</string>
+    <string name="location_position">Location</string>
+    <string name="optional">Optional filling</string>
+    <string name="nearby_wifi">Near this location Wi&#8211;Fi</string>
+
+    <!-- select wifi -->
+    <string name="select_wifi">Select Wi&#8211;Fi</string>
+    <string name="mobile_search_wifi">Mobile search Wi&#8211;Fi</string>
+    <string name="have_chosen">[Added]</string>
+
+    <!-- fence -->
+    <string name="fence_add">Add safety zone</string>
+    <string name="fence_edit">Edit safety zone</string>
+    <string name="fence_info">Enter reminder:%s,Leave reminder:%s,Radius:%s</string>
+    <string name="fence_info_description">Address:%1$s</string>
+    <string name="fence_name">Safety zone name</string>
+    <string name="entry_fence_switch">Enter reminder</string>
+    <string name="exit_fence_switch">Leave reminder</string>
+
+    <!-- location settings -->
+    <string name="locate_mode">Positioning mode</string>
+    <string name="locate_mode_satellite">Satellite positioning</string>
+    <string name="locate_mode_satellite_content">Supporting  two types of satellite positioning: American GPS and Russian GLONASS. For outdoor open space, the best positioning accuracy is about 10 meters, but indoor positioning effect is not good.</string>
+    <string name="locate_mode_wifi">Wi&#8211;Fi location</string>
+    <string name="locate_mode_wifi_content">Device collect surrounding wi&#8211;fi hotspot information to calculate its own location information via Wi&#8211;Fi modular,. The best positioning accuracy is around 50m。</string>
+    <string name="locate_mode_fuzzy">Vague location</string>
+    <string name="locate_mode_fuzzy_content">Device obtains its own position information through network of operators (such as GSM network), and accuracy of positioning is generally around 500m。</string>
+    <string name="locate_mode_agps">A&#8211;GPS position</string>
+    <string name="locate_mode_agps_content">A&#8211;GPS technology is a technology that combines information of network base station and GPS information to locate mobile station. It can improve performance of GPS satellite positioning system. Through mobile communication operation base station it can quickly locate.The best precision is about 10 meters。</string>
+    <string name="acceleration_sensor">Acceleration sensor</string>
+    <string name="acceleration_sensor_content">Obtain current movement state of device through auxiliary positioning of acceleration sensor。</string>
+    <string name="locate_mode_prompt">Warm tip:\nDuring positioning process, device will intelligently select most appropriate positioning mode according to environment at that time. And tuser does not need to manually select positioning mode</string>
+
+    <!-- more -->
+    <string name="update_device_firmware">Firmware upgrade</string>
+    <string name="bind_member">Bind members</string>
+    <string name="device_address_book">Contacts</string>
+    <string name="sms_collection">Collection of SMS</string>
+    <string name="watch_bill">Telephone bill</string>
+    <string name="ban_classes">Class forbidden</string>
+    <string name="refuse_strangers">Restrict unknown calls</string>
+    <string name="school_guardian">School guard</string>
+    <string name="time_switch">Timing switch</string>
+    <string name="automatic_connection">Auto boot</string>
+    <string name="reserved_electric">Saving power</string>
+    <string name="device_wifi">Watch Wi&#8211;Fi</string>
+    <string name="call_record">Calling records</string>
+    <string name="device_settings">Device setting</string>
+    <string name="device_report_loss">Report loss</string>
+    <string name="app_settings">APP setting</string>
+    <string name="bind_and_unbind">Bind and unbind</string>
+    <string name="add_contacts">Add a contact</string>
+    <string name="change_device">Switch device</string>
+    <string name="add_device">Add device</string>
+    <string name="unbind_device">Unbind</string>
+    <string name="device_qrcode">QRCODE</string>
+    <string name="point">Score</string>
+    <string name="step_counter">Step</string>
+    <string name="device_imei">Device No. :%s</string>
+
+    <!-- device message -->
+    <string name="device_message">Watch message</string>
+    <string name="main_message">Message</string>
+
+    <!-- change device -->
+    <string name="change_device_title">Switch Watch</string>
+    <string name="no_answer">Not answered</string>
+    <string name="call_duration">Calling time：%s</string>
+    <string name="strange_number">Unknown number</string>
+    <string name="cmd_type_first">Normal</string>
+    <string name="cmd_type_second">SOS</string>
+    <string name="cmd_type_third">Guard</string>
+    <string name="cmd_type_fourth">Restrict unknown calls</string>
+
+    <!-- qrcode -->
+    <string name="unbind">Unbind</string>
+    <string name="devices_qrcode">%s QRCODE</string>
+    <string name="bind_id">Bind No.:%s</string>
+    <string name="scan_bind_device">Scan code to bind</string>
+    <string name="unbind_prompt">You will not be able to check this device information after unbind.Are you sure to unbind？</string>
+
+    <!-- contacts add -->
+    <string name="name">Name</string>
+    <string name="name_select">Choose a name</string>
+    <string name="short_number">Short/family</string>
+    <string name="short_number_add">Add Short/family</string>
+    <string name="short_number_input_prompt">For the discount package between SIM cards, you can call each other 2&#8211;6 short numbers. \n No need fill if not opened.</string>
+    <string name="edit_contacts">Edit contacts</string>
+
+    <!-- select name -->
+    <string name="name_type_first">Father</string>
+    <string name="name_type_second">Mother</string>
+    <string name="name_type_fourth">Grandfather</string>
+    <string name="name_type_fifth">Grandmother</string>
+    <string name="name_type_seventh">Grandpa</string>
+    <string name="name_type_eighth">Grandma</string>
+    <string name="name_type_tenth">Custom</string>
+    <string name="name_type_eleventh">School contacts</string>
+
+    <!-- personal center -->
+    <string name="personal_center">Personal Center</string>
+    <string name="friend">Friends</string>
+    <string name="contacts">Contacts</string>
+    <string name="watch_number">Tel of watch</string>
+    <string name="baby_info">Child info</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="baby_short_numer">Child short/family</string>
+    <string name="no_input">Not filled in</string>
+    <string name="new_watch_login">Sign in on a new device</string>
+    <string name="photograph">Take picture</string>
+    <string name="select_from_album">Select from album</string>
+    <string name="change_mobile_prompt">Please fill in correct device number. Incorrect number will cause unavailability。</string>
+    <string name="goto_set">Go to set</string>
+
+    <!-- baby info -->
+    <string name="portrait">Head portrait</string>
+    <string name="baby_name">Child name</string>
+    <string name="baby_level">Child level</string>
+    <string name="sex">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="school">School</string>
+    <string name="grade">Grade</string>
+    <string name="classes">Class</string>
+    <string name="family_address">Home address</string>
+    <string name="family_wifi">Home Wi&#8211;Fi</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="sex_select">Choose gender</string>
+    <string name="grade_select">Select grade</string>
+    <string name="grade_type_first">Not enrolled</string>
+    <string name="grade_type_second">Junior Kindergarten</string>
+    <string name="grade_type_third">Kindergarten middle class</string>
+    <string name="grade_type_fourth">Senior kindergarten</string>
+    <string name="grade_type_fifth">Preschool</string>
+    <string name="grade_type_sixth">First grade</string>
+    <string name="grade_type_seventh">Second grade</string>
+    <string name="grade_type_eighth">Third grade</string>
+    <string name="grade_type_ninth">Fourth grade</string>
+    <string name="grade_type_tenth">Fifth grade</string>
+    <string name="grade_type_eleventh">Sixth grade</string>
+    <string name="grade_type_twelfth">Grade seven</string>
+    <string name="grade_type_thirteenth">Grade eight</string>
+    <string name="grade_type_fourteenth">Senior one</string>
+    <string name="grade_type_fifteenth">Senior two</string>
+    <string name="grade_type_sixteenth">Senior Three</string>
+    <string name="grade_type_seventeenth">Grade nine</string>
+    <string name="others">Other</string>
+    <string name="birth_select">Choose birthday</string>
+
+    <!-- change number -->
+    <string name="change_phone_number_input_prompt">When device number is detected by APP,it will be automatically entered number instead of by manual</string>
+    <string name="change_phone_number_question">What should I do if I need to change my SIM card of device？</string>
+    <string name="change_short_number_input_prompt">Please fill in if you have such package</string>
+    <string name="change_sim_card">Change SIM card</string>
+
+    <!-- new watch login -->
+    <string name="new_watch_login_title">Want to use data of previous device in new device？</string>
+    <string name="new_watch_login_content">Scan QR code of new device to use data of previous device. The previous device will return to unbind state。</string>
+    <string name="scan_new_watch">Scan a new watch and use IMEI data</string>
+    <string name="scan_and_scan">Scan</string>
+
+    <!-- step -->
+    <string name="step_update">%s update</string>
+    <string name="step_num_target">Target steps\n%s</string>
+    <string name="step_week_record">Steps in last seven days</string>
+    <string name="step_target">Daily goal</string>
+    <string name="step_num_target_unit">Target steps</string>
+    <string name="step_target_prompt">The research shows that insist on fast walking or jogging for 30 minutes every day (more than 110 steps per minute), which is of great health benefits. The daily goal of 8000 steps is recommended</string>
+
+    <!-- update firmware -->
+    <string name="device_watch">%s\'s Watch</string>
+    <string name="current_version">Version：%s</string>
+    <string name="install_package_wifi">Wi&#8211;Fi download installation package</string>
+    <string name="install_package_traffic">Data download installation package</string>
+    <string name="install_package_traffic_prompt">Download with data when not connected to wi&#8211;fi, please pay attention to data usage</string>
+    <string name="current_version_newest">It is latest version currectly</string>
+
+    <!-- bind member -->
+    <string name="bind_member_prompt">You need to download TrackMasters APP and bind device to contact with your child</string>
+    <string name="manager">Admin</string>
+    <string name="me">Me</string>
+    <string name="invitate_member">Invite family members</string>
+    <string name="apply_wait_handle">Application pending</string>
+    <string name="user_bind_device_prompt">Guardian application</string>
+    <string name="manager_transfer_prompt">Transfer administrator</string>
+    <string name="manager_transfer_content">Set member:%s as administrator?</string>
+    <string name="change_user_nick">Edit name</string>
+    <string name="info_title">%s information </string>
+    <string name="manager_unbind_title">You\'re the administrator. You can：</string>
+    <string name="continue_unbind">Continue to unbind</string>
+    <string name="unbind_member_title">Delete bind member</string>
+    <string name="unbind_member_prompt">After deleting bind member, bind member is no longer associated with device. Delete？</string>
+
+    <!-- unbind -->
+    <string name="unbind_title">Unbind instructions</string>
+    <string name="unbind_device_prompt">After unbinding,Local data, photo albums, etc. will be cleared.</string>
+    <string name="reset_device_prompt">Some important data of device will be saved in your APP account.And device will be unbound. Are you sure to unbind everyone and restore factory settings?</string>
+
+    <!-- device address book -->
+    <string name="address_book_add">Add a contact</string>
+    <string name="add_short_number">Add a short/family number</string>
+    <string name="address_book_sort">Contacts sequence</string>
+    <string name="add_sos_number">Add SOS&#160;&#160;&#160;&#160;</string>
+    <string name="add_sos_number_title">Add SOS</string>
+    <string name="guard">Guard</string>
+    <string name="address_book_sort_prompt">Drag contact sorting, and sync to watch after saving</string>
+    <string name="details">Detail</string>
+    <string name="guard_permission">Guard permission</string>
+    <string name="emergency_call">Emergency call</string>
+    <string name="emergency_call_content">Can answer emergency call of watch</string>
+
+    <!-- sms collection -->
+    <string name="sms_collection_title">Collect watch SMS</string>
+    <string name="sms_collection_open">Collecting watch messages&#8230;</string>
+    <string name="sms_collection_close">Collection of watch SMS is closed</string>
+    <string name="open_string">On %s</string>
+    <string name="close_string">Off %s</string>
+    <string name="open_status">ON</string>
+    <string name="close_status">OFF</string>
+
+    <!-- ban classes -->
+    <string name="ban_classes_title">Disabled in class</string>
+    <string name="ban_classes_content">Child will not be distracted\nwhile studying</string>
+    <string name="ban_classes_prompt">Warm reminder \nDuring disabled period,,  device only can check time meanwhile restrict all calls and messages.</string>
+    <string name="ban_classes_time_slot">Study time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_to">%s to %s</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="start_more_than_end_time_prompt">Start time cannot more than end time.</string>
+    <string name="end_less_than_start_time_prompt">End time cannot less than start time.</string>
+
+    <!-- refuse strangers -->
+    <string name="refuse_strangers_call">Restrict calls from\nstrangers</string>
+    <string name="refuse_strangers_title">Restrict harassment\ncalls</string>
+    <string name="refuse_strangers_content">Don\'t give strangers a chance</string>
+    <string name="call_permission">Call permission</string>
+    <string name="call_permission_content">Only contacts in address book can call watch after opening.</string>
+    <string name="intercept_record">Interception record</string>
+    <string name="intercept_record_content">If any stranger call, will send message to APP for parents to confirm"</string>
+    <string name="refuse_call">Restrict a call</string>
+
+    <!-- time switch -->
+    <string name="time_switch_title">Schedule boot\nshutdown</string>
+    <string name="time_switch_content">Watch breaks on time</string>
+    <string name="time_switch_prompt">Note: This function will not work when charging.</string>
+    <string name="time_switch_start">Setting boot time</string>
+    <string name="time_switch_end">Setting shutdown time</string>
+    <string name="time_switch_time_error_prompt">Switching time cannot be same.</string>
+
+    <!-- automatic connection -->
+    <string name="automatic_connection_title">Connect within\n10 seconds</string>
+    <string name="automatic_connection_content">Contact baby more easily</string>
+
+    <!-- reserved electric -->
+    <string name="reserved_electric_title">Reserve exclusive power</string>
+    <string name="reserved_electric_content">Baby only can answer calls.</string>
+    <string name="watch_ban">Watch disabled</string>
+    <string name="watch_ban_content">Watch enters power saving mode when battery is low.</string>
+    <string name="support_answer_call">Supporting answer calls</string>
+    <string name="support_answer_call_content">Watch enters power saving mode and only supports answering calls.</string>
+
+    <!-- device report loss -->
+    <string name="device_report_loss_manager">Watch loss management</string>
+    <string name="device_report_loss_title">Don\'t be afraid of losing\nyour watch</string>
+    <string name="device_report_loss_content">I\'ll help you find a way</string>
+    <string name="location_report">Location reporting</string>
+    <string name="location_report_content">After watch is reported lost, it will automatically report location to APP in each boot.</string>
+    <string name="watch_lock">Watch lock</string>
+    <string name="watch_lock_content">When watch is locked, you can only enter lost password to unlock it.</string>
+    <string name="privacy_security">Privacy security</string>
+    <string name="privacy_security_content">Unavailable to others, protecting your privacy and property.</string>
+    <string name="ring_tone_maximize">Ring tone maximization</string>
+    <string name="ring_tone_maximize_content">After watch is reported lost, volume of messages and ringtones is maximized.</string>
+    <string name="device_report_loss_prompt">After reporting loss of watch, it will be locked and cannot be used and guarded normally. Are you sure to report loss?</string>
+    <string name="device_report_loss_close_content">Watch will end report loss function after shutdown. It will not automatically return to position without turning on. Are you sure to close?</string>
+    <string name="input_report_loss_pwd_simple_prompt">Password is too simple, please re-enter.</string>
+
+    <!-- device wifi -->
+    <string name="add_wifi">Add Wi&#8211;Fi</string>
+    <string name="edit_wifi">Edit Wi&#8211;Fi</string>
+    <string name="add_wifi_title">Connect wi&#8211;Fi to watch</string>
+    <string name="add_wifi_content">Save data</string>
+    <string name="verify_success">Verification successful</string>
+    <string name="verify_error">Validation failed</string>
+    <string name="verify_wait">Waiting for validation</string>
+    <string name="device_wifi_title">Wi&#8211;Fi：%s</string>
+    <string name="wifi_name">Wi&#8211;Fi name</string>
+    <string name="wifi_add_prompt">Note: \n1. If wi&#8211;fi does not have a password, you can confirm it directly; \n2. Device does not support it&#160;&#160;5G&#160;&#160;Wi&#8211;Fi；</string>
+
+    <!-- device settings -->
+    <string name="hour_system">%s Hour system</string>
+    <string name="time_display_format">Time format</string>
+    <string name="dial_pad">Dial keypad</string>
+    <string name="alarm_clock_settings">Alarm settings</string>
+    <string name="find_device">Find my device</string>
+    <string name="voice_monitor">Voice monitoring</string>
+    <string name="remote_photo_take">Remote taking photo</string>
+    <string name="remote_shutdown">Remote shutdown</string>
+    <string name="remote_reboot">Remote reboot</string>
+    <string name="reset_device">Reset device</string>
+    <string name="no_shutdown">Disable shutdown</string>
+    <string name="allow_watch_use">Allow watch to use</string>
+    <string name="allow_watch_use_content">Can\'t make a call after device shutdown</string>
+    <string name="instruct_send_prompt">Send %s instruction or not</string>
+    <string name="disable_watch_shutdown">Disable watch shutdown</string>
+    <string name="disable_watch_shutdown_content">Now watch can only be turned off remotely through APP</string>
+    <string name="set_alarm_clock">Set alarm</string>
+    <string name="alarm_clock">Alarm</string>
+    <string name="time">Time</string>
+
+    <!-- app settings -->
+    <string name="message_notify">Notify</string>
+    <string name="change_pwd">Edit password</string>
+    <string name="app_server_select">APP server selection</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="app_version_update">APP version update</string>
+    <string name="app_version_can_update">There are updatable versions</string>
+    <string name="about">About</string>
+    <string name="login_out">Logout</string>
+    <string name="login_out_prompt">Data of any watch or APP will not be deleted after logging out.Are you sure to login out?</string>
+    <string name="clear_cache_prompt">Do you want to clear local data such as chat and message record with one click?</string>
+
+    <!-- app version update -->
+    <string name="app_new_version">Latest version detected：%s</string>
+    <string name="app_new_version_content">The version is updated as follows：\n%s</string>
+    <string name="app_is_newest_version">Current version is latest</string>
+
+    <!-- message notify -->
+    <string name="receiver_message_notify">Receive new message notification</string>
+    <string name="receiver_message_notify_prompt">If you want to turn on or off new message alert for TrackMasters. Please enter mobile phone\&#034;setting\&#034;&#8211;\&#034;useage\&#034;，In application list，find\&#034;TrackMasters\&#034;&#8211;\&#034;notification\&#034;make changes。</string>
+    <string name="mobile_ringtone">Ring tone</string>
+    <string name="mobile_vibrate">Vibration</string>
+
+    <!-- change pwd -->
+    <string name="change_pwd_prompt">Please enter old password, then enter new password of 6&#8211;16 digit combination of letters and numbers</string>
+    <string name="change_forgot_pwd">Forget password？</string>
+
+    <!-- app version update -->
+    <string name="app_version_auto_update">New version, automatic update</string>
+    <string name="app_version_wifi">Wi&#8211;FiEnvironment auto download update package</string>
+    <string name="install_now">Install now</string>
+
+    <!-- about -->
+    <string name="about_user_service">User service agreement</string>
+    <string name="about_privacy_protocol">Privacy policy</string>
+    <string name="about_user_experience">User experience improvement program</string>
+
+    <!-- select device type -->
+    <string name="device_type_select">Select device type</string>
+    <string name="device_type_first">Kids Watch</string>
+    <string name="device_type_second">Elderly Watch</string>
+    <string name="chat_to_device">Try talking with device</string>
+    <string name="device">Device</string>
+    <string name="find_device_navi">Find Device</string>
+    <string name="msg_device_sos">Device made an emergency call</string>
+    <string name="msg_device_photo">Device uploaded a new photo, please check it in time</string>
+    <string name="msg_device_call_record">Device just spoke to %s</string>
+    <string name="msg_device_leave_fence">Device left electronic safety zone called %s</string>
+    <string name="msg_device_entry_fence">Device entered electronic safety zone named %s</string>
+    <string name="msg_device_low_energy">Power is less than %s%%, please charge in time</string>
+    <string name="msg_device_shutdown">Device was shutdown</string>
+    <string name="msg_device_reserved_electric">Device has entered power-saving mode and only can answer calls. It can return to normal after charging</string>
+    <string name="msg_device_update_contancts">Device added a new friend</string>
+    <string name="address_book">Contacts</string>
+    <string name="change_device_type">Switch Product</string>
+    <string name="sedentary_reminder">Sedentary Reminder</string>
+    <string name="alarm_and_prompt">Alarm Clock And Reminder</string>
+    <string name="name_type_twelfth">Husband/Wife</string>
+    <string name="name_type_thirteenth">Son</string>
+    <string name="name_type_fourteenth">Daughter</string>
+    <string name="name_type_fifteenth">Daughter in law</string>
+    <string name="name_type_sixteenth">Son in law</string>
+    <string name="device_center_second">Device Basic info</string>
+    <string name="device_info">Device info</string>
+    <string name="device_name">Device name</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="weight_unit">kg</string>
+    <string name="height_unit">cm</string>
+    <string name="selelct_type">select %s</string>
+    <string name="bind_member_device_prompt">You need to download TrackMasters APP and bind device to contact with your device</string>
+    <string name="automatic_connection_devie_content">Contact family more easily</string>
+    <string name="reserved_electric_device_content">Family only can answer calls.</string>
+    <string name="set_alarm_and_prompt">Set alarm clock and reminder</string>
+    <string name="prompt_content">Reminder content</string>
+
+    <string name="contact_device_name_hint">Enter device nickname</string>
+    <string name="device_name_hint">Enter device\'s name</string>
+    <string name="no_add_data_prompt">Not added yet %1$s</string>
+    <string name="settings_to_max_prompt">Maximum settings %1$d num %2$s</string>
+
+    <!-- sedentary reminder -->
+    <string name="sedentary_reminder_no_disturb">Lunch break</string>
+    <string name="sedentary_reminder_no_disturb_content">%1$s to %2$s don\'t remind me</string>
+    <string name="settings_less_than_hour">Set for at least one hour</string>
+    <!--    <string name="sedentary_reminder_content">持续40分钟未活动，手表将振动提醒</string>-->
+
+    <!-- Elderly Watch  -->
+
+    <!-- health -->
+    <string name="health">Health</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="heart_rate_unit">BPM</string>
+    <string name="heart_rate_day">24H heart rate</string>
+    <string name="heart_rate_average">Heart rate average</string>
+    <string name="blood_oxygen">Blood oxygen</string>
+    <string name="sleep_title">Sleep</string>
+    <string name="sleep_hour">%s hour</string>
+    <string name="step_num_title">Step</string>
+    <string name="step_unit">%s step</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <string name="blood_pressure_content">SBP/DBP</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperature_unit">℃</string>
+    <string name="temperature_unit_name">Centigrade</string>
+    <string name="health_testing">Measuring...</string>
+    <string name="bind_member_device_no_video_prompt">You need to download TrackMasters APP and bind device to contact with your device</string>
+
+    <!-- heart rate -->
+    <string name="week_unit">Week</string>
+    <string name="heart_rate_analysis_content">Heart rate data analysis</string>
+    <string name="heart_rate_analysis">Heart rate analysis</string>
+    <string name="heart_rate_quiet">Rest heart rate：normal people have 60-100 beats per minute in a quiet state.</string>
+    <string name="heart_rate_sport">Exercise heart rate：judge the body\'s movement state according to the heart rate range, and choose the appropriate heart rate range to achieve better exercise effect.</string>
+    <string name="heart_rate_test_trend">Trend of heart rate measurement in recent seven times</string>
+    <string name="heart_rate_start_test">Click to start measuring heart rate </string>
+    <string name="heart_rate_type_first">Light</string>
+    <string name="heart_rate_type_second">Weight</string>
+    <string name="heart_rate_type_third">Aerobic</string>
+    <string name="heart_rate_type_forth">Anaerobic</string>
+    <string name="heart_rate_type_fifth">VO2 max</string>
+
+    <!-- heart rate test -->
+    <string name="heart_rate_continue_test">Continuous measurement of heart rate</string>
+    <string name="heart_rate_test_type">Heart rate explanation</string>
+    <string name="heart_rate_test_content">Turn on continuous measurement function，24-hour detection of your heart rate, heart rate data more detailed, refresh more timely, power consumption will increase by 50%</string>
+    <string name="heart_rate_test_type_first">Intelligence</string>
+    <string name="heart_rate_test_type_first_content">Dynamically adjust the measurement frequency according to the movement state, and intelligently detect your heart rate 24 hours, which helps to save power</string>
+    <string name="heart_rate_test_type_second">Real time</string>
+    <string name="heart_rate_test_type_second_content">24-hour detection of your heart rate, heart rate data more detailed, refresh more timely, great impact on power consumption </string>
+    <string name="heart_rate_adjust">Static heart rate adjustment</string>
+    <string name="heart_rate_adjust_hign">High static heart rate</string>
+    <string name="heart_rate_adjust_low">Low static heart rate</string>
+    <string name="heart_rate_adjust_hign_content">When the heart rate exceeds 150 beats / min for more than 10 minutes in the inactive state</string>
+    <string name="heart_rate_adjust_low_content">When the heart rate is lower than 45 beats / min for more than 10 minutes in the inactive state</string>
+    <string name="heart_rate_adjust_unit">Times / min</string>
+
+    <!-- blood pressure -->
+    <string name="blood_pressure_start_test">Click to start measuring blood pressure</string>
+    <string name="systolic_pressure">Systolic pressure</string>
+    <string name="diastolic_pressure">Diastolic pressure</string>
+    <string name="blood_pressure_data_about">Blood pressure data</string>
+    <string name="blood_pressure_data_analysis">Analysis blood pressure data</string>
+    <string name="blood_pressure_data_analysis_content">Normal blood pressure value：\n90MMHG &lt; systolic pressure &lt; 140MMHG\n60MMHG &lt; diastolic pressure &lt; 90MMHG</string>
+    <string name="blood_pressure_test_trend">Trend of blood pressure measurement in recent seven times</string>
+
+    <!-- blood oxygen -->
+    <string name="blood_oxygen_start_test">Click to start measuring SpO2</string>
+    <string name="blood_oxygen_data_about">Blood oxygen data</string>
+    <string name="blood_oxygen_data_analysis">Analysis SpO2 data</string>
+    <string name="blood_oxygen_data_analysis_content">The oxygen saturation is the percentage of the volume of oxygenated hemoglobin in the blood to the total binding hemoglobin. It is not only the concentration of oxygen in the blood, but also an important physiological parameter of respiratory cycle\ N\n the oxygen saturation of normal artery is about 96-99%</string>
+    <string name="blood_oxygen_test_trend">Trend of blood oxygen saturation measurement in recent seven times</string>
+
+    <!-- sleep -->
+    <string name="sleep_data_point">Sleep quality score</string>
+    <string name="sleep_data_point_about">Sleep quality score</string>
+    <string name="sleep_data_point_about_content">The sleep quality score is based on the Pittsburgh sleep quality index to calculate the basic original value. The sleep quality is evaluated and scored by the factors of sleep regularity, sleep duration, deep sleep proportion, times of waking up at night and waking time measured by the watch.</string>
+
+    <!-- temperature -->
+    <string name="temperature_start_test">Click start temperature measurement</string>
+    <string name="temperature_data_about">About body temperature data</string>
+    <string name="temperature_data_analysis">Understanding body temperature data</string>
+    <string name="temperature_data_analysis_content">Body temperature data \n Body temperature data</string>
+    <string name="temperature_test_trend">Trend of body temperature measurement in recent seven times</string>
+
+    <!-- step -->
+    <string name="metre">Metre</string>
+    <string name="kilocalorie">Kilocalorie</string>
+    <string name="effective_sport">Effective activity</string>
+    <string name="effective_sport_unit">MET-min</string>
+    <string name="effective_sport_week_num">Weekly total</string>
+    <string name="effective_sport_recommend">Advised weekly effective activity 600-1000 MET-min</string>
+    <string name="effective_sport_analysis">Know effective activity</string>
+    <string name="effective_sport_analysis_content">Sport movement reach medium or high strength, and continue 10mins or above, which will regard as effective sports</string>
+    <string name="step_test_trend">latest 7 qualified activity</string>
+    <string name="step_info_prompt">Calories and distance are calculated based on height and weight</string>
+
+    <!-- health settings -->
+    <string name="health_settings">Health settings</string>
+
+    <!-- fall off -->
+    <string name="fall_off">Take off detect</string>
+    <string name="fall_off_title">Take off switch</string>
+    <string name="fall_off_content">Power consumption will increase when it is turned on</string>
+
+    <!-- unit -->
+    <string name="report_day">Day</string>
+    <string name="report_week">Week</string>
+    <string name="report_month">Month</string>
+    <string name="report_sun">Sun</string>
+    <string name="report_mon">Mon</string>
+    <string name="report_tue">Tue</string>
+    <string name="report_wed">Wed</string>
+    <string name="report_thu">Thu</string>
+    <string name="report_fri">Fri</string>
+    <string name="report_sat">Sat</string>
+
+    <!-- hint -->
+    <string name="mobile_hint">Enter mobile number</string>
+    <string name="email_hint">Enter email</string>
+    <string name="account_hint">Enter account</string>
+    <string name="pwd_hint">Enter password</string>
+    <string name="verification_code_hint">Enter code</string>
+    <string name="set_pwd_hint">Set password</string>
+    <string name="imei_hint">Enter device bind number</string>
+    <string name="contact_name_hint">Enter your name</string>
+    <string name="baby_name_hint">Enter child\'s name</string>
+    <string name="new_pwd_hint">Enter a new password</string>
+    <string name="short_number_hint">Enter short/family number</string>
+    <string name="custom_name_hint">Enter contact name</string>
+    <string name="old_pwd_hint">Enter old password</string>
+    <string name="confirm_pwd_hint">Confirm new password</string>
+    <string name="location_name_hint">Enter location name</string>
+    <string name="watch_bill_hint">Enter inquiry instruction or package instruction</string>
+    <string name="input_hint">Enter %s</string>
+    <string name="voice_monitor_hint">Enter mobile number of voice monitoring</string>
+    <string name="wifi_name_hint">Enter Wi&#8211;Fi name</string>
+    <string name="wifi_pwd_hint">Enter Wi&#8211;Fi password</string>
+    <string name="fence_name_hint">Enter name of safety zone</string>
+    <string name="report_loss_pwd_hint">Enter a six digit lost password</string>
+    <string name="chat_input_hint">No more than 15 Chinese chars or 30 letters</string>
+
+    <!-- permission -->
+    <string name="no_camera_permission_prompt">Camera open failed, please check if permission is not obtained</string>
+    <string name="no_contact_permission_prompt">Contacts access failed, please check if permission is not obtained</string>
+    <string name="no_gallery_permission_prompt">Album open failed, please check if permission is not obtained</string>
+    <string name="no_location_permission_prompt">Mobile location failed, please check if permission is not obtained</string>
+    <string name="no_video_permission_prompt">Video Call failed, please check if permission is not obtained</string>
+
+    <!-- prompt -->
+    <string name="input_true_mobile_prompt">Please enter correct mobile number</string>
+    <string name="input_true_email_prompt">Please enter correct email</string>
+    <string name="read_protocol_prompt">Please read and agree to relevant policies</string>
+    <string name="request_error_prompt">Request failure</string>
+    <string name="request_success_prompt">Request successful</string>
+    <string name="not_result_prompt">No results</string>
+    <string name="device_ont_online_prompt">Device is not online</string>
+    <string name="wait_online_update_prompt">Set successfully, device will be online simultaneously.</string>
+    <string name="repeat_request_prompt">Account repeat registration</string>
+    <string name="not_exist_param_prompt">Required parameter not exist</string>
+    <string name="login_success_prompt">Login successful</string>
+    <string name="register_success_prompt">Register successful</string>
+    <string name="account_not_exist_prompt">Account not exist</string>
+    <string name="token_error_prompt">Your account is logged in elsewhere, please login again</string>
+    <string name="old_pwd_error_prompt">Original password error</string>
+    <string name="wait_admin_confirm_prompt">Wait for administrator to confirm</string>
+    <string name="user_already_bind_prompt">User already bound</string>
+    <string name="user_not_request_bind_prompt">User didn\'t request for binding</string>
+    <string name="not_turn_myself_prompt">You can\'t transfer it to yourself</string>
+    <string name="device_not_active_prompt">The device is not activated</string>
+    <string name="watch_not_register_prompt">Watch does not exist</string>
+    <string name="bind_member_to_max_prompt">More than eight bound users</string>
+    <string name="service_busy_prompt">Server busy, please try again later</string>
+    <string name="permissions_error_prompt">Permission request denied:%s</string>
+    <string name="empty_data_prompt">Currently no data</string>
+    <string name="seach_result_empty_prompt">No matching results</string>
+    <string name="user_unbind_device_prompt">User not bound Watch</string>
+    <string name="reset_pwd_input_different_prompt">Two passwords are inconsistent</string>
+    <string name="reset_pwd_success_prompt">Password reset succeeded</string>
+    <string name="no_device_gps_prompt">No device location information</string>
+    <string name="no_query_data_prompt">No query record</string>
+    <string name="update_success_prompt">Modification succeeded</string>
+    <string name="select_at_least_one_prompt">Please select at least one</string>
+    <string name="old_pwd_input_prompt">Please enter old password of 6&#8211;16 letters and numbers.</string>
+    <string name="old_same_new_pwd_prompt">The old password entered is same as new password.</string>
+    <string name="change_pwd_success_prompt">Modification succeeded, please login again</string>
+    <string name="address_not_find_prompt">Unable to find address</string>
+    <string name="device_not_set_phone_prompt">Device not set mobile number.</string>
+    <string name="contacts_to_max_prompt">Set up a maximum of 15 contacts</string>
+    <string name="sos_number_to_max_prompt">There\'re 3 emergency contacts, unable to add anymore</string>
+    <string name="contacts_type_equal_prompt">Contact cannot be set to same type</string>
+    <string name="contacts_name_equal_prompt">Contact cannot be set to same name</string>
+    <string name="contacts_phone_equal_prompt">This number is already in contacts, no need to add it again.</string>
+    <string name="contacts_name_equal_edit_prompt">This nickname is duplicate, whether to edit to existing contact.</string>
+    <string name="clear_cache_success_prompt">Cache cleaned up</string>
+    <string name="manager_agree_success_prompt">Agreed to bind device successfully</string>
+    <string name="verification_code_input_error_prompt">Incorrect verification code entered</string>
+    <string name="no_active_code_prompt">Error for getting bind number</string>
+    <string name="upload_file_prompt">Uploading&#8230;</string>
+    <string name="ban_classes_to_max_prompt">Up to 4 classes disabled</string>
+    <string name="fence_to_max_prompt">Up to 2 safety zone</string>
+    <string name="alarm_clock_to_max_prompt">Set up to 4 alarm clocks</string>
+    <string name="manager_transfer_success_prompt">Transfer administrator succeeded</string>
+    <string name="manager_refuse_success_prompt">Reject user binding succeeded</string>
+    <string name="manager_agree_user_bind_prompt">Administrator has agreed to bind your device.</string>
+    <string name="manager_refuse_user_bind_prompt">Administrator has refused to bind your device.</string>
+    <string name="no_message_prompt">No message yet</string>
+    <string name="no_data_prompt">No data available</string>
+    <string name="no_remote_photo_take_prompt">No remote taking photo</string>
+    <string name="no_contacts_prompt">No number added</string>
+    <string name="send_success_prompt">Sent successfully</string>
+    <string name="send_error_prompt">Fail in send</string>
+    <string name="upload_file_error_prompt">Image upload failed</string>
+    <string name="no_alarm_clock_prompt">No alarm clock has been added yet</string>
+    <string name="change_language_prompt">Modifying language requires restarting APP to take effect</string>
+    <string name="name_equal_prompt">Cannot set the same name</string>
+    <string name="fence_equal_prompt">Cannot set the same area</string>
+    <string name="time_equal_prompt">Cannot set duplicate time</string>
+    <string name="watch_loss_prompt">This function is not available when device is in process of reporting loss</string>
+    <string name="video_time_prompt">To prevent device from overheating, the call will be end in %1$d minutes and can be used normally later</string>
+    <string name="operation_is_too_frequent_prompt">The %s operation is too frequent. Please try again later.</string>
+    <string name="location_no_net_prompt">Location request has been sent. Will update location once device online.</string>
+    <string name="request_too_busy_prompt">Do not operate frequently</string>
+    <string name="query_too_min_day_prompt">Only the data of the last three months can be queried</string>
+
+    <!-- time -->
+    <string name="today">Today</string>
+    <string name="yestoday">Yesterday</string>
+    <string name="before_yestoday">Before</string>
+    <string name="now">Now</string>
+    <string name="year_ago">%1$d last year</string>
+    <string name="month_ago">%1$d months ago</string>
+    <string name="day_ago">%1$d days ago</string>
+    <string name="hour_ago">%1$d hours ago</string>
+    <string name="minutes_ago">%1$d mins ago</string>
+    <string name="minutes">%s mins</string>
+    <string name="hour">%1$d hour</string>
+    <string name="minute">%1$d mins</string>
+    <string name="second">%1$d secs</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="everyday">Everyday</string>
+    <string name="picker_year">Y</string>
+    <string name="picker_month">M</string>
+    <string name="picker_day">D</string>
+    <string name="picker_hour">H</string>
+    <string name="picker_minute">M</string>
+    <string name="picker_second">S</string>
+
+    <!-- other -->
+    <string name="prompt">Reminder</string>
+    <string name="search">Search</string>
+    <string name="confirm">Confirm</string>
+    <string name="refuse">Refuse</string>
+    <string name="next_handle">Next time</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="del">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="send">Send</string>
+    <string name="unknow">Unknown</string>
+    <string name="not_set">Not set</string>
+    <string name="i_know">I got it!</string>
+    <string name="open">On</string>
+    <string name="close">Off</string>
+    <string name="notification_name">Message notification</string>
+    <string name="notification_description">Message notification</string>
+
+    <!-- help text -->
+    <string name="phone_no_receive_content">Please confirm that you have entered phone number not watch number; \nverification code is blocked as spam by security software, and you can find blocked SMS on your phone;\ntry restarting your phone；</string>
+    <string name="email_no_receive_content">Please confirm email format is correct; \nVerification code emails are automatically classified as spam mailbox, which can be found in spammailbox; \n Receiving time is too long, you can open mailbox and click to receive.</string>
+    <string name="not_found_device_imei_content">1. Insert SIM card into watch and turn it on\n2. Enter binding interface and click icon\n3. There are 10-bit binding code below QR code. If not, it means watch is not connected to network, please check again</string>
+
+    <!-- picture selector -->
+    <string name="picture_audio">Access to system recording permission denied</string>
+    <string name="picture_camera">Get system camera permission denied</string>
+    <string name="picture_camera_roll">Camera roll</string>
+    <string name="picture_cancel">Cancel</string>
+    <string name="picture_completed">Completed</string>
+    <string name="picture_confirm">Cancel</string>
+    <string name="picture_done">Ok</string>
+    <string name="picture_done_front_num">%1$d/%2$d Ok</string>
+    <string name="picture_empty">You can use your camera to take photos or videos</string>
+    <string name="picture_empty_title">No video or photos\n</string>
+    <string name="picture_error">The picture is corrupted</string>
+    <string name="picture_jurisdiction">Read memory card access denied</string>
+    <string name="picture_long_chart">Long</string>
+    <string name="picture_message_max_num">You can choose up to %1$s pictures</string>
+    <string name="picture_min_img_num">The minimum selection of picture cannot be less than %1$s</string>
+    <string name="picture_pause_audio">Pause</string>
+    <string name="picture_photograph">Photograph</string>
+    <string name="picture_please">Please later&#8230;</string>
+    <string name="picture_please_select">Please Select</string>
+    <string name="picture_preview">Preview</string>
+    <string name="picture_prompt">Prompt</string>
+    <string name="picture_prompt_content">Do you want to save pictures to your phone?</string>
+    <string name="picture_quit_audio">Quit</string>
+    <string name="picture_rule">Not pictures or video</string>
+    <string name="picture_save_error">Picture save failed</string>
+    <string name="picture_save_success">Save picture successfully to</string>
+    <string name="picture_stop_audio">Stop</string>
+    <string name="picture_take_picture">Shot</string>
+
+    <!-- PictureSelectorActivity -->
+    <string name="rc_picsel_toolbar">Photos &amp; Videos</string>
+    <string name="rc_picsel_toolbar_send">Send</string>
+    <string name="rc_picsel_toolbar_send_num">Send(%d/9)</string>
+    <string name="rc_picsel_pictype">Photos &amp; Videos</string>
+    <string name="rc_picsel_toolbar_preview">Preview</string>
+    <string name="rc_picsel_toolbar_preview_num">Preview(%d)</string>
+    <string name="rc_picsel_selected_max_pic_count">You can only choose 9 pictures at most.</string>
+    <string name="rc_picsel_selected_max_gif_size_span_with_param">GIF image size too Iarge. Unable to send.</string>
+    <string name="rc_picsel_catalog_number">%d</string>
+    <string name="rc_picsel_take_picture">Take picture</string>
+    <string name="rc_picsel_catalog_allpic">All pictures</string>
+
+    <!-- PicturePreviewActivity -->
+    <string name="rc_picprev_origin">Full Image</string>
+    <string name="rc_picprev_origin_size">Full Image(%s)</string>
+    <string name="rc_picprev_select">Select</string>
+
+    <!-- rong im -->
+    <string name="rc_audio_input">Hold to Talk</string>
+    <string name="rc_audio_input_hover">Release to Send</string>
+    <string name="rc_ext_send">Send</string>
+    <string name="rc_ext_cancel">Cancel</string>
+    <string name="rc_message_unread_count">"···"</string>
+    <string name="rc_input_voice">Hold to talk</string>
+    <string name="rc_voice_rec">Slide up to cancel</string>
+    <string name="rc_voice_cancel">Release to cancel</string>
+    <string name="rc_voice_short">Recording time is too short</string>
+    <string name="rc_voice_failure">Recording failed</string>
+    <string name="rc_voice_too_long">Recording time is too long</string>
+    <string name="rc_voip_occupying">The audio channel is being used, please try later</string>
+    <string name="rc_dialog_item_message_delete">Delete</string>
+    <string name="rc_dialog_item_message_copy">Copy</string>
+    <string name="rc_dialog_item_message_recall">Recall</string>
+    <string name="rc_dialog_item_message_more">More</string>
+    <string name="rc_recall_success">Message recalled</string>
+    <string name="rc_recall_failed">Failed to recall the message</string>
+    <string name="rc_you_recalled_a_message">You have recalled a message</string>
+    <string name="rc_you_recalled_edit">Edit</string>
+    <string name="rc_admin_recalled_a_message">Admin has recalled a message</string>
+    <string name="rc_recalled_a_message">&#160; has recalled a message</string>
+    <string name="rc_admin_recalled_message">Admin&#160; has recalled a message</string>
+    <string name="rc_exceeded_max_limit">Exceeded the maximum limit</string>
+    <string name="rc_exceeded_max_limit_100">Select up to 100 chat transcripts</string>
+    <string name="seal_conversation_remote_side_is_typing">Typing &#046;&#046;&#046;</string>
+    <string name="seal_conversation_remote_side_speaking">Speaking &#046;&#046;&#046;</string>
+    <string name="rc_send_format">Send(%1$s)</string>
+    <string name="rc_yesterday_format">Yesterday</string>
+    <string name="rc_year_format">Year</string>
+    <string name="rc_month_format">Month</string>
+    <string name="rc_day_format">Day</string>
+    <string name="rc_monday_format">Mon</string>
+    <string name="rc_tuesday_format">Tue</string>
+    <string name="rc_wednesday_format">Wed</string>
+    <string name="rc_thuresday_format">Thu</string>
+    <string name="rc_friday_format">Fri</string>
+    <string name="rc_saturday_format">Sat</string>
+    <string name="rc_sunsay_format">Sun</string>
+    <string name="rc_daybreak_format">AM</string>
+    <string name="rc_morning_format">AM</string>
+    <string name="rc_noon_format">PM</string>
+    <string name="rc_afternoon_format">PM</string>
+    <string name="rc_night_format">PM</string>
+    <string name="rc_waiting">Waiting…</string>
+    <string name="rc_file_not_exist">File does not exist</string>
+    <string name="rc_network_is_busy">Network is busy</string>
+    <string name="rc_network_error">Network connection error</string>
+    <string name="rc_called_on_hook">Call is hung-up by caller</string>
+    <string name="rc_called_is_calling">The number you have called is busy</string>
+    <string name="rc_exit_calling">Do you want to exit the calling interface?</string>
+    <string name="rc_yes">Yes</string>
+    <string name="rc_called_not_accept">Call has not answered</string>
+    <string name="rc_called_accept">The receiver has accepted call request</string>
+    <string name="rc_plugins_voip">Voice Call</string>
+    <string name="callkit_voip_ok">OK</string>
+    <string name="rc_voip_video">Video Call</string>
+    <string name="rc_voip_call_waiting">Waiting for response&#8230;</string>
+    <string name="rc_voip_call_connecting">Connecting</string>
+    <string name="rc_voip_call_busy">Busy line</string>
+    <string name="rc_voip_call_no_response">No answer</string>
+    <string name="rc_voip_call_hangup">Cancelled</string>
+    <string name="rc_voip_call_network_error">Network connection is not reachable, please check it</string>
+    <string name="rc_voip_call_interrupt">Cancelled</string>
+    <string name="rc_voip_call_terminalted">Call ended</string>
+    <string name="rc_voip_call_started">Call started</string>
+    <string name="rc_voip_select_member">Select members</string>
+    <string name="rc_voip_call_audio_start_fail">Voice call is on. Try again later.</string>
+    <string name="rc_voip_call_video_start_fail">Video call is on. Try again later.</string>
+    <string name="rc_voip_call_other">Other devices have been answered</string>
+    <string name="rc_voip_audio_call_inviting">Invites you to voice call</string>
+    <string name="rc_voip_video_call_inviting">Invites you to video call</string>
+    <string name="rc_voip_notificatio_video_call_inviting">Invites you to video call</string>
+    <string name="rc_voip_notificatio_audio_call_inviting">Invites you to voice call</string>
+    <string name="rc_voip_notificatio_audio_call_inviting_general">You\'ve got a voice chat invitation</string>
+    <string name="rc_voip_notificatio_video_call_inviting_general">You\'ve got a video chat invitation</string>
+    <string name="rc_voip_video_ended">Video call ended</string>
+    <string name="rc_voip_video_no_response">Video call no answer</string>
+    <string name="rc_voip_audio_ended">Voice call ended</string>
+    <string name="rc_voip_audio_no_response">Voice call no answer</string>
+    <string name="rc_voip_mute">Mute</string>
+    <string name="rc_voip_hangup">Hang up</string>
+    <string name="rc_voip_answer">Accept</string>
+    <string name="rc_voip_camera">Camera</string>
+    <string name="rc_voip_handfree">Speaker</string>
+    <string name="rc_voip_disable_camera">Turn off camera</string>
+    <string name="rc_voip_enable_camera">Turn on camera</string>
+    <string name="rc_voip_participant_users">Members</string>
+    <string name="rc_voip_mo_cancel">Cancelled</string>
+    <string name="rc_voip_mo_reject">Declined</string>
+    <string name="rc_voip_mo_no_response">No answer</string>
+    <string name="rc_voip_mt_cancel">Cancelled</string>
+    <string name="rc_voip_mt_reject">Declined</string>
+    <string name="rc_voip_mt_no_response">No answer</string>
+    <string name="rc_voip_call_time_length">Duration&#160;</string>
+    <string name="rc_voip_mt_busy">The other user may be busy now.</string>
+    <string name="rc_voip_message_audio">[Voice Call]</string>
+    <string name="rc_voip_message_video">[Video Call]</string>
+    <string name="rc_voip_switch_to_audio">Switch to voice call</string>
+    <string name="rc_voip_remote_switched_to_audio">Other user switched to voice call.</string>
+    <string name="rc_voip_switched_to_audio">Switch to voice call</string>
+    <string name="rc_voip_float_window_not_allowed">Please enable floating windows</string>
+    <string name="rc_call_on_going">Call in progress</string>
+    <string name="rc_video_call_on_going">Tap to continue as video call is on</string>
+    <string name="rc_voip_over_limit">Up to %d members</string>
+    <string name="rc_voip_ok">Confirm</string>
+    <string name="rc_voip_cancel">Cancel</string>
+    <string name="rc_voip_mic">Microphone</string>
+    <string name="rc_voip_camera_mic">Camera and microphone</string>
+    <string name="rc_voip_open">Open</string>
+    <string name="rc_voip_close">Close</string>
+    <string name="rc_voip_unstable_call_connection">Current call connections is poor quality.</string>
+    <string name="rc_voip_connecting">In Connection&#160;</string>
+    <string name="rc_voip_audio_refuse">Voice call rejected</string>
+    <string name="rc_plugin_image">Photos</string>
+    <string name="rc_message_content_image">[Photos]</string>
+    <string name="rc_message_content_voice">[Voice]</string>
+    <string name="rc_voip_call_terminalted_notify">[Call ended]</string>
+
+
+    <!--    ==========================================================================================-->
+
+
+    <string name="crash_error_tips">Sorry, the program is abnormal and will quit .&#8230;</string>
+    <string name="destination">My purpose</string>
+    <string name="gaode_map">AMap</string>
+    <string name="baidu_map">Baidu Maps</string>
+    <string name="tencent_map">Tencent Map</string>
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+    <string name="northwest">Northwest</string>
+    <string name="northeast">Northeast</string>
+    <string name="southwest">Southwest</string>
+    <string name="southeast">Southeast</string>
+    <string name="online">On-line</string>
+    <string name="offline">Off-line</string>
+    <string name="on">Open</string>
+    <string name="off">Close</string>
+
+    <!-- tracking -->
+    <string name="tracking_count_down">%1$dRefresh in seconds</string>
+    <string name="tracking_my_address">My position</string>
+    <string name="tracking_distance">Apart&#160;&#160;%1$s</string>
+    <string name="tracking_address_not_find">Unable to locate address</string>
+    <string name="tracking_address_finding">Looking for an address&#8230;</string>
+    <string name="tracking_device_info">GPS+Beidou&#160;%1$s&#160;ACC%2$s\n%3$s\n speed:%4$s&#160;direction:%5$s</string>
+    <string name="tracking_device_info_track">GPS+Beidou&#160;%1$s&#160;ACC%2$s,Vol:%3$s%%\n%4$s\n speed:%5$s&#160;direction:%6$s</string>
+    <string name="tracking_device_info_track_new">GPS+Beidou&#160;%1$s&#160;ACC&#160;%2$s,Vol:%3$s%%\n%4$s\n speed:%5$s&#160;direction:%6$s\nnickname:%7$s\nIMEI:%8$s</string>
+    <string name="tracking_device_info_of_pigeon">IMEI:%1$s\nVol%2$s%%\nlocationTime:%3$s\nLogTime:%4$s\nnickname:%5$s\n%6$s\npositioning points:%7$d</string>
+    <string name="tracking_device_info_stop">GPS+Beidou&#160;%1$s&#160;ACC%2$s\n%3$s\nLength of stay:%4$s</string>
+    <string name="tracking_device_info_title">GPS+Beidou&#160;%1$s&#160;ACC%2$s</string>
+    <string name="tracking_device_info_content">%1$s\n speed:%2$s&#160;direction :%3$s</string>
+    <string name="tracking_device_info_stop_content">%1$s\n Length of stay:%2$s</string>
+    <string name="tracking_share_no_address">Share a location information</string>
+    <string name="tracking_share_title">Sharing Location </string>
+
+    <!-- home -->
+    <string name="home_tracking">Live Track</string>
+    <string name="home_history">Replay</string>
+    <string name="home_electronic">Geo-Fence</string>
+    <string name="home_setting">Setting information</string>
+    <string name="home_message">Device Information</string>
+    <string name="home_recharge">Recharge renewaI</string>
+    <string name="home_report">Statement statistics</string>
+    <string name="home_alarm">Alarm alert</string>
+    <string name="home_user">User Information</string>
+    <string name="home_risk_management">Risk management</string>
+    <string name="home_loginout">Logout</string>
+    <string name="home_bind">Binding device</string>
+    <string name="home_voice">Speech Intertalk</string>
+    <string name="home_voice_monitoring">Voice monitoring</string>
+    <string name="home_message_noti"> Message reminder</string>
+    <string name="home_send_order">Remote control</string>
+    <string name="flight_training">Flight training</string>
+    <string name="flight_training_trajectory">Flight training trajectory</string>
+    <string name="home_safe">Wind Control Query</string>
+    <string name="home_navi">Navigation</string>
+    <string name="home_offline_map">Offline map</string>
+    <string name="home_system_configure">System Tools</string>
+
+    <!-- home -->
+    <string name="home_trip_report">Trip report</string>
+    <string name="home_summary_record">Summary report</string>
+    <string name="home_fuel_report">Fuel Report</string>
+    <string name="home_device_setting">Set Parameters</string>
+    <string name="home_e_message">eMessage</string>
+    <string name="home_alarm_record">Alarm Report</string>
+    <string name="home_user_setting">User Setting</string>
+    <string name="home_sports_report">Sports Report</string>
+
+    <string name="hours">%1$d hour</string>
+    <string name="track_minutes">%1$d minute</string>
+    <string name="seconds">%1$d second</string>
+    <string name="day_tips">%1$d day ago</string>
+    <string name="hour_tips">%1$d hour ago</string>
+    <string name="minutes_tips">%1$d minute ago</string>
+    <string name="seconds_tips">%1$d second ago</string>
+    <string name="now_time">Now</string>
+
+    <!-- other -->
+    <string name="tips">Reminder</string>
+    <string name="start">Start</string>
+    <string name="stop">Dry</string>
+    <string name="end">End</string>
+    <string name="bg">Background</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="custom">Customization</string>
+    <string name="year">Year</string>
+    <string name="mouth">Month</string>
+    <string name="day">Day</string>
+    <string name="day_new">Day</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="select_all">Select All</string>
+
+    <!-- history -->
+    <string name="history_start_date">Start time</string>
+    <string name="history_end_date">End time</string>
+    <string name="history_progress">Speed of progress</string>
+    <string name="history_speed">Speed of progress</string>
+    <string name="select_time">Select time</string>
+
+    <!-- electronic -->
+    <string name="electronic_add">Adding Geo-Fence</string>
+    <string name="electronic_edit">Editing Geo-Fence</string>
+    <string name="electronic_description">latitude:%s&#160;&#160;latitude:%s&#160;&#160;radius:%s</string>
+    <string name="electronic_hint">Please enter the name of the Geo-Fence.&#8230;</string>
+
+    <!-- alarm -->
+    <string name="alarm_onoff">Is it enabled?</string>
+    <string name="alarm_voice">Voice reminder</string>
+    <string name="alarm_vibrator">Vibration reminder</string>
+    <string name="alarm_mobile_location">Whether to update the location of mobile phone in real time</string>
+    <string name="alarm_vibrator_tips">Vibration reminder </string>
+    <string name="alarm_offline">Offline alarm</string>
+    <string name="alarm_over_speed">Speed Alarm</string>
+    <string name="alarm_displacement">Displacement alarm</string>
+
+    <!-- user -->
+    <string name="user_nick">Customer Name</string>
+    <string name="user_name">User name</string>
+    <string name="user_contact">Contacts</string>
+    <string name="user_mobile">Contact number</string>
+    <string name="user_email">mailbox</string>
+    <string name="user_address">address</string>
+
+    <!-- setting -->
+    <string name="setting_device_info">Equipment Information</string>
+    <string name="setting_change_password">Change Password</string>
+
+    <!-- device info -->
+    <string name="device_info_name">Name of device</string>
+    <string name="device_info_no">Equipment Number</string>
+    <string name="device_info_expire_date">Expire Date</string>
+    <string name="device_info_car_no">License plate</string>
+    <string name="device_info_model">Equipment type</string>
+    <string name="device_info_mobile">Equipment Telephone</string>
+    <string name="device_info_remark">Remarks</string>
+    <string name="device_info_unbind">Unbound</string>
+    <string name="device_info_upload_photo">Photo upload</string>
+
+    <!-- change password -->
+    <string name="password_now">Original password </string>
+    <string name="password_new">New password</string>
+    <string name="password_repwd">Repeat the new password</string>
+
+    <!-- report -->
+    <string name="report_mileage">Mileage statistics</string>
+    <string name="report_stop">Parking Report</string>
+    <string name="report_mileage_unit">Mileage:%1$s</string>
+    <string name="report_mileage_alarm">Number of alarms:%1$s count</string>
+    <string name="report_mileage_stop">Stop:%1$s count</string>
+    <string name="report_mileage_over_speed">Speeding:%1$s count</string>
+    <string name="report_stop_start">End:%1$s</string>
+    <string name="report_stop_end">End:%1$s</string>
+    <string name="report_stop_time">Length of berth:%1$s</string>
+    <string name="report_stop_latlng">longitude :%1$s&#160;&#160;latitude:%2$s</string>
+
+    <!-- user list -->
+    <string name="user_list">User List </string>
+    <string name="user_list_tips">Long Press Selection User</string>
+
+    <!-- search device -->
+    <string name="search_device">Search equipment</string>
+    <string name="search_device_hint">Please enter the device name/Equipment type/IDNumber&#160;&#160;search</string>
+
+    <!-- recharge -->
+    <string name="recharge_id">Equipment Number :&#160;&#160;&#160;&#160;%1$s</string>
+    <string name="recharge_date">Maturity time:&#160;&#160;&#160;&#160;%1$s</string>
+    <string name="recharge_text">Recharge amount</string>
+    <string name="recharge_cost">Platform renewal for one year/60 yuan</string>
+    <string name="recharge_tips">Platform renewal refers to the usage period of the platform software, which is not related to the SIM card inside the locator. If the SIM card of the locator device is in arrears, please contact the agent or operator to recharge.</string>
+    <string name="recharge_type">Payment method</string>
+    <string name="recharge_pepay">Pepay</string>
+    <string name="recharge_googlepay">Google&#160;&#160;Pay</string>
+    <string name="recharge_wxpay">Wechat Payment</string>
+    <string name="recharge_alipay">Alipay payment </string>
+
+    <!-- device -->
+    <string name="device_acc">ACC %1$s</string>
+    <string name="device_sport">motion</string>
+    <string name="device_motionless">static</string>
+
+    <!-- pay -->
+    <string name="pay_life_renewal">Platform renewal for one year</string>
+    <string name="gps_platform_item_1">gps_platform_item_1</string>
+    <string name="gps_platform_test_item_1">gps_platform_test_item_1</string>
+    <string name="google_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjyaraPX9d6jxefgPj/BLvIi6Cb7/joe3gR59AxdtZuNbVNmiAhbpPEkIWkea6hptKscOgL55D/7xJWHnX+uQ9yHDkZimq+fjdBKl1gfwNhfniuWn5BKXujmh8GyX73NgSiniJRu4QiNzpG65bBiteWuigOmzI9LG2o0LjKhh4Sit5FtpEuDath/+NDzSfN3Y1I83feNI6UqA2O06+t829NU/gS6sZCG20PO8Xhftn6zJHMY+ipgA/rgOyHFWm+1DdazierOY3DB0EnKVWuwzSV9Vkz/6sy4JEtN+rFE9RdL4vi9posXzxt8kRsb+DfEtg/QN3IhDk/qFmKgJbsUL+QIDAQAB</string>
+
+    <!-- bind device -->
+    <string name="bind_device_imei_hint">Please enter the device number</string>
+    <string name="bind_device_pwd_hint">Please enter the device password</string>
+    <string name="bind_device_btn">binding</string>
+
+    <!-- qrcode scanner -->
+    <string name="qrcode_scanner">Scan QR code</string>
+    <string name="qrcode_scanner_tips">The two-dimensional code/bar code can be scanned automatically by putting it into the frame.</string>
+    <string name="qrcode_scanner_flash_open">Light spot illumination</string>
+    <string name="qrcode_scanner_flash_close">Turn off lightly</string>
+
+    <!-- chat -->
+    <string name="chat_send">Send</string>
+    <string name="chat_record_normal">Hold down&#160;&#160;&#160;&#160;speak </string>
+    <string name="chat_recording">Release&#160;&#160;&#160;&#160;End</string>
+    <string name="chat_record_cancel">Release&#160;&#160;&#160;&#160;Cancel</string>
+    <string name="chat_other_message">[unknown information]</string>
+    <string name="chat_item_photo">Photo</string>
+    <string name="chat_item_camera">shot</string>
+    <string name="chat_resend">Resend message</string>
+
+    <!-- send order -->
+    <string name="send_order_type">Recovery of oil and electricity</string>
+    <string name="send_order_type2">Oil-cut electricity</string>
+    <string name="send_order_type3">Fortification</string>
+    <string name="send_order_type4">Oil-cut electricity</string>
+    <string name="send_order_type5">Remote Reboot</string>
+    <string name="send_order_type6">Forced positioning</string>
+    <string name="main_control_num">Master Control Number</string>
+    <string name="sos_num">SOSNumber</string>
+    <string name="passthrough">ransparent transmission</string>
+
+    <!-- nearby navi -->
+    <string name="nearby_navi_type">Parking lot</string>
+    <string name="nearby_navi_type2">Bank</string>
+    <string name="nearby_navi_type3">Delicious food</string>
+    <string name="nearby_navi_type4">Hotel</string>
+    <string name="nearby_navi_type5">Gas station</string>
+    <string name="nearby_navi_type6">Hospital</string>
+    <string name="nearby_navi_type7">Bus stop</string>
+    <string name="nearby_navi_type8">Super market</string>
+    <string name="nearby_navi_type9">Casino</string>
+
+    <!-- offline map -->
+    <string name="city_list">City List</string>
+    <string name="download_manager">Download Management</string>
+
+    <!-- url -->
+    <string name="image_thumb_url">http://lineliao.com:8088/file/%1$s/images/%2$s_Thumb</string>
+    <string name="image_url">http://lineliao.com:8088/file/%1$s/images/%2$s</string>
+
+
+    <!-- common -->
+    <string name="common_type_first">Stop</string>
+    <string name="common_type_second">Restore</string>
+    <string name="common_type_third">Unlock</string>
+    <string name="common_type_forth">Lock</string>
+    <string name="common_type_fifth">Start-up</string>
+    <string name="common_type_sixth">Search Car</string>
+    <string name="common_type_seventh">Alarm</string>
+    <string name="common_type_eightth">Take Photo</string>
+    <string name="common_result_wait">Wait for sending</string>
+    <string name="common_result_sending">Sending</string>
+    <string name="common_result_sent">Sent</string>
+    <string name="common_result_fail">Fail in send</string>
+
+    <!-- device setting -->
+    <string name="device_setting_type_first">Set authorized phone number</string>
+    <string name="device_setting_type_second">Set speed limit for over speed alarm</string>
+    <string name="device_setting_type_third">Set movement alert</string>
+    <string name="device_setting_type_fourth">Output control (safe - 10Km/h)</string>
+    <string name="device_setting_type_fifth">Output control (general)</string>
+    <string name="device_setting_type_sixth">Set telephone number for wiretapping</string>
+    <string name="device_setting_type_seventh">Set time zone</string>
+    <string name="device_setting_type_eightth">Set angle interval for continuous tracking</string>
+    <string name="device_setting_type_ninth">Set odometer interval for continuous tracking</string>
+    <string name="device_setting_type_tenth">Take photo</string>
+    <string name="device_setting_type_eleventh">Set 500 RFID numbers</string>
+    <string name="device_setting_type_twelfth">Set time interval for continuous tracking</string>
+    <string name="unit_metre">Metre</string>
+    <string name="device_setting_close_over_speed">Close over speed alarm</string>
+    <string name="device_setting_view">View</string>
+    <string name="device_setting_close_movement">Close movement alert</string>
+    <string name="device_setting_key_no">Key No</string>
+
+    <!-- sport report -->
+    <string name="report_data">Date</string>
+    <string name="ride_human">Human riding(H)</string>
+    <string name="ride_pas">PAS riding(H)</string>
+    <string name="ride_odometer">odometer(Km)</string>
+    <string name="ride_calorie">calorie(kcal)</string>
+
+    <!-- history record -->
+    <string name="report_time">Time</string>
+    <string name="history_record_latlng">Latlng</string>
+    <string name="history_record_direct">Direct</string>
+    <string name="history_record_speed">Speed</string>
+    <string name="history_record_fuel">Fuel</string>
+    <string name="history_record_mileage">Mileage</string>
+    <string name="history_record_temp">Temp</string>
+    <string name="history_record_alarm">Alarm</string>
+    <string name="history_record_status">Status</string>
+
+    <!-- trip report -->
+    <string name="trip_report_fuel">Consume fuel</string>
+    <string name="trip_report_avg_speed">Avg Speed</string>
+    <string name="trip_report_max_speed">Max speed</string>
+
+    <!-- alarm report -->
+    <string name="alarm_report_content">Alarm text</string>
+    <string name="expire_time_prompt">Your account will expire in %s days, please renew it in time!</string>
+
+    <!-- appointment parameter -->
+    <string name="recording_mode">Record model</string>
+    <string name="preset_params_custom_mode">Custom Mode</string>
+    <string name="pigeon_ring_number">Pigeon ring number</string>
+    <string name="appointment_parameter">Reserve set</string>
+    <string name="please_select_schedule_start_time">Please select an appointment for a start-up time</string>
+    <string name="schedule_start_time_cannot_be_earlier_than_the_current_time">The scheduled start time cannot be earlier than the current time</string>
+    <string name="please_select_a_recording_mode">Please select a recording mode</string>
+    <string name="please_select_at_least_one_device_to_apply_this_configuration">Select at least one device to apply this configuration</string>
+
+    <!-- trajectory analysis -->
+    <string name="trajectory_analysis">Trajectory analysis</string>
+
+    <!-- blue tooth -->
+    <string name="blue_tooth">Bluetooth</string>
+    <string name="blue_tooth_searching">Searching</string>
+    <string name="blue_tooth_connecting">Connecting</string>
+    <string name="blue_tooth_connect_success">Successfully connected</string>
+    <string name="blue_tooth_connect_time">Bluetooth connection time:%s</string>
+    <string name="blue_tooth_disconnect_time">Bluetooth disconnection time:%s</string>
+    <string name="blue_tooth_upload_status">Transmission Status:%s</string>
+    <string name="blue_tooth_upload_record">Transmission Record:%d/%d</string>
+    <string name="blue_tooth_status_first">Waiting for Connection</string>
+    <string name="blue_tooth_status_second">Transferring</string>
+    <string name="blue_tooth_status_third">Get Configuration Information</string>
+    <string name="blue_tooth_status_fourth">Completed</string>
+    <string name="blue_tooth_status_fifth">Disconnected</string>
+    <string name="blue_tooth_data_check">View</string>
+    <string name="blue_tooth_data_prompt">There are %d positioning data that need to be supplemented and will be automatically uploaded when staying on this page</string>
+    <string name="blue_tooth_reset">Restore Factory Settings</string>
+
+    <!-- Ble scan error messages -->
+    <string name="error_bluetooth_not_available">Bluetooth is not available</string>
+    <string name="error_bluetooth_disabled">Enable bluetooth and try again</string>
+    <string name="error_location_permission_missing">On Android 6.0 location permission is required. Please enable it in phone settings</string>
+    <string name="error_location_services_disabled">Location services need to be enabled on Android 6.0</string>
+    <string name="error_scan_failed_already_started">Scan with the same filters is already started</string>
+    <string name="error_scan_failed_application_registration_failed">Failed to register application for bluetooth scan</string>
+    <string name="error_scan_failed_feature_unsupported">Scan with specified parameters is not supported</string>
+    <string name="error_scan_failed_internal_error">Scan failed due to internal error</string>
+    <string name="error_scan_failed_out_of_hardware_resources">Scan cannot start due to limited hardware resources</string>
+    <string name="error_undocumented_scan_throttle">Android 7+ does not allow more scans.</string>
+    <string name="error_undocumented_scan_throttle_retry">Try in %d seconds</string>
+    <string name="error_bluetooth_cannot_start">Unable to start scanning</string>
+    <string name="error_unknown_error">Unknown error</string>
+
+    <!-- device list -->
+    <string name="device_list_selector_all">All</string>
+    <string name="device_list_selector_usable">Available</string>
+    <string name="device_list_selector_lost">Flying Lost</string>
+    <string name="device_list_selector_unbound">Unbound</string>
+    <string name="device_list_selector_unbind">Unbind</string>
+    <string name="device_list_selector_activated">Activate</string>
+    <string name="device_list_selector_not_active">Not activated</string>
+    <string name="device_list_selector_find">Retrieve</string>
+    <string name="device_list_selector_expire">Expire date</string>
+    <string name="device_list_ring_no">Pigeon Ring Number:%s</string>
+    <string name="device_list_selector_activated_time">Opening time:%s</string>
+    <string name="device_list_selector_expire_time">Use warranty period to:%s</string>
+    <string name="device_list_selector_bind_time">Binding time:%s</string>
+    <string name="device_list_selector_unbind_time">Unbind time:%s</string>
+    <string name="device_list_selector_lose_time">Lost time:%s</string>
+    <string name="device_list_selector_retrieve_time">Retrieve time:%s</string>
+    <string name="device_list_selector_last_gps_time">Last positioning time:%s</string>
+    <string name="device_list_expire_date_select">Choose to use the warranty period</string>
+    <string name="device_list_expire_date_prompt">The warranty period is about to expire.\nPlease contact your dealer to renew the warranty\nTo extend the warranty period</string>
+    <string name="device_list_expire_date_pass_prompt">The warranty period has expired.\nPlease contact your dealer to renew the warranty\nTo extend the warranty period</string>
+    <string name="device_list_race_status">Current mode:%s</string>
+
+    <!-- hint -->
+    <string name="hint_sos_num">SOSnumber1</string>
+    <string name="hint_sos_num_second">SOSnumber2</string>
+    <string name="hint_wiretapping_num">Enter telephone number for wiretapping</string>
+    <string name="hint_auth_num_first">Enter authorized phone number 1</string>
+    <string name="hint_auth_num_second">Enter authorized phone number 2</string>
+    <string name="hint_rfid_num_first">Enter RFID numbers 1</string>
+    <string name="hint_rfid_num_second">Enter RFID numbers 2</string>
+    <string name="hint_rfid_num_third">Enter RFID numbers 3</string>
+    <string name="hint_rfid_num_fourth">Enter RFID numbers 4</string>
+    <string name="hint_rfid_num_fifth">Enter RFID numbers 5</string>
+    <string name="hint_phone_num">Enter phone number</string>
+    <string name="hint_message">Enter message</string>
+
+    <!-- tips -->
+    <string name="no_read_phone_state_permission">Refuse to read local identification code</string>
+    <string name="no_amap_permission">Reject the permissions required to locate</string>
+    <string name="no_camera_permission">Refuse the permission required to open the camera</string>
+    <string name="no_record_permission">The permissions required to deny recording</string>
+    <string name="server_empty_tips">Please enter the website address</string>
+    <string name="username_empty_tips">enter one user name or ID number</string>
+    <string name="car_no_empty_tips">Please enter ID number</string>
+    <string name="pwd_empty_tips">Please input a password</string>
+    <string name="loading_tips">Please wait while loading&#8230;</string>
+    <string name="requesting_tips">In the request, please wait a moment.&#8230;</string>
+    <string name="logining_tips">Logging in, please wait a moment.&#8230;</string>
+    <string name="login_success_tips">Successful login</string>
+    <string name="login_failure_tips">Logon failure</string>
+    <string name="login_pwd_error_tips">Logon password error</string>
+    <string name="login_pwd_change_tips">The login password has been changed. Please login again</string>
+    <string name="no_device_tips">No Binding Device</string>
+    <string name="no_device_gps_tips">No device location information</string>
+    <string name="no_mobile_gps_tips">No location information for mobile phones</string>
+    <string name="no_gps_tips">No location information</string>
+    <string name="no_gaode_map_tips">You haven\'t installed the AMap yet</string>
+    <string name="no_baidu_map_tips">You haven\'t installed Baidu Map yet</string>
+    <string name="no_tencent_map_tips">You haven\'t installed Tencent Map yet</string>
+    <string name="no_google_map_tips">You haven\'t installed it yetGoogle&#160;&#160;Map</string>
+    <string name="no_history_tips">There is no record of historical trajectory in this period</string>
+    <string name="no_mileage_tips">No mileage record for this period</string>
+    <string name="no_stop_tips">No docking records were recorded during this period.</string>
+    <string name="set_error_tips">Setup failed</string>
+    <string name="query_error_tips">Query failure</string>
+    <string name="input_now_pwd_tips">Please enter the original password.</string>
+    <string name="input_new_pwd_tips">Please enter a new password</string>
+    <string name="input_repwd_error_tips">The two new passwords you entered are inconsistent</string>
+    <string name="input_now_pwd_error_tips">The original password you entered is incorrect</string>
+    <string name="add_error_tips">Failure to add</string>
+    <string name="edit_error_tips">Editorial failure</string>
+    <string name="del_error_tips">Delete failed</string>
+    <string name="edit_success_tips">Successful revision</string>
+    <string name="rename_error_tips">The name already exists. Please change it to another name</string>
+    <string name="loginout_tips">Are you sure you want to cancel？</string>
+    <string name="electronic_name_empty_tips">Please enter the name of the Geo-Fence.</string>
+    <string name="no_support_google_tips">Not supported for use Google&#160;&#160;Map</string>
+    <string name="empty_data_electronic_tips">There is no Geo-Fence information at present</string>
+    <string name="empty_data_message_tips">There is no alarm information at present</string>
+    <string name="empty_data_device_tips">There is no equipment information available at present</string>
+    <string name="empty_data_mileage_tips">There is no mileage information at present</string>
+    <string name="empty_data_stop_tips">There is no docking information at present</string>
+    <string name="empty_data_tips">There is no data at present.</string>
+    <string name="bind_device_success_tips">Binding success!!</string>
+    <string name="bind_device_error_tips">Binding failed!</string>
+    <string name="bind_device_imei_error_tips">Equipment does not exist, please try again!</string>
+    <string name="bind_device_pwd_error_tips">The device password is incorrect, please try again!</string>
+    <string name="bind_device_rebind_tips">The device has been bound, no duplicate binding is allowed!</string>
+    <string name="unbind_device_success_tips">Successful unbinding!</string>
+    <string name="unbind_device_error_tips">Unbundling failed!</string>
+    <string name="unbind_device_nobind_tips">You did not bind the device, unbinding failed!</string>
+    <string name="chat_delete_all_message_tips">Are you sure you want to delete all message records locally on the device？</string>
+    <string name="module_no_opening_tips">The function is not yet open</string>
+    <string name="send_order_tips">Please confirm whether you need to send %s Instruction</string>
+    <string name="check_download_offline_package">Confirm to download.&#160;%s&#160;Offline package.？</string>
+    <string name="check_del_offline_package">Confirm to delete.&#160;%s&#160;Offline package.？</string>
+    <string name="send_success_tips">Send successfully!</string>
+    <string name="photo_uploading_tips">The picture is being uploaded.</string>
+    <string name="upload_success_tips">The upload was successful!</string>
+    <string name="upload_error_tips">The upload failed!</string>
+    <string name="network_error_prompt">Network connection is not available, please try again later</string>
+    <string name="request_unkonow_prompt">Network exception</string>
+    <string name="request_token_expired_prompt">Login information has expired</string>
+    <string name="bind_success_agent_prompt">Successfully bound: Please contact the dealer to activate the device before it can be used normally</string>
+    <string name="activated_device_prompt">Do you want to activate device %s(%s)?</string>
+    <string name="activated_device_success_prompt">Successfully opened</string>
+    <string name="select_device_prompt">Select at least one device</string>
+    <string name="update_expire_date_prompt">Do you want to update the warranty period for device %s (%s)?</string>
+
+    <!-- crash error -->
+    <string name="customactivityoncrash_error_activity_error_occurred_explanation">An unexpected error occurred。The inconvenience，Please forgive me。</string>
+    <string name="customactivityoncrash_error_activity_restart_app">Restart.&#160;&#160;APP</string>
+    <string name="customactivityoncrash_error_activity_close_app">Close&#160;&#160;APP</string>
+    <string name="customactivityoncrash_error_activity_error_details">Display error details</string>
+    <string name="customactivityoncrash_error_activity_error_details_title">Display error details</string>
+    <string name="customactivityoncrash_error_activity_error_details_close">Close</string>
+    <string name="customactivityoncrash_error_activity_error_details_copy">Copy to the cutting board</string>
+    <string name="customactivityoncrash_error_activity_error_details_copied">Copy to the cutting board</string>
+    <string name="customactivityoncrash_error_activity_error_details_clipboard_label">Chimpanzees</string>
+
+
+    <string name="add_device_new">Add device</string>
+    <string name="switch_device_new">Switch device</string>
+    <string name="unbind_device_new">Unbind device</string>
+    <string name="device_qrcode_new">QRCODE</string>
+    <string name="scan_qrcode_new">Scan Device QR Code</string>
+    <string name="scan_qrcode_prompt_new">Align QR code in frame and scan</string>
+
+
+    <string name="map">Map</string>
+    <string name="map_title">Map Center</string>
+    <string name="home">Home</string>
+    <string name="map_center">Map Center</string>
+    <string name="device_number">Tel of device</string>
+    <string name="scan_bind_device_new">Scan code to bind</string>
+    <string name="change_device_prompt">Please fill in correct device number. Incorrect number will cause unavailability。</string>
+    <string name="login_out_prompt_new">Data of any device or APP will not be deleted after logging out.Are you sure to login out?</string>
+    <string name="hour_new">hour</string>
+    <string name="minute_new">min</string>
+    <string name="second_new">sec</string>
+    <string name="add_server_address_title">Add server address</string>
+    <string name="device_list">Device list</string>
+    <string name="meter">m</string>
+    <string name="kilometer">km</string>
+    <string name="kilometerPerHour">km/h</string>
+
+    <string name="pigeon_ring">Pigeon ring</string>
+    <string name="number_of_foot_ring_prompt">Enter the number of the foot ring</string>
+    <string name="number">Number</string>
+    <string name="nickname">Nickname</string>
+    <string name="plumage_color">Color</string>
+    <string name="operation">Operation</string>
+    <string name="number_of_pigeon_ring">Number of the ring</string>
+    <string name="my_smart_pigeon_ring">My ring</string>
+    <string name="enter_number_of_pigeon">Please enter pigeon number</string>
+    <string name="enter_nickname_of_pigeon">Please enter pigeon nickname</string>
+    <string name="enter_color_of_plumage">Please enter plumage color</string>
+    <string name="cannot_empty_prompt">can not be empty</string>
+    <string name="add_pigeon">Add pigeon</string>
+    <string name="delete_pigeon_ring_prompt">Delete this device?</string>
+    <string name="pigeon">Pigeon</string>
+    <string name="delete_pigeon_prompt">Whether delete this pigeon</string>
+    <string name="cannot_find_pigeon_by_number_prompt">Can not find the pigeon</string>
+    <string name="race_live_broadcast">Race live broadcast</string>
+    <string name="delete_server_address">Delete this server address</string>
+    <string name="unnamed">Unnamed</string>
+    <string name="choose_color_of_polyline">Choose color of polyline</string>
+    <string name="change_a_batch_of_color">Change a batch of color</string>
+    <string name="live_broadcast">Live broadcast</string>
+    <string name="live_broadcast_list">Live broadcast list</string>
+    <string name="device_power">Power</string>
+    <string name="device_nickname">Nickname:%s</string>
+    <string name="track_playback">Track playback</string>
+
+    <string name="which_devices_be_shown">Display devices</string>
+    <string name="selected_device_cannot_be_hidden">Selected device cannot be hidden</string>
+
+    <string name="start_downloading_ephemeris_time">Start downloading ephemeris time</string>
+    <string name="delay_start_time_of_game">Delay start time of the game</string>
+    <string name="scheduled_start_time">Scheduled start time</string>
+    <string name="positioning_frequency">Positioning frequency</string>
+    <string name="upload_frequency">Upload frequency</string>
+    <string name="data_upload_start_time">Data upload start time</string>
+    <string name="low_battery_threshold">Low battery threshold</string>
+    <string name="second_stage_start_time">Second stage start time</string>
+    <string name="second_stage_end_time">Second stage end time</string>
+    <string name="positioning_frequency_in_second_stage">Second stage positioning frequency </string>
+    <string name="data_upload_frequency_in_second_stage">Second stage data upload frequency </string>
+    <string name="positioning_frequency_in_third_stage">Third stage positioning frequency</string>
+    <string name="data_upload_frequency_in_third_stage">Third stage data upload frequency</string>
+    <string name="positioning_frequency_in_low_battery_mode">Low battery positioning frequency</string>
+    <string name="data_upload_frequency_in_low_battery_mode">Low battery data upload frequency</string>
+    <string name="Continue_the_last_race_data">Continue the last race data</string>
+    <string name="clear_the_last_race_data">Clear the last race data</string>
+    <string name="race_number">Race number</string>
+    <string name="configuration_data_modification_time">Configuration data modification time</string>
+    <string name="position_frequency_unit">Minutes/time</string>
+    <string name="enter_positioning_frequency_hint">Please enter the positioning frequency</string>
+    <string name="update_time_later_than_now">You have modified the sending parameters. Please unplug the device and re mount it to the charging station. Wait for the device to flash green. Configuration data issuing time: change to the current time, and the modified parameters will take effect. Please confirm.</string>
+    <string name="frequency">Frequency</string>
+    <string name="threshold">Threshold</string>
+    <string name="enter_range_1_to_100">the input range is 1&#8211;100</string>
+    <string name="update_succeed_prompt">Update Succeed</string>
+    <string name="update_failed_prompt">Update Failed</string>
+    <string name="discard_modification_prompt">Whether discard the modification and quit</string>
+    <string name="modify_and_send_out">Modify and send out</string>
+    <string name="set_value_to_empty">Set value to empty</string>
+    <string name="make_modification">Make modification</string>
+    <string name="point_count">Point count</string>
+    <string name="valid_end_time">Valid end time</string>
+    <string name="valid_point_count">Valid point count</string>
+    <string name="total_time">Total time</string>
+    <string name="position_frequency_too_high_prompt">Positioning frequency is too high that once every 2 minutes at most</string>
+    <string name="whether_delete_flight_training_plan">Whether delete this flight training plan</string>
+    <string name="delete_succeed_prompt">Delete successful</string>
+    <string name="during_this_period_no_flight_training_tips">There is no flight training path during this period</string>
+    <string name="configuration_cannot_be_modified_in_race_mode_prompt">Configuration cannot be modified in race mode</string>
+    <string name="track_information">Start time:%1$s\nEnd time:%2$s\nDistance:%3$s\nCount point:%4$s\nTotal time:%5$s</string>
+    <string name="first_location_time">First positioning time</string>
+    <string name="track_info_prompt">Track basic information</string>
+    <string name="track_sharing_circle">Track sharing circle</string>
+    <string name="share">Share</string>
+    <string name="enter_the_content_what_wnat_to_share_prompt">please enter the content what want to share</string>
+    <string name="share_to_track_sharing_circle">Share to track sharing circle</string>
+    <string name="post">Post</string>
+    <string name="failed_to_load_data">Failed to load data</string>
+    <string name="content">Content</string>
+    <string name="device_imei_new">Device IMEI</string>
+    <string name="input_device_imei_prompt">Please enter the IMEI of the device</string>
+    <string name="cannot_find_out_any_device_prompt">Cannot find out any device,please check the entered device IMEI and retry it</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="straight_line_distance">Distance</string>
+    <string name="count_views">Views</string>
+    <string name="whether_delete_track_prompt">Whether delete this track</string>
+    <string name="create_pigeon_competition">Create competition</string>
+    <string name="competition_time">Competition time</string>
+    <string name="competition_name">Competition name</string>
+    <string name="competition_start_and_end_point">Start/End point</string>
+    <string name="enter_the_name_of_competition_prompt">please enter the name of competition</string>
+    <string name="whether_delete_this_competition_prompt">Whether delete this competition</string>
+    <string name="start_point_longitude">Longitude of starting point</string>
+    <string name="start_point_latitude">Latitude of starting point</string>
+    <string name="end_point_longitude">Longitude of ending point</string>
+    <string name="end_point_latitude">Latitude of ending point</string>
+    <string name="rule_valid_range_of_longitude">The valid range of longitude values is between -180 and 180</string>
+    <string name="rule_valid_range_of_latitude">The valid range of latitude values is between -90 and 90</string>
+    <string name="race_information">Race information</string>
+    <string name="manage_competition">Race manage</string>
+    <string name="succeed">succeed</string>
+    <string name="failed">failed</string>
+    <string name="private_mode">private mode</string>
+    <string name="competition_mode">competition mode</string>
+    <string name="competition_parameter">Competition parameter</string>
+    <string name="manage_device_of_competition">Race device manage</string>
+    <string name="whether_delete_this_device_from_the_competition_prompt">whether delete this device from the competition</string>
+    <string name="location_refresh_interval">Positioning refresh interval</string>
+    <string name="set_location_refresh_interval">Set positioning refresh interval</string>
+    <string name="set_positioning_refresh_interval_prompt">Set positioning refresh interval between 15 sec to 300 sec</string>
+    <string name="whether_capture_the_map_and_share_it_prompt">Do you want to capture the map and share it</string>
+    <string name="my">My</string>
+    <string name="user_id">userID</string>
+    <string name="create_time">Creation time:%s</string>
+    <string name="location_time">Location time</string>
+    <string name="update_time">Upload time</string>
+    <string name="positioning_points">Location points</string>
+    <string name="fuel">Fuel</string>
+    <string name="weather">Weather</string>
+    <string name="pack_up">Pack up</string>
+    <string name="standby_time">Start standby time</string>
+    <string name="total_positioning_time">Total positioning time</string>
+    <string name="total_standby_time">Total standby time</string>
+    <string name="last_log_time">Last log time</string>
+    <string name="please_enter_user_account">Please enter user account</string>
+    <string name="user_management">User management</string>
+    <string name="device_management">Device management</string>
+    <string name="unbind_succeed_prompt">Unbind succeed</string>
+    <string name="agent_sale_device_management">Distribution equipment management</string>
+    <string name="dealer_manage">Dealers manage</string>
+    <string name="please_enter_the_reseller_user_account">Please enter the reseller user account</string>
+    <string name="precautions">Precautions</string>
+    <string name="precautions_of_pigeon_location_device">The device manufacturer\'s charging stand lights up in red first, and then flashes in red and green to indicate that the network signal is being searched.\nThen flashes in green to indicate that the network signal has been searched and the latest configuration parameter settings have been downloaded; You will see an update on the configuration data modification time in the configuration information section; Then proceed with charging.\nThe constant green light indicates full charge.\n\nIt is not located when there is power on the charging stand.\n\nSet the scheduled startup time in the configuration information to null. If the device is unplugged from the charging stand or unplugged from the power socket, it will start searching for location.\n\nIf the scheduled startup time is set, it should be noted that the device will not work if it is unplugged from the charging stand after the scheduled startup time, You must reset the appointment start time and then grab the latest parameters from the charging stand on the device, and check if the configuration data modification time has changed.\n\nThe device needs to be placed on an outdoor pigeon or outside the car to catch the location. If you cannot find the location indoors, it will consume a lot of power and quickly run out of power</string>
+    <string name="log_off">Account cancellation</string>
+    <string name="account_cancellation_succeed">Account cancellation succeed</string>
+    <string name="confirm_account_cancellation">Confirm account cancellation</string>
+    <string name="hint_account_cancellation">Be careful! The account cannot be recovered after being cancelled. Please confirm whether to cancel the account right now</string>
+    <string name="word_default">Default</string>
+    <string name="invalid_imei_number">IMEI number is invalid, please scan again</string>
+    <string name="camera_permission_is_denied">Camera permission is denied,cannot open camera</string>
+    <string name="log_time">Log time</string>
+    <string name="distance_from_previous_point">Distance from previous point</string>
+    <string name="time_from_previous_point">Time from previous point</string>
+    <string name="cumulative_distance">Cumulative distance</string>
+    <string name="cumulative_time">Cumulative time</string>
+    <string name="direction">Direction</string>
+    <string name="signal_intensity">Signal intensity</string>
+    <string name="altitude">Altitude</string>
+    <string name="flight_lost">Lost</string>
+    <string name="unbind_shrank">Unbind</string>
+    <string name="retrieve">Retrieve</string>
+    <string name="tip_mark_as_lost">Whether mark this device as lost</string>
+    <string name="tip_mark_as_found">Whether mark this device as found</string>
+    <string name="select_which_device_update">Select which devices update</string>
+    <string name="speed_per_minute">speedPerMinute</string>
+    <string name="speed_per_hour">speedPerHour</string>
+    <string name="average_speed_per_minute">m/min(avg)</string>
+    <string name="average_speed_per_hour">km/h(avg)</string>
+    <string name="meter_per_minute">m/min</string>
+    <string name="dealer">Dealer</string>
+    <string name="enter_dealer_account">Please enter the dealer account</string>
+    <string name="add_subordinate_dealer">Add subordinate dealer</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="passwords_inconsistent">The passwords entered are inconsistent</string>
+    <string name="create_and_bind_dealer_account">Create and bind dealer account</string>
+    <string name="switch_to_sub_dealer_account_tip">Switch to subordinate dealer account</string>
+    <string name="user_no_bound_device_tips">User does not bind device,please bind device first</string>
+    <string name="login_to_subordinate_dealer_account">Login to subordinate dealer account</string>
+    <string name="remove_subordinate_dealer_tip">Whether to remove this subordinate dealer</string>
+    <string name="remove_sub_dealer_succeed">Succeed to remove the subordinate dealer</string>
+    <string name="create">Create</string>
+    <string name="add">Add</string>
+    <string name="create_dealer_account_succeed">Create dealer account succeed</string>
+    <string name="expand">Expand</string>
+    <string name="collapse">Collapse</string>
+    <string name="device_version">Device version</string>
+    <string name="no_unbind_permission">No unbind Permission</string>
+    <string name="invalid_position">Invalid positioning</string>
+    <string name="base_station">Base Station</string>
+    <string name="base_station_nb">NB base station positioning</string>
+    <string name="communication_time">Communication time</string>
+    <string name="satellite_num">Number of satellites</string>
+    <string name="charge_status">Charging</string>
+    <string name="set_position_interval">Set positioning interval</string>
+    <string name="restart_device">Reboot the device</string>
+    <string name="shut_down_device">Device shutdown</string>
+    <string name="immedial_location_device">Immediately locate the device</string>
+    <string name="find_device_end">Stop finding devices</string>
+    <string name="hint_set_position_interval">Please enter 0-1440 minutes</string>
+    <string name="unit_minute">(Unit/minute)</string>
+    <string name="pet_location_type_first">Accurate positioning: Continuous positioning, high power consumption</string>
+    <string name="pet_location_type_second">Power saving mode:%d minutes/time</string>
+    <string name="pet_location_type_third">Sleep mode: Always standby, super power-saving</string>
+    <string name="pet_location_mode_first">Precise positioning</string>
+    <string name="pet_location_mode_third">Sleep mode</string>
+    <string name="track_mode">Track</string>
+    <string name="device_type">Device Type</string>
+    <string name="activated_status">Activation status</string>
+    <string name="activated_time">Activation time</string>
+    <string name="expire_time">Validity period</string>
+    <string name="bind_time">Binding time</string>
+    <string name="unbind_time">Unbind time</string>
+    <string name="lose_time">Lost time</string>
+    <string name="retrieve_time">Retrieve time</string>
+    <string name="last_gps_time">Last positioning time</string>
+    <string name="guarantee_time">Warranty Period</string>
+    <string name="guarantee_time_limit">Warranty Period</string>
+    <string name="expire_time_limit">Validity period</string>
+    <string name="device_list_selector_guarantee_time">Warranty period expires:%s</string>
+    <string name="device_list_guarantee_date_select">Select Warranty Period</string>
+    <string name="update_guarantee_date_prompt">Do you want to update the warranty period for device %s(%s)?</string>
+    <string name="online_status">Online status</string>
+    <string name="track_mode_show">Show Tracks</string>
+    <string name="track_mode_hide">Hide Tracks</string>
+    <string name="location_mode_gps">Display GPS positioning</string>
+    <string name="location_mode_base_station">Display base station positioning</string>
+    <string name="location_card_show">Display device information</string>
+    <string name="location_card_hide">Hide device information</string>
+    <string name="message_center">Message Center</string>
+    <string name="send_command_message">Instruction Messages</string>
+    <string name="send_command_type_first">To be sent</string>
+    <string name="send_command_type_second">sent</string>
+    <string name="send_command_type_third">Confirmed</string>
+    <string name="send_command_type_fourth">Received</string>
+    <string name="send_command_type_fifth">Replied</string>
+    <string name="pet_real_time"></string>
+    <string name="update_race_status_first_prompt">Do you want to set this device to personal mode</string>
+    <string name="update_race_status_second_prompt">Do you want to set this device to competition mode</string>
+
+    <!--request error prompt-->
+    <string name="tip_request_error">request was aborted,please try again later</string>
+    <string name="tip_account_permission">Account permission</string>
+    <string name="tip_internal_error">Internal error, please concat the administrator</string>
+    <string name="tip_request_parameter_error">Request parameter error</string>
+    <string name="tip_illegal_request">Illegal request</string>
+    <string name="tip_token_has_expired">The token has expired,please login again</string>
+    <string name="tip_token_in_request_header_cannot_be_empty">Token in request header cannot be empty</string>
+    <string name="tip_token_incorrect">Token is incorrect in request header</string>
+    <string name="tip_user_not_logged_in">User not logged in,please try again after logging in</string>
+    <string name="tip_user_id_in_request_header_cannot_be_empty">User Id in request header cannot be empty</string>
+    <string name="tip_user_id_incorrect">UserId is incorrect in request header</string>
+    <string name="tip_clientFlag_cannot_be_empty_in_request_header">There is no clientFlag tag in request header</string>
+    <string name="tip_clientFlag_only_equal_1_or_2">The clientFlag tag can only be equal to 1 or 2</string>
+    <string name="tip_no_session_in_request_header">There is no session in request header</string>
+    <string name="tip_verification_code_error">Verification code error</string>
+    <string name="tip_verification_code_expired_or_invalid">Verification code not exist or invalid</string>
+    <string name="tip_account_not_exist_or_password_incorrect">Account not exist or password incorrect</string>
+    <string name="tip_user_does_not_exist">User does not exist</string>
+    <string name="tip_device_does_not_exist">Device does not exist</string>
+    <string name="tip_old_password_incorrect">The old password is correct,please re-enter</string>
+    <string name="tip_password_error">Password error,please re-enter</string>
+    <string name="tip_device_cannot_bind_repeatedly">The Device has been bound,please do not bind repeatedly</string>
+    <string name="tip_no_authorization_to_unbind">This equipment is a pigeon shed project. Unbinding is not allowed</string>
+    <string name="tip_no_authorization_to_operate">Sorry, you are not authorized to operate this device</string>
+
+
+</resources>
