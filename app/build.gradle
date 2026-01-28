@@ -1,39 +1,386 @@
-plugins {
-    id 'com.android.application'
+apply plugin: 'com.android.application'
+apply plugin: 'img-optimizer'
+//apply plugin: 'com.huawei.agconnect'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'com.hujiang.android-aspectjx'
+apply plugin: 'android-aspectjx'
+//apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-kapt' // required for kotlin.
+//打包时，记得设置true启用
+if (isNeedPackage.toBoolean()) {
+    apply plugin: 'com.didiglobal.booster'
 }
 
 android {
-    namespace 'com.lanhai.gps'
-    compileSdk 34
+    compileSdkVersion build_versions.target_sdk
+
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "com.lanhai.gps"
-        minSdk 29
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.yyt.trackcar"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode build_versions.version_code
+        versionName build_versions.version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            //根据需要 自行选择添加的对应cpu类型的.so库。
+            abiFilters "armeabi-v7a", "arm64-v8a"
+//            abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a', 'armeabi', 'x86_64'
+            // 还可以添加 'mips', 'mips64'
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+
+        resConfigs "zh","en","zh-rTW","ar","de","fr","in","ja","pt","ru","vi","es"
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.yyt.trackcar",
+                //JPush 上注册的包名对应的 Appkey.
+                JPUSH_APPKEY : "080f34c2180f85c009b79256",
+                //暂时填写默认值即可.
+                JPUSH_CHANNEL : "developer-default",
+
+                //若不集成厂商通道，可直接跳过以下配置
+//                MEIZU_APPKEY : "MZ-魅族的APPKEY",
+//                MEIZU_APPID : "MZ-魅族的APPID",
+                XIAOMI_APPID : "MI-2882303761520149705",
+                XIAOMI_APPKEY : "MI-5862014996705",
+//                OPPO_APPKEY : "OP-oppo的APPKEY",
+//                OPPO_APPID : "OP-oppo的APPID",
+                OPPO_APPSECRET : "OP-oppo的APPSECRET",
+                VIVO_APPKEY : "cc9d3973443bb291eb7a3ec933452091",
+                VIVO_APPID : "105552779"
+        ]
+
+    }
+
+    signingConfigs {
+        if (isNeedPackage.toBoolean()) {
+            release {
+                //添加此行代码，可以在release包下打印log
+//                debuggable true
+                storeFile file(app_release.storeFile)
+                storePassword app_release.storePassword
+                keyAlias app_release.keyAlias
+                keyPassword app_release.keyPassword
+            }
+        }
+
+        debug {
+//            storeFile file("./debug.jks")
+//            storePassword "123456"
+//            keyAlias "debug"
+//            keyPassword "123456"
+            storeFile file(app_release.storeFile)
+            storePassword app_release.storePassword
+            keyAlias app_release.keyAlias
+            keyPassword app_release.keyPassword
+            keyPassword app_release.keyPassword
+        }
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            debuggable true
+//            zipAlignEnabled true
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (isNeedPackage.toBoolean()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+
+            signingConfig signingConfigs.debug
         }
     }
+
+    lintOptions {
+        abortOnError false
+
+        checkReleaseBuilds false
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    buildToolsVersion build_versions.build_tools
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            output.processResources.doFirst { pm ->
+                String manifestPath = output.processResources.manifestFile
+                def manifestFile = new File(manifestPath)
+                def xml = new XmlParser(false, true).parse(manifestFile)
+                def exportedTag = "android:exported"
+                ///指定 space
+                def androidSpace = new groovy.xml.Namespace('http://schemas.android.com/apk/res/android', 'android')
+
+                def nodes = xml.application[0].'*'.findAll {
+                    //挑选要修改的节点，没有指定的 exported 的才需要增加
+                    (it.name() == 'activity' || it.name() == 'receiver' || it.name() == 'service') && it.attribute(androidSpace.exported) == null
+
+                }
+                ///添加 exported，默认 false
+                nodes.each {
+                    def isMain = false
+                    it.each {
+                        if (it.name() == "intent-filter") {
+                            it.each {
+                                if (it.name() == "action") {
+                                    if (it.attributes().get(androidSpace.name) == "android.intent.action.MAIN") {
+                                        isMain = true
+                                        println("......................MAIN FOUND......................")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    it.attributes().put(exportedTag, "${isMain}")
+                }
+
+                PrintWriter pw = new PrintWriter(manifestFile)
+                pw.write(groovy.xml.XmlUtil.serialize(xml))
+                pw.close()
+            }
+        }
+
+    }
+
+
 }
+
+//kotlin {
+//    experimental {
+//        coroutines 'enable'
+//    }
+//}
+
+//aspectjx {
+//    exclude 'com.google.firebase', 'com.google.android', 'com.github.xuexiangjys'
+//}
+
+aspectjx {
+    // 排除一些第三方库的包名（Gson、 LeakCanary 和 AOP 有冲突）
+    // 否则就会起冲突：ClassNotFoundException: Didn't find class on path: DexPathList
+//    enabled false
+    exclude 'androidx', 'com.google', 'com.squareup', 'com.alipay', 'com.taobao', 'org.apache',"org.jetbrains","io.github.inflationx"
+//        exclude 'androidx', 'com.google', 'com.squareup', 'com.alipay', 'com.taobao',org.apache', 'android.support' '
+}
+
+//kapt {
+//    arguments {
+//        arg("moduleName", project.getName())
+//    }
+//}
+
+def dbflow_version = "4.2.4"
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.support.constraint_layout
+    testImplementation deps.junit
+    implementation 'com.android.support:multidex:1.0.3'
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'androidx.appcompat:appcompat:1.7.1'
-    implementation 'com.google.android.material:material:1.13.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+    //下拉刷新
+    implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-header:1.1.5'
+    implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-layout:1.1.5'
+
+    //WebView
+    implementation 'com.github.xuexiangjys.AgentWeb:agentweb-core:1.0.0'
+
+//    implementation 'com.google.android.gms:play-services-ads:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'me.yokeyword:indexablerecyclerview:1.3.0'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.1'
+    implementation 'com.koushikdutta.ion:ion:2.2.1'
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.5'
+    implementation 'pub.devrel:easypermissions:0.4.0'
+//    implementation 'id.zelory:compressor:2.1.0'
+    //    {
+//        exclude group: 'com.github.bumptech.glide'
+//    }
+    implementation 'com.github.pengrad:mapscaleview:1.5.0'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.applikeysolutions:cosmocalendar:1.0.4'
+
+    // 阿里云推送
+//    implementation 'com.aliyun.ams:alicloud-android-push:3.2.5'
+//    implementation 'com.aliyun.ams:alicloud-android-push:3.1.9'
+    // 阿里云oss
+//    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.10'
+//    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+
+    //屏幕适配AutoSize
+    implementation 'me.jessyan:autosize:1.1.2'
+
+    implementation 'com.github.zhaokaiqiang.klog:library:1.6.0'
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.20"
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.20"
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'org.aspectj:aspectjrt:1.8.9'
+
+//    implementation "com.polidea.rxandroidble3:rxandroidble:1.17.2"
+    implementation "com.polidea.rxandroidble2:rxandroidble:1.17.2"
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+//    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+//    implementation 'io.netty:netty-all:4.1.92.Final'
+
+    implementation project(':xmltojsonlib')
+    implementation (project(':org.eclipse.paho.android.service')){
+        //exclude module: "org.eclipse.paho.client.mqttv3"
+        transitive=true
+    }
+//    implementation 'com.github.smart-fun:XmlToJson:1.5.3'
+//    implementation group: 'xpp3', name: 'xpp3', version: '1.1.2a'
+//    implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4'
+//    implementation 'xstream:xstream:1.2.1'
+//    implementation 'com.sun.xml.bind:jaxb-impl:2.3.0'
+//    implementation 'com.sun.xml.bind:jaxb-core:2.3.0'
+//    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+
+    //友盟推送
+//    implementation "com.umeng.umsdk:common:9.1.0" //（必选）
+//    implementation "com.umeng.umsdk:asms:1.1.3" // asms包依赖(必选)
+//    implementation "com.umeng.umsdk:crash:0.0.4" // native crash包依赖(必选)
+//    implementation "com.umeng.umsdk:oaid_lenovo:1.0.0" //（可选）
+//    implementation "com.umeng.umsdk:oaid_mi:1.0.0" //（可选）
+//    implementation "com.umeng.umsdk:oaid_oppo:1.0.4" //（可选）
+//    implementation "com.umeng.umsdk:oaid_vivo:1.0.0.1" //（可选）
+
+    // if Java use this. If using Kotlin do NOT use this.
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    // Use if Kotlin user.
+//    kapt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    // sql-cipher database encryption (optional)
+    implementation "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.9@aar'
+    // kotlin extensions
+    implementation "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:${dbflow_version}"
+    // RXJava 1 support
+    implementation "com.github.Raizlabs.DBFlow:dbflow-rx:${dbflow_version}"
+    // RXJava 1 Kotlin Extensions Support
+    implementation "com.github.Raizlabs.DBFlow:dbflow-rx-kotlinextensions:${dbflow_version}"
+    // RXJava 2 support
+    implementation "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflow_version}"
+    // RXJava 2 Kotlin Extensions Support
+    implementation "com.github.Raizlabs.DBFlow:dbflow-rx2-kotlinextensions:${dbflow_version}"
+
+    //ANR异常捕获
+//    implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
+
+    //美团多渠道打包
+    implementation 'com.meituan.android.walle:library:1.1.6'
+//    implementation 'com.JuphoonCloud:JC-SDK:2.4.4'
+
+    //activity崩溃日志 添加或删除该依赖时需要先clean build,正式发布打包前请注释该依赖
+//    implementation 'cat.ereza:customactivityoncrash:2.2.0'
+
+
+    //===============================
+
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.9@aar'
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
+
+    // 树形结构
+    implementation 'com.github.bmelnychuk:atv:1.2.+'
+
+    // printView
+//    implementation 'com.github.johnkil.print:print:1.2.2'
+
+//    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+
+//    implementation 'com.tencent:mmkv:1.2.11'
+
+//    api 'com.afollestad.material-dialogs:core:2.0.0-alpha05'
+//    api 'com.afollestad.material-dialogs:input:2.0.0-alpha05'
+
+    implementation 'com.baoyz.actionsheet:library:1.1.7'
+
+//    implementation 'com.amap.api:navi-3dmap:latest-integration'
+
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    //极光推送 jiguang push
+    // 此处以JCore 3.2.4 版本为例。
+//    implementation 'cn.jiguang.sdk:jcore:3.2.4'
+    // 此处以JPush 4.6.4 版本为例
+//    implementation 'cn.jiguang.sdk:jpush:4.6.4'
+
+//    implementation 'cn.jiguang.sdk:jpush-google:4.6.4'  // 此处以JPush 4.6.4 Google Play版本为例
+//    implementation 'cn.jiguang.sdk:jcore-google:3.2.4'  // 此处以JCore 3.2.4 Google Play 版本为例。
+    //若不集成厂商通道，可直接跳过以下依赖
+    // 接入华为厂商
+//    implementation 'com.huawei.hms:push:6.1.0.300'
+    //仅使用 com.huawei.hms:push:6.1.0.XXX 版本需要加 base 依赖，其他版本不需要
+//    implementation 'com.huawei.hms:base:6.2.0.300'
+
+    // 极光厂商插件版本与接入 JPush 版本保持一致，下同
+//    implementation 'cn.jiguang.sdk.plugin:huawei:4.6.4'
+    // 接入 FCM 厂商
+//    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+//    implementation 'cn.jiguang.sdk.plugin:fcm:4.6.4'
+    // 接入魅族厂商
+//    implementation 'cn.jiguang.sdk.plugin:meizu:4.6.4'
+    // 接入 VIVO 厂商
+//    implementation 'cn.jiguang.sdk.plugin:vivo:4.6.4'
+    // 接入小米厂商
+//    implementation 'cn.jiguang.sdk.plugin:xiaomi:4.6.4'
+    // 接入 OPPO 厂商
+//    implementation 'cn.jiguang.sdk.plugin:oppo:4.6.4'
+    // oppo 厂商 aar 需要单独引入，请将 jpush-android-xxx-release/third-push/oppo/libs 下 com.heytap.msp-push-x.x.x.aar 单独拷贝一份到应用 module/libs 下
+//    implementation(name: 'com.heytap.msp-push-3.0.0', ext: 'aar')
+
+    //以下为 OPPO 3.0.0 aar需要依赖
+//    implementation 'com.google.code.gson:gson:2.6.2'
+//    implementation 'commons-codec:commons-codec:1.6'
+//    implementation 'androidx.annotation:annotation:1.1.0'
+
+    implementation 'com.androidessence:pinchzoomtextview:1.0.1'
+
+    //BGAQRCode二维码扫描
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.3@aar'
+    implementation 'cn.bingoogolapple:bga-zxing:1.1.3@aar'
+
 }
+
+//apply plugin: 'com.google.gms.google-services'
+//自动添加X-Library依赖
+apply from: 'x-library.gradle'
+//walle多渠道打包
+apply from: 'multiple-channel.gradle'

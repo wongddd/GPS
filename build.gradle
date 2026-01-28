@@ -1,4 +1,80 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-id 'com.android.application' version '8.2.0' apply false
+
+buildscript {
+    ext.booster_version = '0.26.1'
+//    ext.kotlin_version = '1.3.50'
+    apply from: './versions.gradle'
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://oss.sonatype.org/content/repositories/public' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/releases/' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://repo1.maven.org/maven2/'}
+        maven {url 'https://maven.aliyun.com/repository/public/'}
+        maven {url 'https://maven.aliyun.com/repository/central'}
+        maven {url "https://github.com/apache/maven"}
+        maven {url "https://mvnrepository.com/"}
+    }
+//    addRepos(repositories) //增加代码仓库
+    dependencies {
+        classpath deps.android_gradle_plugin
+        classpath deps.android_maven_gradle_plugin
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath 'org.aspectj:aspectjtools:1.8.10'
+//        classpath 'org.aspectj:aspectjweaver:1.8.8'
+//        //aspectjtools插件
+//        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8'
+//        classpath 'org.aspectj:aspectjtools:1.8.9'
+
+        classpath 'com.chenenyu:img-optimizer:1.1.1' // 图片压缩
+//        classpath 'com.google.gms:google-services:4.3.3'
+//        classpath 'com.huawei.agconnect:agcp:1.1.1.300'
+        //美团多渠道打包
+        classpath 'com.meituan.android.walle:plugin:1.1.6'
+
+        //极光相关
+        // fcm，若不集成 FCM 通道，可直接跳过
+//        classpath 'com.google.gms:google-services:4.3.8'
+        // hms，若不集成华为厂商通道，可直接跳过
+//        classpath 'com.huawei.agconnect:agcp:1.6.0.300'
+
+//        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+
+        //滴滴的质量优化框架
+        if (isNeedPackage.toBoolean()) {
+            classpath "com.didiglobal.booster:booster-gradle-plugin:$booster_version"
+            classpath "com.didiglobal.booster:booster-task-all:$booster_version"
+            classpath "com.didiglobal.booster:booster-transform-all:$booster_version"
+        }
+    }
+}
+
+allprojects {
+//    addRepos(repositories)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://oss.sonatype.org/content/repositories/public' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/releases/' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://repo1.maven.org/maven2/'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+repositories {
+    google()
+    mavenCentral()
+    // hms， 若不集成华为厂商通道，可直接跳过
+    // maven { url 'http://developer.huawei.com/repo/'}
+    // 1.添加MobSDK Maven地址
+    // maven { url "https://mvn.mob.com/android" }
+    // fcm， 若不集成 FCM 通道，可直接跳过
+    // maven { url "https://maven.google.com" }
 }
