@@ -91,7 +91,7 @@ public interface CWConstant {
     String SERVER_ADDRESS_AMERICA = "usaold.lagenio.net";
     String SERVER_ADDRESS_EUROPE = "europeold.lagenio.net";
     String SERVER_ADDRESS_CHINA = "chinakid.lagenio.net";
-    String SERVER_ADDRESS_CHINA_TWO = "192.168.0.142:8088"; // lagenio.vip   chinakid.lagenio.net:8088
+    String SERVER_ADDRESS_CHINA_TWO = "192.168.1.127:8088"; // lagenio.vip   chinakid.lagenio.net:8088
     String SERVER_ADDRESS_AMERICA_TWO = "lagenio.com.cn";
     String SERVER_ADDRESS_SECOND = "hkold.lagenio.net";
     String SERVER_ADDRESS_AMERICA_SECOND = "usaold.lagenio.net";
